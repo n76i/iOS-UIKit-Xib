@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 
 
     @IBAction func buttonDidTap(_ sender: Any) {
-        let viewController = AuthViewController()
+        let viewController = BuyDiamondsVC()
         
         navigationController?.pushViewController(viewController, animated: true)
     }
