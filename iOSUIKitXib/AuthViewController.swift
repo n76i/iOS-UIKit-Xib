@@ -16,6 +16,10 @@ class AuthViewController: UIViewController {
     }
     
     @IBAction func buttonDidTap(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
+        let modelBottomSheet = BuyDiamondsVC()
+        
+        self.present(modelBottomSheet, animated: true)
+            
+//        navigationController?.popViewController(animated: true)
     }
 }

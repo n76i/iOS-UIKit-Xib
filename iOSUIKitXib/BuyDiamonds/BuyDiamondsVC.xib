@@ -10,11 +10,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Sarabun-ExtraBold.ttf">
-            <string>Sarabun-ExtraBold</string>
-        </array>
         <array key="Sarabun-Regular.ttf">
             <string>Sarabun-Regular</string>
+        </array>
+        <array key="Sarabun-SemiBold.ttf">
+            <string>Sarabun-SemiBold</string>
         </array>
     </customFonts>
     <objects>
@@ -23,8 +23,10 @@
                 <outlet property="buyBtn" destination="DdW-Ua-973" id="xzI-e3-a49"/>
                 <outlet property="contentView" destination="CGl-Rv-16p" id="MTZ-r7-DmW"/>
                 <outlet property="diamondCurrentTxt" destination="trg-76-Ual" id="Udd-ee-xS2"/>
+                <outlet property="diamondTotal" destination="trg-76-Ual" id="N7c-M3-WbL"/>
                 <outlet property="diamondView" destination="5YG-Yd-2rf" id="A8h-0q-bAI"/>
                 <outlet property="diamondsClv" destination="Qy6-Kk-WsH" id="3CL-iI-TBI"/>
+                <outlet property="moneyTotal" destination="yph-MS-Tmx" id="m83-zA-0DT"/>
                 <outlet property="titletxt" destination="3wa-5Q-cyB" id="CA9-eU-B7Q"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -115,10 +117,16 @@
                                         <constraint firstAttribute="width" constant="25" id="T9J-mB-LOB"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="69 (100000 vnđ)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trg-76-Ual">
-                                    <rect key="frame" x="107.66666666666666" y="25.666666666666629" width="119.66666666666666" height="21"/>
-                                    <fontDescription key="fontDescription" name="Sarabun-ExtraBold" family="Sarabun" pointSize="16"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="69 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trg-76-Ual">
+                                    <rect key="frame" x="107.66666666666667" y="26.666666666666629" width="22.000000000000014" height="19.333333333333329"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                     <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yph-MS-Tmx">
+                                    <rect key="frame" x="159" y="25.666666666666714" width="42" height="21"/>
+                                    <fontDescription key="fontDescription" name="Sarabun-SemiBold" family="Sarabun" pointSize="12"/>
+                                    <color key="textColor" name="555050"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdW-Ua-973">
@@ -136,6 +144,7 @@
                             </subviews>
                             <constraints>
                                 <constraint firstItem="Hb9-rV-sm3" firstAttribute="centerY" secondItem="UEa-d3-7XH" secondAttribute="centerY" id="4F3-19-Byd"/>
+                                <constraint firstItem="yph-MS-Tmx" firstAttribute="centerY" secondItem="UEa-d3-7XH" secondAttribute="centerY" id="C2O-2q-tVN"/>
                                 <constraint firstItem="trg-76-Ual" firstAttribute="leading" secondItem="Hb9-rV-sm3" secondAttribute="trailing" constant="8" id="E1l-bK-9zR"/>
                                 <constraint firstItem="saO-WF-iNR" firstAttribute="leading" secondItem="UEa-d3-7XH" secondAttribute="leading" id="EDO-AF-Mae"/>
                                 <constraint firstAttribute="trailing" secondItem="DdW-Ua-973" secondAttribute="trailing" id="MAg-6E-fiL"/>
@@ -143,6 +152,7 @@
                                 <constraint firstItem="Hb9-rV-sm3" firstAttribute="leading" secondItem="saO-WF-iNR" secondAttribute="trailing" constant="8" id="fF4-fT-yCY"/>
                                 <constraint firstItem="DdW-Ua-973" firstAttribute="centerY" secondItem="UEa-d3-7XH" secondAttribute="centerY" id="fon-qG-DZA"/>
                                 <constraint firstItem="trg-76-Ual" firstAttribute="centerY" secondItem="UEa-d3-7XH" secondAttribute="centerY" id="g6E-At-aG8"/>
+                                <constraint firstItem="yph-MS-Tmx" firstAttribute="leading" secondItem="trg-76-Ual" secondAttribute="trailing" constant="8" id="wlN-Wh-oml"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -179,6 +189,9 @@
         <image name="diamond_ic" width="14.666666984558105" height="11.333333015441895"/>
         <namedColor name="342E2E">
             <color red="0.20392156862745098" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="555050">
+            <color red="0.33333333333333331" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="EEF7FF">
             <color red="0.93333333333333335" green="0.96862745098039216" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -21,31 +21,26 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wox-Us-Fao">
                         <rect key="frame" x="0.0" y="0.0" width="266" height="197"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="9ek-ce-XHB">
-                                <rect key="frame" x="92.333333333333343" y="12" width="81.333333333333343" height="25"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diamond_ic" translatesAutoresizingMaskIntoConstraints="NO" id="PS1-PH-iFb">
-                                        <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="25" id="3zy-wn-jW4"/>
-                                            <constraint firstAttribute="width" constant="25" id="Qav-tR-AlV"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsC-4J-XDo">
-                                        <rect key="frame" x="29.000000000000004" y="0.0" width="52.333333333333343" height="25"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                        <color key="textColor" name="555050"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="9ek-ce-XHB" firstAttribute="top" secondItem="wox-Us-Fao" secondAttribute="top" constant="12" id="w1I-TI-BNd"/>
-                        </constraints>
                     </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="9ek-ce-XHB">
+                        <rect key="frame" x="92.333333333333343" y="12" width="81.333333333333343" height="25"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diamond_ic" translatesAutoresizingMaskIntoConstraints="NO" id="PS1-PH-iFb">
+                                <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="3zy-wn-jW4"/>
+                                    <constraint firstAttribute="width" constant="25" id="Qav-tR-AlV"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsC-4J-XDo">
+                                <rect key="frame" x="29.000000000000004" y="0.0" width="52.333333333333343" height="25"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" name="555050"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gs7-31-UB5">
                         <rect key="frame" x="115.33333333333333" y="174" width="35.333333333333329" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -61,7 +56,8 @@
                 <constraint firstAttribute="bottom" secondItem="wox-Us-Fao" secondAttribute="bottom" id="D9A-lS-56e"/>
                 <constraint firstAttribute="trailing" secondItem="wox-Us-Fao" secondAttribute="trailing" id="PEz-jy-Vdi"/>
                 <constraint firstItem="Gs7-31-UB5" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="TtF-3g-ExZ"/>
-                <constraint firstItem="9ek-ce-XHB" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="gOi-Uz-OPM"/>
+                <constraint firstItem="9ek-ce-XHB" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="UhN-rt-1d6"/>
+                <constraint firstItem="9ek-ce-XHB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="dFt-K1-JCK"/>
                 <constraint firstAttribute="bottom" secondItem="Gs7-31-UB5" secondAttribute="bottom" constant="6" id="oYr-nz-z5o"/>
             </constraints>
             <size key="customSize" width="266" height="197"/>

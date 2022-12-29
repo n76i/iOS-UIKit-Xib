@@ -28,12 +28,13 @@ extension UIView {
         self.layer.addSublayer(gradient)
     }
     
-    func gradientBorder(colors: [UIColor], isVertical: Bool, isStroker: Bool = true){
+    @discardableResult
+    func gradientBorder(colors: [UIColor], isVertical: Bool, isStroker: Bool = true) -> CAGradientLayer {
         self.layer.masksToBounds = true
         
         //Create gradient layer
         let gradient = CAGradientLayer()
-        gradient.frame = CGRect(origin: CGPoint.zero, size: self.bounds.size)
+        gradient.frame = self.frame
         gradient.colors = colors.map({ (color) -> CGColor in
             color.cgColor
         })
@@ -59,8 +60,9 @@ extension UIView {
         }
 
         //Add layer to view
-        self.layer.addSublayer(gradient)
+        self.layer.insertSublayer(gradient, at: 0)
 //        gradient.zPosition = 0
+        return gradient
     }
     
     func roundCorners(_ corners: UIRectCorner, radius: CGFloat) {

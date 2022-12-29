@@ -1,13 +1,13 @@
 //
-//  BuyDiamondsVC.swift
+//  BuydiamondsBottomSheet.swift
 //  iOSUIKitXib
 //
-//  Created by HungND on 26/12/2022.
+//  Created by HungND on 29/12/2022.
 //
 
 import UIKit
 
-class BuyDiamondsVC: UIViewController {
+class BuydiamondsBottomSheet: UIViewController {
     let diamondsData: [DiamondModel] = [
         DiamondModel(diamondNumber: 69, money: 100000, isSelect: true),
         DiamondModel(diamondNumber: 139, money: 100000, isSelect: false),
@@ -17,35 +17,47 @@ class BuyDiamondsVC: UIViewController {
         DiamondModel(diamondNumber: 6999, money: 100000, isSelect: false),
     ]
     
-    var itemSize: CGSize!
-    
+    @IBOutlet weak var space: UIView!
     @IBOutlet weak var moneyTotal: UILabel!
     @IBOutlet weak var diamondTotal: UILabel!
     @IBOutlet weak var diamondView: UIView!
     @IBOutlet weak var diamondCurrentTxt: UILabel!
     @IBOutlet weak var titletxt: UILabel!
-    @IBOutlet weak var contentView: UIView!
-    
+
+    @IBOutlet weak var sheetView: UIView!
     @IBOutlet weak var buyBtn: UIButton!
     @IBOutlet weak var diamondsClv: UICollectionView!
     
+    var itemSize: CGSize!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
-        setBackgroundImage()
         setupView()
+        // Do any additional setup after loading the view.
     }
     
+    @objc func spaceAction(_ sender:UITapGestureRecognizer){
+        // do other task
+        dismiss(animated: true)
+    }
+
+    
     func setupView() {
+        self.view.backgroundColor = UIColor.white.withAlphaComponent(0)
+        
+        //set height to BottomSheet
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(self.spaceAction(_:)))
+        self.space.addGestureRecognizer(gesture)
+        space.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        
+        sheetView.roundCorners([.topLeft, .topRight], radius: 18)
+
         //setup diamondsCollection
         diamondsClv.register(UINib(nibName: "DiamondCell", bundle: nil), forCellWithReuseIdentifier: "DiamondCell")
         diamondsClv.dataSource = self
         diamondsClv.delegate = self
         
-        //setup contentView
-        contentView.roundCorners([.topLeft, .topRight], radius: 18)
         
         //setup titleTxt
         titletxt.font = UIFont(name: "Sarabun-Regular", size: 18)
@@ -62,27 +74,9 @@ class BuyDiamondsVC: UIViewController {
         let shape = CAShapeLayer()
         buyBtn.applyGradient(colors: [ UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!], startPoint: CGPoint(x: 0.0, y: 0.8), endPoint: CGPoint(x: 1.0, y: 0.2), shape: shape)
     }
-    
-    func setBackgroundImage() {
-        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "buy_diamonds_bgr_img")
-        backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
-        view.insertSubview(backgroundImage, at: 0)
-    }
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
 }
 
-extension BuyDiamondsVC: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+extension BuydiamondsBottomSheet: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return diamondsData.count
     }

@@ -24,6 +24,10 @@
 		64D3A1C5295C209A007EC7E3 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D3A1C4295C209A007EC7E3 /* StringExt.swift */; };
 		64D3A1C7295C2E25007EC7E3 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D3A1C6295C2E25007EC7E3 /* UIViewExt.swift */; };
 		64EF85FD295C4154000F4EBB /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EF85FC295C4154000F4EBB /* UIButton.swift */; };
+		64EF8601295D75D2000F4EBB /* BuydiamondsBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EF85FF295D75D2000F4EBB /* BuydiamondsBottomSheet.swift */; };
+		64EF8602295D75D2000F4EBB /* BuydiamondsBottomSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64EF8600295D75D2000F4EBB /* BuydiamondsBottomSheet.xib */; };
+		64EF8606295D7CB3000F4EBB /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EF8604295D7CB3000F4EBB /* HomeVC.swift */; };
+		64EF8607295D7CB3000F4EBB /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64EF8605295D7CB3000F4EBB /* HomeVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,10 @@
 		64D3A1C4295C209A007EC7E3 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		64D3A1C6295C2E25007EC7E3 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		64EF85FC295C4154000F4EBB /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		64EF85FF295D75D2000F4EBB /* BuydiamondsBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuydiamondsBottomSheet.swift; sourceTree = "<group>"; };
+		64EF8600295D75D2000F4EBB /* BuydiamondsBottomSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuydiamondsBottomSheet.xib; sourceTree = "<group>"; };
+		64EF8604295D7CB3000F4EBB /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		64EF8605295D7CB3000F4EBB /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,8 @@
 		649D39422959849D005E1E89 /* BuyDiamonds */ = {
 			isa = PBXGroup;
 			children = (
+				64EF8603295D7C80000F4EBB /* HomeVC */,
+				64EF85FE295D75A4000F4EBB /* BuyDiamondsBottomSheet */,
 				64D3A1BD2959A8A5007EC7E3 /* Extension */,
 				649D394A29599C92005E1E89 /* Cell */,
 				649D394729599206005E1E89 /* Font */,
@@ -130,6 +140,24 @@
 				64EF85FC295C4154000F4EBB /* UIButton.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		64EF85FE295D75A4000F4EBB /* BuyDiamondsBottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				64EF85FF295D75D2000F4EBB /* BuydiamondsBottomSheet.swift */,
+				64EF8600295D75D2000F4EBB /* BuydiamondsBottomSheet.xib */,
+			);
+			path = BuyDiamondsBottomSheet;
+			sourceTree = "<group>";
+		};
+		64EF8603295D7C80000F4EBB /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				64EF8604295D7CB3000F4EBB /* HomeVC.swift */,
+				64EF8605295D7CB3000F4EBB /* HomeVC.xib */,
+			);
+			path = HomeVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,9 +218,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64EF8602295D75D2000F4EBB /* BuydiamondsBottomSheet.xib in Resources */,
 				4923971A293EFB0200CC84FA /* AuthViewController.xib in Resources */,
 				649D394629598520005E1E89 /* BuyDiamondsVC.xib in Resources */,
 				4923970E293EF96900CC84FA /* LaunchScreen.storyboard in Resources */,
+				64EF8607295D7CB3000F4EBB /* HomeVC.xib in Resources */,
 				649D394E29599CE0005E1E89 /* DiamondCell.xib in Resources */,
 				649D394929599288005E1E89 /* Sarabun in Resources */,
 				49239716293EFAB600CC84FA /* ViewController.xib in Resources */,
@@ -207,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64EF8601295D75D2000F4EBB /* BuydiamondsBottomSheet.swift in Sources */,
 				64D3A1C7295C2E25007EC7E3 /* UIViewExt.swift in Sources */,
 				49239706293EF96800CC84FA /* ViewController.swift in Sources */,
 				49239719293EFB0200CC84FA /* AuthViewController.swift in Sources */,
@@ -215,6 +246,7 @@
 				64EF85FD295C4154000F4EBB /* UIButton.swift in Sources */,
 				64D3A1BF2959A8BA007EC7E3 /* IntExt.swift in Sources */,
 				649D394529598520005E1E89 /* BuyDiamondsVC.swift in Sources */,
+				64EF8606295D7CB3000F4EBB /* HomeVC.swift in Sources */,
 				64D3A1BC2959A5D8007EC7E3 /* DiamondModel.swift in Sources */,
 				49239702293EF96800CC84FA /* AppDelegate.swift in Sources */,
 			);
