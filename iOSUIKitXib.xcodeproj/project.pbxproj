@@ -14,6 +14,8 @@
 		49239716293EFAB600CC84FA /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49239715293EFAB600CC84FA /* ViewController.xib */; };
 		49239719293EFB0200CC84FA /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49239717293EFB0200CC84FA /* AuthViewController.swift */; };
 		4923971A293EFB0200CC84FA /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49239718293EFB0200CC84FA /* AuthViewController.xib */; };
+		564907942966703C00CD768C /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564907922966703C00CD768C /* TestViewController.swift */; };
+		564907952966703C00CD768C /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 564907932966703C00CD768C /* TestViewController.xib */; };
 		649D394529598520005E1E89 /* BuyDiamondsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649D394329598520005E1E89 /* BuyDiamondsVC.swift */; };
 		649D394629598520005E1E89 /* BuyDiamondsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 649D394429598520005E1E89 /* BuyDiamondsVC.xib */; };
 		649D394929599288005E1E89 /* Sarabun in Resources */ = {isa = PBXBuildFile; fileRef = 649D394829599288005E1E89 /* Sarabun */; };
@@ -36,6 +38,8 @@
 		49239715293EFAB600CC84FA /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		49239717293EFB0200CC84FA /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		49239718293EFB0200CC84FA /* AuthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
+		564907922966703C00CD768C /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		564907932966703C00CD768C /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		649D394329598520005E1E89 /* BuyDiamondsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyDiamondsVC.swift; sourceTree = "<group>"; };
 		649D394429598520005E1E89 /* BuyDiamondsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyDiamondsVC.xib; sourceTree = "<group>"; };
 		649D394829599288005E1E89 /* Sarabun */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sarabun; sourceTree = "<group>"; };
@@ -91,9 +95,19 @@
 			path = iOSUIKitXib;
 			sourceTree = "<group>";
 		};
+		564907912966700D00CD768C /* TestVC */ = {
+			isa = PBXGroup;
+			children = (
+				564907922966703C00CD768C /* TestViewController.swift */,
+				564907932966703C00CD768C /* TestViewController.xib */,
+			);
+			path = TestVC;
+			sourceTree = "<group>";
+		};
 		649D39422959849D005E1E89 /* BuyDiamonds */ = {
 			isa = PBXGroup;
 			children = (
+				564907912966700D00CD768C /* TestVC */,
 				64D3A1BD2959A8A5007EC7E3 /* Extension */,
 				649D394A29599C92005E1E89 /* Cell */,
 				649D394729599206005E1E89 /* Font */,
@@ -196,6 +210,7 @@
 				649D394E29599CE0005E1E89 /* DiamondCell.xib in Resources */,
 				649D394929599288005E1E89 /* Sarabun in Resources */,
 				49239716293EFAB600CC84FA /* ViewController.xib in Resources */,
+				564907952966703C00CD768C /* TestViewController.xib in Resources */,
 				4923970B293EF96900CC84FA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +224,7 @@
 			files = (
 				64D3A1C7295C2E25007EC7E3 /* UIViewExt.swift in Sources */,
 				49239706293EF96800CC84FA /* ViewController.swift in Sources */,
+				564907942966703C00CD768C /* TestViewController.swift in Sources */,
 				49239719293EFB0200CC84FA /* AuthViewController.swift in Sources */,
 				649D394D29599CE0005E1E89 /* DiamondCell.swift in Sources */,
 				64D3A1C5295C209A007EC7E3 /* StringExt.swift in Sources */,
