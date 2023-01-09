@@ -24,11 +24,10 @@ class HomeVC: UIViewController {
     
 
     @IBAction func showBottomSheet(_ sender: Any) {
-        let detailSheet = BuydiamondsBottomSheet()
+        let detailSheet = RewardAndTaskVC()
         detailSheet.modalPresentationStyle = .overCurrentContext
 
         self.present(detailSheet, animated: true)
-        
     }
     /*
     // MARK: - Navigation

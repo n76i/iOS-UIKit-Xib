@@ -9,8 +9,14 @@ import Foundation
 import UIKit
 
 extension UIView {
-    func applyGradient(colors: [UIColor], startPoint: CGPoint, endPoint: CGPoint, shape: CAShapeLayer?) {
-        let gradient = CAGradientLayer()
+    func applyGradient(colors: [UIColor], startPoint: CGPoint, endPoint: CGPoint, shape: CAShapeLayer?, corner: CGFloat) {
+        var gradient: CAGradientLayer!
+        if let sub = layer.sublayers?.first as? CAGradientLayer {
+            gradient = sub
+        } else {
+            gradient = CAGradientLayer()
+            self.layer.insertSublayer(gradient, at: 0)
+        }
         gradient.frame = CGRect(origin: CGPoint.zero, size: self.bounds.size)
         gradient.colors = colors.map({ (color) -> CGColor in
             color.cgColor
@@ -18,14 +24,23 @@ extension UIView {
         
         gradient.startPoint = startPoint
         gradient.endPoint = endPoint
-
+        
         if(shape != nil) {
-            shape!.path = UIBezierPath(roundedRect: gradient.frame.insetBy(dx: 1, dy: 1), cornerRadius: 30.0).cgPath
+            shape!.path = UIBezierPath(roundedRect: gradient.frame, cornerRadius: corner).cgPath
 
             gradient.mask = shape
         }
+        print(self.frame)
+        print(gradient.frame)
+        print("=========================")
+
+//        self.layer.insertSublayer(gradient, at: 0)//addSublayer(gradient)
         
-        self.layer.addSublayer(gradient)
+//        for i in 0..<(self.layer.sublayers?.count ?? 0) - 1 {
+//            if(i>=1) {
+//                self.layer.sublayers?.remove(at: i)
+//            }
+//        }
     }
     
     @discardableResult
@@ -65,10 +80,25 @@ extension UIView {
         return gradient
     }
     
-    func roundCorners(_ corners: UIRectCorner, radius: CGFloat) {
-         let path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
-         let mask = CAShapeLayer()
-         mask.path = path.cgPath
-         self.layer.mask = mask
+    func roundCorners(_ corners: [CACornerMask], radius: CGFloat) {
+        clipsToBounds = true
+        layer.cornerRadius = radius
+        
+        layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner, ]
     }
+    
+//    func _round(corners: UIRectCorner, radius: CGFloat) -> CAShapeLayer {
+//     let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+//     let mask = CAShapeLayer()
+//     mask.path = path.cgPath
+//     self.layer.mask = mask
+//     return mask
+//    }
+}
+
+extension CACornerMask {
+    static let bottomLeft = CACornerMask.layerMinXMaxYCorner
+    static let bottomRight = CACornerMask.layerMaxXMaxYCorner
+    static let topLeft = CACornerMask.layerMinXMinYCorner
+    static let topRight = CACornerMask.layerMaxXMinYCorner
 }

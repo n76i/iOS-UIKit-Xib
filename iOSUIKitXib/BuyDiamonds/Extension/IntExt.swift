@@ -17,4 +17,10 @@ extension Int {
         return formatter.string(from: number)!
       }
     
+    func convertToMinutes() -> String {
+        let second: Int = self%60
+        let minutes: Int = Int(self/60)
+        
+        return "0\(minutes)" + ":" + (second<10 ? "0\(second)" : String(second))
+    }
 }

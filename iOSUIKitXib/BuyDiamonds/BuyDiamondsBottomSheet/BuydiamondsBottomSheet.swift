@@ -72,7 +72,7 @@ class BuydiamondsBottomSheet: UIViewController {
         //setup buy btn
         buyBtn.setTitle("NẠP", for: .normal)
         let shape = CAShapeLayer()
-        buyBtn.applyGradient(colors: [ UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!], startPoint: CGPoint(x: 0.0, y: 0.8), endPoint: CGPoint(x: 1.0, y: 0.2), shape: shape)
+        buyBtn.applyGradient(colors: [ UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!], startPoint: CGPoint(x: 0.0, y: 0.8), endPoint: CGPoint(x: 1.0, y: 0.2), shape: shape, corner: 30)
     }
 }
 

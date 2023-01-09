@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LineView" customModule="iOSUIKitXib" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="th8-4T-hOU" id="xmH-Xw-JgW"/>
+                <outlet property="subView" destination="PGO-Rz-LkX" id="6GV-ZC-B5z"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="th8-4T-hOU">
+            <rect key="frame" x="0.0" y="0.0" width="12" height="2"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PGO-Rz-LkX">
+                    <rect key="frame" x="0.0" y="0.0" width="12" height="2"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="dh9-Oa-J3f"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="PGO-Rz-LkX" secondAttribute="trailing" id="7dH-Ix-Ys0"/>
+                <constraint firstItem="PGO-Rz-LkX" firstAttribute="top" secondItem="th8-4T-hOU" secondAttribute="top" id="R67-dv-Nsc"/>
+                <constraint firstItem="PGO-Rz-LkX" firstAttribute="leading" secondItem="th8-4T-hOU" secondAttribute="leading" id="r5D-QJ-ijg"/>
+                <constraint firstItem="dh9-Oa-J3f" firstAttribute="bottom" secondItem="PGO-Rz-LkX" secondAttribute="bottom" id="y8C-tZ-Ncm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-125.19083969465649" y="299.29577464788736"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		49239716293EFAB600CC84FA /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49239715293EFAB600CC84FA /* ViewController.xib */; };
 		49239719293EFB0200CC84FA /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49239717293EFB0200CC84FA /* AuthViewController.swift */; };
 		4923971A293EFB0200CC84FA /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49239718293EFB0200CC84FA /* AuthViewController.xib */; };
+		642B58E02966C30E0050B812 /* UILabelExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642B58DF2966C30E0050B812 /* UILabelExt.swift */; };
+		642B58E2296742330050B812 /* ButtonTapDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642B58E1296742330050B812 /* ButtonTapDelegate.swift */; };
 		649D394529598520005E1E89 /* BuyDiamondsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649D394329598520005E1E89 /* BuyDiamondsVC.swift */; };
 		649D394629598520005E1E89 /* BuyDiamondsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 649D394429598520005E1E89 /* BuyDiamondsVC.xib */; };
 		649D394929599288005E1E89 /* Sarabun in Resources */ = {isa = PBXBuildFile; fileRef = 649D394829599288005E1E89 /* Sarabun */; };
@@ -28,6 +30,15 @@
 		64EF8602295D75D2000F4EBB /* BuydiamondsBottomSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64EF8600295D75D2000F4EBB /* BuydiamondsBottomSheet.xib */; };
 		64EF8606295D7CB3000F4EBB /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EF8604295D7CB3000F4EBB /* HomeVC.swift */; };
 		64EF8607295D7CB3000F4EBB /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64EF8605295D7CB3000F4EBB /* HomeVC.xib */; };
+		64EF8610295E94E0000F4EBB /* RewardAndTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EF860E295E94E0000F4EBB /* RewardAndTaskVC.swift */; };
+		64EF8611295E94E0000F4EBB /* RewardAndTaskVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64EF860F295E94E0000F4EBB /* RewardAndTaskVC.xib */; };
+		64EF8617295E971F000F4EBB /* LineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64EF8616295E971F000F4EBB /* LineView.xib */; };
+		64EF861B295E973C000F4EBB /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EF861A295E973C000F4EBB /* LineView.swift */; };
+		64EF8621295EC8F6000F4EBB /* RewardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EF8620295EC8F6000F4EBB /* RewardView.swift */; };
+		64EF8623295EC95F000F4EBB /* RewardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64EF8622295EC95F000F4EBB /* RewardView.xib */; };
+		64EF8625295ECBDD000F4EBB /* RewardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EF8624295ECBDD000F4EBB /* RewardType.swift */; };
+		64EF8627296346B7000F4EBB /* RewardItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EF8626296346B7000F4EBB /* RewardItemView.swift */; };
+		64EF8629296346CB000F4EBB /* RewardItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64EF8628296346CB000F4EBB /* RewardItemView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +51,8 @@
 		49239715293EFAB600CC84FA /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		49239717293EFB0200CC84FA /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		49239718293EFB0200CC84FA /* AuthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
+		642B58DF2966C30E0050B812 /* UILabelExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExt.swift; sourceTree = "<group>"; };
+		642B58E1296742330050B812 /* ButtonTapDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTapDelegate.swift; sourceTree = "<group>"; };
 		649D394329598520005E1E89 /* BuyDiamondsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyDiamondsVC.swift; sourceTree = "<group>"; };
 		649D394429598520005E1E89 /* BuyDiamondsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyDiamondsVC.xib; sourceTree = "<group>"; };
 		649D394829599288005E1E89 /* Sarabun */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sarabun; sourceTree = "<group>"; };
@@ -54,6 +67,15 @@
 		64EF8600295D75D2000F4EBB /* BuydiamondsBottomSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuydiamondsBottomSheet.xib; sourceTree = "<group>"; };
 		64EF8604295D7CB3000F4EBB /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		64EF8605295D7CB3000F4EBB /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		64EF860E295E94E0000F4EBB /* RewardAndTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardAndTaskVC.swift; sourceTree = "<group>"; };
+		64EF860F295E94E0000F4EBB /* RewardAndTaskVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardAndTaskVC.xib; sourceTree = "<group>"; };
+		64EF8616295E971F000F4EBB /* LineView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LineView.xib; sourceTree = "<group>"; };
+		64EF861A295E973C000F4EBB /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		64EF8620295EC8F6000F4EBB /* RewardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardView.swift; sourceTree = "<group>"; };
+		64EF8622295EC95F000F4EBB /* RewardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardView.xib; sourceTree = "<group>"; };
+		64EF8624295ECBDD000F4EBB /* RewardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardType.swift; sourceTree = "<group>"; };
+		64EF8626296346B7000F4EBB /* RewardItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardItemView.swift; sourceTree = "<group>"; };
+		64EF8628296346CB000F4EBB /* RewardItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardItemView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +108,7 @@
 		49239700293EF96800CC84FA /* iOSUIKitXib */ = {
 			isa = PBXGroup;
 			children = (
+				64EF8608295D980A000F4EBB /* RewardAndTask */,
 				649D39422959849D005E1E89 /* BuyDiamonds */,
 				49239701293EF96800CC84FA /* AppDelegate.swift */,
 				49239705293EF96800CC84FA /* ViewController.swift */,
@@ -138,6 +161,7 @@
 				64D3A1C4295C209A007EC7E3 /* StringExt.swift */,
 				64D3A1C6295C2E25007EC7E3 /* UIViewExt.swift */,
 				64EF85FC295C4154000F4EBB /* UIButton.swift */,
+				642B58DF2966C30E0050B812 /* UILabelExt.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -158,6 +182,47 @@
 				64EF8605295D7CB3000F4EBB /* HomeVC.xib */,
 			);
 			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		64EF8608295D980A000F4EBB /* RewardAndTask */ = {
+			isa = PBXGroup;
+			children = (
+				64EF8612295E96B8000F4EBB /* Widget */,
+				64EF860E295E94E0000F4EBB /* RewardAndTaskVC.swift */,
+				64EF860F295E94E0000F4EBB /* RewardAndTaskVC.xib */,
+				64EF8624295ECBDD000F4EBB /* RewardType.swift */,
+			);
+			path = RewardAndTask;
+			sourceTree = "<group>";
+		};
+		64EF8609295D9F5D000F4EBB /* RewardVC */ = {
+			isa = PBXGroup;
+			children = (
+				64EF8620295EC8F6000F4EBB /* RewardView.swift */,
+				64EF8622295EC95F000F4EBB /* RewardView.xib */,
+				64EF8626296346B7000F4EBB /* RewardItemView.swift */,
+				64EF8628296346CB000F4EBB /* RewardItemView.xib */,
+			);
+			path = RewardVC;
+			sourceTree = "<group>";
+		};
+		64EF8612295E96B8000F4EBB /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				64EF8609295D9F5D000F4EBB /* RewardVC */,
+				64EF8613295E96C2000F4EBB /* LineView */,
+				642B58E1296742330050B812 /* ButtonTapDelegate.swift */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		64EF8613295E96C2000F4EBB /* LineView */ = {
+			isa = PBXGroup;
+			children = (
+				64EF8616295E971F000F4EBB /* LineView.xib */,
+				64EF861A295E973C000F4EBB /* LineView.swift */,
+			);
+			path = LineView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +261,7 @@
 				};
 			};
 			buildConfigurationList = 492396F9293EF96800CC84FA /* Build configuration list for PBXProject "iOSUIKitXib" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -218,15 +283,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64EF8611295E94E0000F4EBB /* RewardAndTaskVC.xib in Resources */,
 				64EF8602295D75D2000F4EBB /* BuydiamondsBottomSheet.xib in Resources */,
 				4923971A293EFB0200CC84FA /* AuthViewController.xib in Resources */,
 				649D394629598520005E1E89 /* BuyDiamondsVC.xib in Resources */,
+				64EF8629296346CB000F4EBB /* RewardItemView.xib in Resources */,
+				64EF8617295E971F000F4EBB /* LineView.xib in Resources */,
 				4923970E293EF96900CC84FA /* LaunchScreen.storyboard in Resources */,
 				64EF8607295D7CB3000F4EBB /* HomeVC.xib in Resources */,
 				649D394E29599CE0005E1E89 /* DiamondCell.xib in Resources */,
 				649D394929599288005E1E89 /* Sarabun in Resources */,
 				49239716293EFAB600CC84FA /* ViewController.xib in Resources */,
 				4923970B293EF96900CC84FA /* Assets.xcassets in Resources */,
+				64EF8623295EC95F000F4EBB /* RewardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,16 +308,23 @@
 			files = (
 				64EF8601295D75D2000F4EBB /* BuydiamondsBottomSheet.swift in Sources */,
 				64D3A1C7295C2E25007EC7E3 /* UIViewExt.swift in Sources */,
+				64EF8625295ECBDD000F4EBB /* RewardType.swift in Sources */,
 				49239706293EF96800CC84FA /* ViewController.swift in Sources */,
 				49239719293EFB0200CC84FA /* AuthViewController.swift in Sources */,
 				649D394D29599CE0005E1E89 /* DiamondCell.swift in Sources */,
+				64EF8610295E94E0000F4EBB /* RewardAndTaskVC.swift in Sources */,
 				64D3A1C5295C209A007EC7E3 /* StringExt.swift in Sources */,
+				64EF8627296346B7000F4EBB /* RewardItemView.swift in Sources */,
+				64EF861B295E973C000F4EBB /* LineView.swift in Sources */,
 				64EF85FD295C4154000F4EBB /* UIButton.swift in Sources */,
 				64D3A1BF2959A8BA007EC7E3 /* IntExt.swift in Sources */,
 				649D394529598520005E1E89 /* BuyDiamondsVC.swift in Sources */,
 				64EF8606295D7CB3000F4EBB /* HomeVC.swift in Sources */,
 				64D3A1BC2959A5D8007EC7E3 /* DiamondModel.swift in Sources */,
+				64EF8621295EC8F6000F4EBB /* RewardView.swift in Sources */,
+				642B58E02966C30E0050B812 /* UILabelExt.swift in Sources */,
 				49239702293EF96800CC84FA /* AppDelegate.swift in Sources */,
+				642B58E2296742330050B812 /* ButtonTapDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
