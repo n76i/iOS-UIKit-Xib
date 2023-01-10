@@ -8,21 +8,21 @@
 import UIKit
 
 class RewardView: UIView {
+    @IBOutlet private weak var superOfView: UIView!
+    @IBOutlet private weak var contentView: UIView!
+    @IBOutlet weak var leftIc1: UIImageView!
     
-    @IBOutlet weak var superOfView: UIView!
-    @IBOutlet weak var contentView: UIView!
-
-    @IBOutlet weak var view1: RewardItemView!
-    @IBOutlet weak var view2: RewardItemView!
-    @IBOutlet weak var view3: RewardItemView!
-    @IBOutlet weak var view4: RewardItemView!
-    @IBOutlet weak var view5: RewardItemView!
-    @IBOutlet weak var view6: RewardItemView!
+    @IBOutlet private weak var view1: RewardItemView!
+    @IBOutlet private weak var view2: RewardItemView!
+    @IBOutlet private weak var view3: RewardItemView!
+    @IBOutlet private weak var view4: RewardItemView!
+    @IBOutlet private weak var view5: RewardItemView!
+    @IBOutlet private weak var view6: RewardItemView!
         
     var dataReward: [RewardModelView] = [
-        RewardModelView(imageName: "gift_box_1_ic", rewardName: "Hoa hồng", numberReward: 1000, type: RewardType.opened),
-        RewardModelView(imageName: "gift_box_1_ic", rewardName: "Hoa hồng", numberReward: 1000, type: RewardType.just_opened),
-        RewardModelView(imageName: "gift_box_2_ic", rewardName: "Hoa hồng", numberReward: 1000, type: RewardType.open),
+        RewardModelView(imageName: "gift_box_1_ic", rewardName: "Hoa hồnghồnghồnghồnghồng", numberReward: 1000, type: RewardType.opened),
+        RewardModelView(imageName: "gift_box_1_ic", rewardName: "Hoa hồnghồnghồnghồnghồng", numberReward: 1000, type: RewardType.just_opened),
+        RewardModelView(imageName: "gift_box_2_ic", rewardName: "Hoa hồnghồnghồnghồnghồng", numberReward: 1000, type: RewardType.open),
         RewardModelView(imageName: "gift_box_3_ic", rewardName: "Hoa hồng", numberReward: 1000, type: RewardType.count_down),
         RewardModelView(imageName: "gift_box_4_ic", rewardName: "Hoa hồng", numberReward: 1000, type: RewardType.awaiting),
         RewardModelView(imageName: "gift_box_5_ic", rewardName: "Hoa hồng", numberReward: 1000, type: RewardType.awaiting),
@@ -101,7 +101,7 @@ class RewardView: UIView {
         initView()
     }
     
-    func initView() {
+    func initView() {        
         //tìm vị trí đếm ngược
         findIndexCountDown()
         
@@ -117,6 +117,8 @@ class RewardView: UIView {
     }
     
     func setupView() {
+        
+        
 //        let widthItem = (UIScreen.main.bounds.size.width - 140 )/3
         
         //setup view 6
@@ -126,6 +128,7 @@ class RewardView: UIView {
 //        subView6.setupView(data: dataReward[5])
 //        view6.addSubview(subView6)
 //        subView6.delegate = self
+        
         
         view1.setupView(data: dataReward[0])
         view1.delegate = self

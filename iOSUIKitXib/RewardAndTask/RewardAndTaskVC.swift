@@ -9,8 +9,10 @@ import UIKit
 
 class RewardAndTaskVC: UIViewController {
     
-    @IBOutlet weak var spaceView: UIView!
     
+    @IBOutlet weak var spaceBottomContentView: NSLayoutConstraint!
+    @IBOutlet weak var space: UIView!
+    @IBOutlet weak var heightConstrainSheetView: NSLayoutConstraint!
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var rewardTitleLabel: UILabel!
     
@@ -26,14 +28,23 @@ class RewardAndTaskVC: UIViewController {
         setupView()
     }
     
+    let heightScreen = UIScreen.main.bounds.height
+    let widthScreen = UIScreen.main.bounds.width
+
     func setupView() {
         lineViewTask.isHidden = true
         
         self.view.backgroundColor = UIColor.white.withAlphaComponent(0)
-        spaceView.backgroundColor = UIColor.black.withAlphaComponent(0)
+        space.backgroundColor = UIColor.white.withAlphaComponent(0)
         sheetView.backgroundColor = UIColor.black.withAlphaComponent(0)
         
-        spaceView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.spaceAction(_:)))
+        if(hasTopNotch) {
+            self.heightConstrainSheetView.constant = self.heightScreen * 0.4
+        } else {
+            self.heightConstrainSheetView.constant = self.heightScreen * 0.5
+        }
+        
+        space.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.spaceAction(_:)))
         )
         
         rewardTab.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.rewardTabAct(_:)))
@@ -53,17 +64,31 @@ class RewardAndTaskVC: UIViewController {
     }
     
     @objc func rewardTabAct(_ sender:UITapGestureRecognizer) {
+        
+        UIView.animate(withDuration: 1, animations: {
+            if(self.hasTopNotch) {
+                self.heightConstrainSheetView.constant = self.heightScreen * 0.4
+            } else {
+                self.heightConstrainSheetView.constant = self.heightScreen * 0.5
+            }
+            
+            self.sheetView.frame.size = CGSize(width: self.widthScreen, height: self.heightScreen)
+            
+            self.view.layoutIfNeeded()
+        })
+        
         lineViewTask.isHidden = true
         lineViewReward.isHidden = false
 
         contentView.subviews.forEach({$0.removeFromSuperview()})
         
         let rewardTab = RewardView()
-        
-        contentView.addSubview(rewardTab)
+            contentView.addSubview(rewardTab)
         rewardTab.frame = contentView.bounds
+        
+        
     }
-    
+        
     @objc func taskTabAct(_ sender:UITapGestureRecognizer) {
         lineViewTask.isHidden = false
         lineViewReward.isHidden = true
@@ -76,6 +101,13 @@ class RewardAndTaskVC: UIViewController {
         
         contentView.addSubview(vc)
         vc.frame = contentView.bounds
+        UIView.animate(withDuration: 1, animations: {
+            self.heightConstrainSheetView.constant = 100
+            self.sheetView.frame.size = CGSize(width: self.widthScreen, height: self.heightScreen)
+            self.view.layoutIfNeeded()
+            
+        })
+
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -89,15 +121,12 @@ class RewardAndTaskVC: UIViewController {
         rewardTab.frame = contentView.bounds
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+    var hasTopNotch: Bool {
+        if #available(iOS 13.0,  *) {
+            return UIApplication.shared.windows.filter {$0.isKeyWindow}.first?.safeAreaInsets.top ?? 0 > 20
+        }else{
+            return UIApplication.shared.delegate?.window??.safeAreaInsets.top ?? 0 > 20
+        }
+    }
 }
 

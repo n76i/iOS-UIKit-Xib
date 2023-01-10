@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RewardView" customModule="iOSUIKitXib" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="ML3-cL-JJq" id="D1e-gr-O5B"/>
+                <outlet property="leftIc1" destination="YvH-ci-ISp" id="BOb-BU-6ap"/>
                 <outlet property="superOfView" destination="ehk-nc-gey" id="3ed-DX-Acm"/>
                 <outlet property="view1" destination="nOx-dk-jvE" id="vXa-lI-zNH"/>
                 <outlet property="view2" destination="GVG-gl-AB5" id="lnC-ts-4n7"/>
@@ -27,26 +28,26 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ML3-cL-JJq" userLabel="ContentView">
-                    <rect key="frame" x="40" y="0.0" width="565" height="365"/>
+                    <rect key="frame" x="24" y="0.0" width="597" height="365"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down_ic" translatesAutoresizingMaskIntoConstraints="NO" id="LQu-Qf-IRS">
-                            <rect key="frame" x="473" y="170" width="16" height="25"/>
+                            <rect key="frame" x="499.66666666666663" y="170" width="16" height="25"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="16" id="bZg-uU-nSp"/>
                                 <constraint firstAttribute="height" constant="25" id="cD0-QR-UuA"/>
                             </constraints>
                         </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BKx-QY-P5H" userLabel="TopView">
-                            <rect key="frame" x="0.0" y="0.0" width="565" height="170"/>
+                            <rect key="frame" x="0.0" y="0.0" width="597" height="170"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOx-dk-jvE" userLabel="View1" customClass="RewardItemView" customModule="iOSUIKitXib" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="168.33333333333334" height="170"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="179" height="170"/>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nLs-a8-u6e" userLabel="ViewIc1">
-                                    <rect key="frame" x="168.33333333333334" y="0.0" width="30" height="170"/>
+                                    <rect key="frame" x="179" y="0.0" width="30" height="170"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="left_ic" translatesAutoresizingMaskIntoConstraints="NO" id="YvH-ci-ISp">
-                                            <rect key="frame" x="2" y="50" width="26" height="16"/>
+                                            <rect key="frame" x="2" y="67" width="26" height="16"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="16" id="E4D-z7-nsb"/>
                                                 <constraint firstAttribute="width" constant="26" id="LOv-pv-BEo"/>
@@ -57,17 +58,17 @@
                                     <constraints>
                                         <constraint firstAttribute="width" constant="30" id="3jg-vv-bMb"/>
                                         <constraint firstItem="YvH-ci-ISp" firstAttribute="centerX" secondItem="nLs-a8-u6e" secondAttribute="centerX" id="Q0p-xf-iFh"/>
-                                        <constraint firstItem="YvH-ci-ISp" firstAttribute="top" secondItem="nLs-a8-u6e" secondAttribute="top" constant="50" id="rho-DG-LIR"/>
+                                        <constraint firstItem="YvH-ci-ISp" firstAttribute="centerY" secondItem="nLs-a8-u6e" secondAttribute="centerY" constant="-10" id="VLW-Ii-iE1"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GVG-gl-AB5" userLabel="View2" customClass="RewardItemView" customModule="iOSUIKitXib" customModuleProvider="target">
-                                    <rect key="frame" x="198.33333333333331" y="0.0" width="168.33333333333331" height="170"/>
+                                    <rect key="frame" x="209" y="0.0" width="179" height="170"/>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vFm-Ub-HX1" userLabel="ViewIc2">
-                                    <rect key="frame" x="366.66666666666669" y="0.0" width="30" height="170"/>
+                                    <rect key="frame" x="388" y="0.0" width="30" height="170"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="left_ic" translatesAutoresizingMaskIntoConstraints="NO" id="6YX-RJ-l86">
-                                            <rect key="frame" x="2" y="50" width="26" height="16"/>
+                                            <rect key="frame" x="2" y="67" width="26" height="16"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="26" id="3HK-qB-BPn"/>
                                                 <constraint firstAttribute="height" constant="16" id="Nr1-EY-LkB"/>
@@ -76,13 +77,13 @@
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
-                                        <constraint firstItem="6YX-RJ-l86" firstAttribute="top" secondItem="vFm-Ub-HX1" secondAttribute="top" constant="50" id="Gvw-LQ-8bl"/>
+                                        <constraint firstItem="6YX-RJ-l86" firstAttribute="centerY" secondItem="vFm-Ub-HX1" secondAttribute="centerY" constant="-10" id="HdZ-sF-kI9"/>
                                         <constraint firstItem="6YX-RJ-l86" firstAttribute="centerX" secondItem="vFm-Ub-HX1" secondAttribute="centerX" id="QmU-HG-cQI"/>
                                         <constraint firstAttribute="width" constant="30" id="rbs-65-Mpa"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UgH-Zv-k7R" userLabel="View3" customClass="RewardItemView" customModule="iOSUIKitXib" customModuleProvider="target">
-                                    <rect key="frame" x="396.66666666666669" y="0.0" width="168.33333333333331" height="170"/>
+                                    <rect key="frame" x="418" y="0.0" width="179" height="170"/>
                                 </view>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -109,17 +110,17 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GYQ-AN-lDd" userLabel="BottomView">
-                            <rect key="frame" x="0.0" y="195" width="565" height="170"/>
+                            <rect key="frame" x="0.0" y="195" width="597" height="170"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="912-7Q-RvI" userLabel="View6" customClass="RewardItemView" customModule="iOSUIKitXib" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="168.33333333333334" height="170"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="179" height="170"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezE-FY-YrS" userLabel="ViewIc3">
-                                    <rect key="frame" x="168.33333333333334" y="0.0" width="30" height="170"/>
+                                    <rect key="frame" x="179" y="0.0" width="30" height="170"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_ic" translatesAutoresizingMaskIntoConstraints="NO" id="3Hh-1D-9Xx">
-                                            <rect key="frame" x="2" y="50" width="26" height="15"/>
+                                            <rect key="frame" x="2" y="67.666666666666686" width="26" height="15"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="26" id="7md-UY-SBS"/>
                                                 <constraint firstAttribute="height" constant="15" id="KhU-Ag-jRH"/>
@@ -128,20 +129,20 @@
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
-                                        <constraint firstItem="3Hh-1D-9Xx" firstAttribute="top" secondItem="ezE-FY-YrS" secondAttribute="top" constant="50" id="BC8-Az-MaP"/>
                                         <constraint firstItem="3Hh-1D-9Xx" firstAttribute="centerX" secondItem="ezE-FY-YrS" secondAttribute="centerX" id="W2l-zM-fny"/>
+                                        <constraint firstItem="3Hh-1D-9Xx" firstAttribute="centerY" secondItem="ezE-FY-YrS" secondAttribute="centerY" constant="-10" id="Yxl-ps-Yb2"/>
                                         <constraint firstAttribute="width" constant="30" id="ggu-37-9Wo"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bK-na-8fH" userLabel="View5" customClass="RewardItemView" customModule="iOSUIKitXib" customModuleProvider="target">
-                                    <rect key="frame" x="198.33333333333331" y="0.0" width="168.33333333333331" height="170"/>
+                                    <rect key="frame" x="209" y="0.0" width="179" height="170"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l1f-Ad-uo9" userLabel="ViewIC4">
-                                    <rect key="frame" x="366.66666666666669" y="0.0" width="30" height="170"/>
+                                    <rect key="frame" x="388" y="0.0" width="30" height="170"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_ic" translatesAutoresizingMaskIntoConstraints="NO" id="Drg-CT-aIC">
-                                            <rect key="frame" x="2" y="50" width="26" height="15"/>
+                                            <rect key="frame" x="2" y="67.666666666666686" width="26" height="15"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="26" id="YyJ-nu-Bl4"/>
                                                 <constraint firstAttribute="height" constant="15" id="eSF-gr-zJT"/>
@@ -151,12 +152,12 @@
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstItem="Drg-CT-aIC" firstAttribute="centerX" secondItem="l1f-Ad-uo9" secondAttribute="centerX" id="IiS-vK-R81"/>
-                                        <constraint firstItem="Drg-CT-aIC" firstAttribute="top" secondItem="l1f-Ad-uo9" secondAttribute="top" constant="50" id="O5A-pN-TyS"/>
                                         <constraint firstAttribute="width" constant="30" id="ZQ8-bG-tcl"/>
+                                        <constraint firstItem="Drg-CT-aIC" firstAttribute="centerY" secondItem="l1f-Ad-uo9" secondAttribute="centerY" constant="-10" id="x9X-hU-k0Z"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="859-aK-7ey" userLabel="View4" customClass="RewardItemView" customModule="iOSUIKitXib" customModuleProvider="target">
-                                    <rect key="frame" x="396.66666666666669" y="0.0" width="168.33333333333331" height="170"/>
+                                    <rect key="frame" x="418" y="0.0" width="179" height="170"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 </view>
                             </subviews>
@@ -201,10 +202,10 @@
             <viewLayoutGuide key="safeArea" id="Fzz-o8-wCQ"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="ML3-cL-JJq" firstAttribute="leading" secondItem="ehk-nc-gey" secondAttribute="leading" constant="40" id="Ehx-Mz-8wt"/>
+                <constraint firstItem="ML3-cL-JJq" firstAttribute="leading" secondItem="ehk-nc-gey" secondAttribute="leading" constant="24" id="Ehx-Mz-8wt"/>
                 <constraint firstItem="ML3-cL-JJq" firstAttribute="top" secondItem="ehk-nc-gey" secondAttribute="top" id="HXO-TC-6wn"/>
                 <constraint firstAttribute="bottom" secondItem="ML3-cL-JJq" secondAttribute="bottom" id="Ohn-Et-W43"/>
-                <constraint firstAttribute="trailing" secondItem="ML3-cL-JJq" secondAttribute="trailing" constant="40" id="UrH-7D-NbH"/>
+                <constraint firstAttribute="trailing" secondItem="ML3-cL-JJq" secondAttribute="trailing" constant="24" id="UrH-7D-NbH"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="161.06870229007632" y="215.14084507042256"/>

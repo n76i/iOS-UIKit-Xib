@@ -138,6 +138,8 @@ class RewardItemView: UIView {
         staticView.backgroundColor = UIColor(named: "DED8D8")
         labelStaticView.textColor = UIColor(named: "9B9999")
         labelStaticView.text = "Đã mở"
+        
+        constantOpenState()
     }
     
     func justOpenedFunc(data: RewardModelView) {
@@ -152,5 +154,17 @@ class RewardItemView: UIView {
         if(dataModel.type == RewardType.open) {
             delegate?.ontapReward(item: dataModel)
         }
+    }
+    
+    func constantOpenState() {
+        labelStaticView.trailingAnchor.constraint(equalTo: staticView.trailingAnchor, constant: 16).isActive = true
+        
+        
+        labelStaticView.leadingAnchor.constraint(equalTo: staticView.leadingAnchor, constant: 16).isActive = true
+        
+    }
+    
+    deinit {
+        print("")
     }
 }

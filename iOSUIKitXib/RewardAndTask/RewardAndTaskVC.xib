@@ -12,12 +12,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RewardAndTaskVC" customModule="iOSUIKitXib" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="UGt-E1-zZD" id="T6E-jF-MZw"/>
+                <outlet property="heightConstrainSheetView" destination="zP2-jd-1TW" id="vj5-Qv-ifZ"/>
                 <outlet property="lineViewReward" destination="Fsi-G1-qvO" id="uvi-tb-TJl"/>
                 <outlet property="lineViewTask" destination="Lim-vi-kir" id="NTN-3G-Ozw"/>
                 <outlet property="rewardTab" destination="S00-hB-9G4" id="x5d-X8-WDX"/>
                 <outlet property="rewardTitleLabel" destination="ion-xZ-W0E" id="gJs-Z9-Fvf"/>
                 <outlet property="sheetView" destination="8hL-Ep-oHa" id="DbY-9c-wpN"/>
-                <outlet property="spaceView" destination="H0D-Fq-FHN" id="gfb-I0-zZz"/>
+                <outlet property="space" destination="H0D-Fq-FHN" id="dOM-SA-zXa"/>
+                <outlet property="spaceBottomContentView" destination="uWp-6q-uJb" id="f4x-aZ-4Hi"/>
                 <outlet property="taskTab" destination="pfT-Jh-TVM" id="K3n-hl-0aa"/>
                 <outlet property="taskTitleLabel" destination="Vgl-Hj-F4g" id="3xh-jp-eOV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -29,11 +31,11 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H0D-Fq-FHN" userLabel="Space">
-                    <rect key="frame" x="0.0" y="0.0" width="393" height="477.33333333333331"/>
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="518"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8hL-Ep-oHa" userLabel="SheetView">
-                    <rect key="frame" x="0.0" y="477.33333333333326" width="393" height="340.66666666666674"/>
+                    <rect key="frame" x="0.0" y="518" width="393" height="300"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="NB0-ez-QRc" userLabel="TabbarView">
                             <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
@@ -41,14 +43,14 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S00-hB-9G4" userLabel="RewardView">
                                     <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="50"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phần thưởng hàng ngày" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ion-xZ-W0E">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phần thưởng hàng ngày" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ion-xZ-W0E">
                                             <rect key="frame" x="0.0" y="15.999999999999998" width="196.66666666666666" height="20.333333333333329"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fsi-G1-qvO" customClass="LineView" customModule="iOSUIKitXib" customModuleProvider="target">
-                                            <rect key="frame" x="92.333333333333329" y="42.333333333333314" width="12" height="2"/>
+                                            <rect key="frame" x="92.333333333333329" y="42.333333333333371" width="12" height="2"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="12" id="7Nu-Ca-hx2"/>
@@ -68,14 +70,14 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfT-Jh-TVM" userLabel="TaskView">
                                     <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="50"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhiệm vụ hàng ngày" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vgl-Hj-F4g">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhiệm vụ hàng ngày" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vgl-Hj-F4g">
                                             <rect key="frame" x="0.0" y="15.999999999999998" width="196.33333333333334" height="20.333333333333329"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lim-vi-kir" customClass="LineView" customModule="iOSUIKitXib" customModuleProvider="target">
-                                            <rect key="frame" x="92.000000000000028" y="42.333333333333314" width="12" height="2"/>
+                                            <rect key="frame" x="92.000000000000028" y="42.333333333333371" width="12" height="2"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="2" id="WqU-Xa-HkX"/>
@@ -98,11 +100,11 @@
                             </constraints>
                         </stackView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGt-E1-zZD" userLabel="ContentView">
-                            <rect key="frame" x="0.0" y="50.000000000000057" width="393" height="290.66666666666669"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <rect key="frame" x="0.0" y="50" width="393" height="250"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="NB0-ez-QRc" secondAttribute="trailing" id="36F-CW-NaR"/>
                         <constraint firstItem="UGt-E1-zZD" firstAttribute="top" secondItem="NB0-ez-QRc" secondAttribute="bottom" id="KyO-b0-AY4"/>
@@ -111,6 +113,7 @@
                         <constraint firstItem="NB0-ez-QRc" firstAttribute="top" secondItem="8hL-Ep-oHa" secondAttribute="top" id="aze-lL-0Et"/>
                         <constraint firstItem="UGt-E1-zZD" firstAttribute="leading" secondItem="8hL-Ep-oHa" secondAttribute="leading" id="lO4-R0-e75"/>
                         <constraint firstAttribute="bottom" secondItem="UGt-E1-zZD" secondAttribute="bottom" id="uWp-6q-uJb"/>
+                        <constraint firstAttribute="height" constant="300" id="zP2-jd-1TW"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PoT-AK-LPy" userLabel="SpaceBottom">
@@ -122,15 +125,14 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="H0D-Fq-FHN" secondAttribute="trailing" id="593-cg-Zo3"/>
-                <constraint firstItem="PoT-AK-LPy" firstAttribute="top" secondItem="8hL-Ep-oHa" secondAttribute="bottom" id="6vb-bo-9pG"/>
                 <constraint firstItem="PoT-AK-LPy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="7Zh-WQ-9qD"/>
                 <constraint firstAttribute="trailing" secondItem="PoT-AK-LPy" secondAttribute="trailing" id="Pqm-ou-JHo"/>
+                <constraint firstItem="8hL-Ep-oHa" firstAttribute="bottom" secondItem="PoT-AK-LPy" secondAttribute="top" id="e2m-lt-E9l"/>
                 <constraint firstItem="8hL-Ep-oHa" firstAttribute="top" secondItem="H0D-Fq-FHN" secondAttribute="bottom" id="hNK-o9-LeQ"/>
                 <constraint firstItem="8hL-Ep-oHa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hOs-P2-bC8"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8hL-Ep-oHa" secondAttribute="trailing" id="hku-po-Oz8"/>
                 <constraint firstAttribute="bottom" secondItem="PoT-AK-LPy" secondAttribute="bottom" id="l8m-OC-1K0"/>
                 <constraint firstItem="H0D-Fq-FHN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sdk-O3-NIJ"/>
-                <constraint firstItem="8hL-Ep-oHa" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="2:5" id="thc-wh-80M"/>
                 <constraint firstItem="PoT-AK-LPy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="v2R-qA-1UJ"/>
                 <constraint firstItem="H0D-Fq-FHN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zE6-lz-smP"/>
             </constraints>
