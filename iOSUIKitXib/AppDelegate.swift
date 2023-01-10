@@ -7,6 +7,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -16,7 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UINavigationController(rootViewController: TestViewController())
+        let vc  = CustomCollecVsTableViewController()
+        window?.rootViewController = vc
+//        window?.rootViewController = UINavigationController(rootViewController: TestViewController())
         window?.makeKeyAndVisible()
         return true
     }
