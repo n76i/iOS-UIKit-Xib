@@ -17,9 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        let vc  = CustomCollecVsTableViewController()
+        let vc  = BuyDiamondsVC()
         window?.rootViewController = vc
-//        window?.rootViewController = UINavigationController(rootViewController: TestViewController())
+//        window?.rootViewController = UINavigationController(rootViewController: SecondViewController())
         window?.makeKeyAndVisible()
         return true
     }

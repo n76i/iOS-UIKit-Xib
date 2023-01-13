@@ -12,8 +12,6 @@
 		4923970B293EF96900CC84FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4923970A293EF96900CC84FA /* Assets.xcassets */; };
 		4923970E293EF96900CC84FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4923970C293EF96900CC84FA /* LaunchScreen.storyboard */; };
 		49239716293EFAB600CC84FA /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49239715293EFAB600CC84FA /* ViewController.xib */; };
-		49239719293EFB0200CC84FA /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49239717293EFB0200CC84FA /* AuthViewController.swift */; };
-		4923971A293EFB0200CC84FA /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49239718293EFB0200CC84FA /* AuthViewController.xib */; };
 		564907942966703C00CD768C /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564907922966703C00CD768C /* TestViewController.swift */; };
 		564907952966703C00CD768C /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 564907932966703C00CD768C /* TestViewController.xib */; };
 		564907982966A30600CD768C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564907962966A30600CD768C /* SecondViewController.swift */; };
@@ -36,6 +34,11 @@
 		569DA5D9296D6C8F001003A1 /* CollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569DA5D7296D6C8F001003A1 /* CollectionTableViewCell.xib */; };
 		569DA5DC296D6CB9001003A1 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569DA5DA296D6CB9001003A1 /* MyCollectionViewCell.swift */; };
 		569DA5DD296D6CB9001003A1 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569DA5DB296D6CB9001003A1 /* MyCollectionViewCell.xib */; };
+		569DA5DF296E5232001003A1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569DA5DE296E5232001003A1 /* Model.swift */; };
+		569DA5E9296FE086001003A1 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569DA5E8296FE086001003A1 /* CustomView.xib */; };
+		569DA5EB296FE0EC001003A1 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569DA5EA296FE0EC001003A1 /* CustomView.swift */; };
+		56B56225296FEA910055271F /* TestViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B56223296FEA910055271F /* TestViewViewController.swift */; };
+		56B56226296FEA910055271F /* TestViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B56224296FEA910055271F /* TestViewViewController.xib */; };
 		649D394529598520005E1E89 /* BuyDiamondsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649D394329598520005E1E89 /* BuyDiamondsVC.swift */; };
 		649D394629598520005E1E89 /* BuyDiamondsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 649D394429598520005E1E89 /* BuyDiamondsVC.xib */; };
 		649D394929599288005E1E89 /* Sarabun in Resources */ = {isa = PBXBuildFile; fileRef = 649D394829599288005E1E89 /* Sarabun */; };
@@ -56,8 +59,6 @@
 		4923970D293EF96900CC84FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4923970F293EF96900CC84FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49239715293EFAB600CC84FA /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
-		49239717293EFB0200CC84FA /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
-		49239718293EFB0200CC84FA /* AuthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
 		564907922966703C00CD768C /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		564907932966703C00CD768C /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		564907962966A30600CD768C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +81,11 @@
 		569DA5D7296D6C8F001003A1 /* CollectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionTableViewCell.xib; sourceTree = "<group>"; };
 		569DA5DA296D6CB9001003A1 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		569DA5DB296D6CB9001003A1 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
+		569DA5DE296E5232001003A1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		569DA5E8296FE086001003A1 /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
+		569DA5EA296FE0EC001003A1 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		56B56223296FEA910055271F /* TestViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewViewController.swift; sourceTree = "<group>"; };
+		56B56224296FEA910055271F /* TestViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewViewController.xib; sourceTree = "<group>"; };
 		649D394329598520005E1E89 /* BuyDiamondsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyDiamondsVC.swift; sourceTree = "<group>"; };
 		649D394429598520005E1E89 /* BuyDiamondsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyDiamondsVC.xib; sourceTree = "<group>"; };
 		649D394829599288005E1E89 /* Sarabun */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sarabun; sourceTree = "<group>"; };
@@ -122,12 +128,11 @@
 		49239700293EF96800CC84FA /* iOSUIKitXib */ = {
 			isa = PBXGroup;
 			children = (
-				649D39422959849D005E1E89 /* BuyDiamonds */,
 				49239701293EF96800CC84FA /* AppDelegate.swift */,
 				49239705293EF96800CC84FA /* ViewController.swift */,
 				49239715293EFAB600CC84FA /* ViewController.xib */,
-				49239717293EFB0200CC84FA /* AuthViewController.swift */,
-				49239718293EFB0200CC84FA /* AuthViewController.xib */,
+				56B5625429713BAE0055271F /* Tests */,
+				649D39422959849D005E1E89 /* BuyDiamonds */,
 				4923970A293EF96900CC84FA /* Assets.xcassets */,
 				4923970C293EF96900CC84FA /* LaunchScreen.storyboard */,
 				4923970F293EF96900CC84FA /* Info.plist */,
@@ -169,10 +174,8 @@
 		569DA5CF296D6B34001003A1 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
-				569DA5D0296D6B71001003A1 /* CustomCollecVsTableViewController.swift */,
-				569DA5D1296D6B71001003A1 /* CustomCollecVsTableViewController.xib */,
-				569DA5D4296D6BF2001003A1 /* TableCell */,
-				569DA5D5296D6BFF001003A1 /* CollecCell */,
+				569DA5E7296FE061001003A1 /* CustomView */,
+				569DA5E6296FE020001003A1 /* Custom CollectionAndTable */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -195,11 +198,49 @@
 			path = CollecCell;
 			sourceTree = "<group>";
 		};
+		569DA5E0296E5255001003A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				569DA5DE296E5232001003A1 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		569DA5E6296FE020001003A1 /* Custom CollectionAndTable */ = {
+			isa = PBXGroup;
+			children = (
+				569DA5D0296D6B71001003A1 /* CustomCollecVsTableViewController.swift */,
+				569DA5D1296D6B71001003A1 /* CustomCollecVsTableViewController.xib */,
+				569DA5D4296D6BF2001003A1 /* TableCell */,
+				569DA5D5296D6BFF001003A1 /* CollecCell */,
+			);
+			path = "Custom CollectionAndTable";
+			sourceTree = "<group>";
+		};
+		569DA5E7296FE061001003A1 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				569DA5EA296FE0EC001003A1 /* CustomView.swift */,
+				569DA5E8296FE086001003A1 /* CustomView.xib */,
+				56B56223296FEA910055271F /* TestViewViewController.swift */,
+				56B56224296FEA910055271F /* TestViewViewController.xib */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		56B5625429713BAE0055271F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				564907912966700D00CD768C /* TestVC */,
+				569DA5CF296D6B34001003A1 /* Custom */,
+				569DA5E0296E5255001003A1 /* Models */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		649D39422959849D005E1E89 /* BuyDiamonds */ = {
 			isa = PBXGroup;
 			children = (
-				569DA5CF296D6B34001003A1 /* Custom */,
-				564907912966700D00CD768C /* TestVC */,
 				64D3A1BD2959A8A5007EC7E3 /* Extension */,
 				649D394A29599C92005E1E89 /* Cell */,
 				649D394729599206005E1E89 /* Font */,
@@ -296,11 +337,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4923971A293EFB0200CC84FA /* AuthViewController.xib in Resources */,
+				569DA5E9296FE086001003A1 /* CustomView.xib in Resources */,
 				649D394629598520005E1E89 /* BuyDiamondsVC.xib in Resources */,
 				569DA5DD296D6CB9001003A1 /* MyCollectionViewCell.xib in Resources */,
 				569DA5CA296D59FB001003A1 /* CollectionViewController.xib in Resources */,
 				569DA5D3296D6B71001003A1 /* CustomCollecVsTableViewController.xib in Resources */,
+				56B56226296FEA910055271F /* TestViewViewController.xib in Resources */,
 				564907A12967C71A00CD768C /* PresentViewController.xib in Resources */,
 				564907A5296BF17100CD768C /* TableViewController.xib in Resources */,
 				4923970E293EF96900CC84FA /* LaunchScreen.storyboard in Resources */,
@@ -330,12 +372,13 @@
 				49239706293EF96800CC84FA /* ViewController.swift in Sources */,
 				564907942966703C00CD768C /* TestViewController.swift in Sources */,
 				564907A8296BF4DE00CD768C /* TestTableViewCell.swift in Sources */,
-				49239719293EFB0200CC84FA /* AuthViewController.swift in Sources */,
 				649D394D29599CE0005E1E89 /* DiamondCell.swift in Sources */,
 				569DA5DC296D6CB9001003A1 /* MyCollectionViewCell.swift in Sources */,
+				56B56225296FEA910055271F /* TestViewViewController.swift in Sources */,
 				64D3A1C5295C209A007EC7E3 /* StringExt.swift in Sources */,
 				569DA5C9296D59FB001003A1 /* CollectionViewController.swift in Sources */,
 				564907A02967C71A00CD768C /* PresentViewController.swift in Sources */,
+				569DA5EB296FE0EC001003A1 /* CustomView.swift in Sources */,
 				64EF85FD295C4154000F4EBB /* UIButton.swift in Sources */,
 				569DA5CD296D5A44001003A1 /* TestCollectionViewCell.swift in Sources */,
 				64D3A1BF2959A8BA007EC7E3 /* IntExt.swift in Sources */,
@@ -343,6 +386,7 @@
 				569DA5D8296D6C8F001003A1 /* CollectionTableViewCell.swift in Sources */,
 				64D3A1BC2959A5D8007EC7E3 /* DiamondModel.swift in Sources */,
 				564907A4296BF17100CD768C /* TableViewController.swift in Sources */,
+				569DA5DF296E5232001003A1 /* Model.swift in Sources */,
 				49239702293EF96800CC84FA /* AppDelegate.swift in Sources */,
 				569DA5D2296D6B71001003A1 /* CustomCollecVsTableViewController.swift in Sources */,
 			);
@@ -483,7 +527,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = JG52YH39VN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOSUIKitXib/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -510,7 +554,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = JG52YH39VN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOSUIKitXib/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

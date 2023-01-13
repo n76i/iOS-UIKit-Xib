@@ -1,15 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "annie.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "annie@2x.jpeg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "pictruce.jpeg",
+      "filename" : "annie@3x.jpeg",
       "idiom" : "universal",
       "scale" : "3x"
     }
