@@ -16,15 +16,43 @@
 		4923971A293EFB0200CC84FA /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49239718293EFB0200CC84FA /* AuthViewController.xib */; };
 		642B58E02966C30E0050B812 /* UILabelExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642B58DF2966C30E0050B812 /* UILabelExt.swift */; };
 		642B58E2296742330050B812 /* ButtonTapDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642B58E1296742330050B812 /* ButtonTapDelegate.swift */; };
+		648EB727296FEFEF001506AA /* Withdrawl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648EB726296FEFEF001506AA /* Withdrawl.swift */; };
+		648EB72A297160B6001506AA /* DetailWithdrawlVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 648EB729297160B6001506AA /* DetailWithdrawlVC.xib */; };
+		648EB72C297160E3001506AA /* DetailWithdrawlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648EB72B297160E3001506AA /* DetailWithdrawlVC.swift */; };
+		648EB7302971616D001506AA /* DetailWithdrawlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648EB72E2971616D001506AA /* DetailWithdrawlCell.swift */; };
+		648EB7312971616D001506AA /* DetailWithdrawlCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 648EB72F2971616D001506AA /* DetailWithdrawlCell.xib */; };
+		648EB73329716452001506AA /* DetailWithdrawl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648EB73229716452001506AA /* DetailWithdrawl.swift */; };
 		649D394529598520005E1E89 /* BuyDiamondsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649D394329598520005E1E89 /* BuyDiamondsVC.swift */; };
 		649D394629598520005E1E89 /* BuyDiamondsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 649D394429598520005E1E89 /* BuyDiamondsVC.xib */; };
-		649D394929599288005E1E89 /* Sarabun in Resources */ = {isa = PBXBuildFile; fileRef = 649D394829599288005E1E89 /* Sarabun */; };
 		649D394D29599CE0005E1E89 /* DiamondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649D394B29599CE0005E1E89 /* DiamondCell.swift */; };
 		649D394E29599CE0005E1E89 /* DiamondCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 649D394C29599CE0005E1E89 /* DiamondCell.xib */; };
+		64AE6FE9296E5CC500A6AD2E /* Sarabun-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64AE6FD9296E5CC400A6AD2E /* Sarabun-Regular.ttf */; };
+		64AE6FEA296E5CC500A6AD2E /* Sarabun-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64AE6FDA296E5CC400A6AD2E /* Sarabun-ThinItalic.ttf */; };
+		64AE6FEB296E5CC500A6AD2E /* Sarabun-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64AE6FDB296E5CC500A6AD2E /* Sarabun-MediumItalic.ttf */; };
+		64AE6FEC296E5CC500A6AD2E /* Sarabun-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64AE6FDC296E5CC500A6AD2E /* Sarabun-SemiBoldItalic.ttf */; };
+		64AE6FED296E5CC500A6AD2E /* Sarabun-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64AE6FDD296E5CC500A6AD2E /* Sarabun-Light.ttf */; };
+		64AE6FEE296E5CC500A6AD2E /* Sarabun-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64AE6FDE296E5CC500A6AD2E /* Sarabun-ExtraBoldItalic.ttf */; };
+		64AE6FEF296E5CC500A6AD2E /* Sarabun-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64AE6FDF296E5CC500A6AD2E /* Sarabun-Medium.ttf */; };
+		64AE6FF0296E5CC500A6AD2E /* Sarabun-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64AE6FE0296E5CC500A6AD2E /* Sarabun-ExtraBold.ttf */; };
+		64AE6FF1296E5CC500A6AD2E /* Sarabun-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64AE6FE1296E5CC500A6AD2E /* Sarabun-Italic.ttf */; };
+		64AE6FF2296E5CC500A6AD2E /* Sarabun-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64AE6FE2296E5CC500A6AD2E /* Sarabun-ExtraLightItalic.ttf */; };
+		64AE6FF3296E5CC500A6AD2E /* Sarabun-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64AE6FE3296E5CC500A6AD2E /* Sarabun-SemiBold.ttf */; };
+		64AE6FF4296E5CC500A6AD2E /* Sarabun-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64AE6FE4296E5CC500A6AD2E /* Sarabun-Thin.ttf */; };
+		64AE6FF5296E5CC500A6AD2E /* Sarabun-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64AE6FE5296E5CC500A6AD2E /* Sarabun-Bold.ttf */; };
+		64AE6FF6296E5CC500A6AD2E /* Sarabun-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64AE6FE6296E5CC500A6AD2E /* Sarabun-BoldItalic.ttf */; };
+		64AE6FF7296E5CC500A6AD2E /* Sarabun-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64AE6FE7296E5CC500A6AD2E /* Sarabun-LightItalic.ttf */; };
+		64AE6FF8296E5CC500A6AD2E /* Sarabun-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64AE6FE8296E5CC500A6AD2E /* Sarabun-ExtraLight.ttf */; };
+		64AE6FFA296E6D1500A6AD2E /* Sarabun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AE6FF9296E6D1500A6AD2E /* Sarabun.swift */; };
+		64AE6FFE296ECEA900A6AD2E /* WithdrawlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AE6FFC296ECEA900A6AD2E /* WithdrawlCell.swift */; };
+		64AE6FFF296ECEA900A6AD2E /* WithdrawlCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64AE6FFD296ECEA900A6AD2E /* WithdrawlCell.xib */; };
 		64D3A1BC2959A5D8007EC7E3 /* DiamondModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D3A1BB2959A5D8007EC7E3 /* DiamondModel.swift */; };
 		64D3A1BF2959A8BA007EC7E3 /* IntExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D3A1BE2959A8BA007EC7E3 /* IntExt.swift */; };
 		64D3A1C5295C209A007EC7E3 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D3A1C4295C209A007EC7E3 /* StringExt.swift */; };
 		64D3A1C7295C2E25007EC7E3 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D3A1C6295C2E25007EC7E3 /* UIViewExt.swift */; };
+		64E432EC296D5C42002261F9 /* WithdrawlVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64E432EB296D5C42002261F9 /* WithdrawlVC.xib */; };
+		64E432EE296D5C8F002261F9 /* WithdrawlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E432ED296D5C8F002261F9 /* WithdrawlVC.swift */; };
+		64E432F4296D5E67002261F9 /* ToolbarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64E432F3296D5E67002261F9 /* ToolbarView.xib */; };
+		64E432F6296D666B002261F9 /* ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E432F5296D666B002261F9 /* ToolbarView.swift */; };
 		64EF85FD295C4154000F4EBB /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EF85FC295C4154000F4EBB /* UIButton.swift */; };
 		64EF8601295D75D2000F4EBB /* BuydiamondsBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EF85FF295D75D2000F4EBB /* BuydiamondsBottomSheet.swift */; };
 		64EF8602295D75D2000F4EBB /* BuydiamondsBottomSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64EF8600295D75D2000F4EBB /* BuydiamondsBottomSheet.xib */; };
@@ -53,15 +81,43 @@
 		49239718293EFB0200CC84FA /* AuthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
 		642B58DF2966C30E0050B812 /* UILabelExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExt.swift; sourceTree = "<group>"; };
 		642B58E1296742330050B812 /* ButtonTapDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTapDelegate.swift; sourceTree = "<group>"; };
+		648EB726296FEFEF001506AA /* Withdrawl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Withdrawl.swift; sourceTree = "<group>"; };
+		648EB729297160B6001506AA /* DetailWithdrawlVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailWithdrawlVC.xib; sourceTree = "<group>"; };
+		648EB72B297160E3001506AA /* DetailWithdrawlVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWithdrawlVC.swift; sourceTree = "<group>"; };
+		648EB72E2971616D001506AA /* DetailWithdrawlCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWithdrawlCell.swift; sourceTree = "<group>"; };
+		648EB72F2971616D001506AA /* DetailWithdrawlCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailWithdrawlCell.xib; sourceTree = "<group>"; };
+		648EB73229716452001506AA /* DetailWithdrawl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWithdrawl.swift; sourceTree = "<group>"; };
 		649D394329598520005E1E89 /* BuyDiamondsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyDiamondsVC.swift; sourceTree = "<group>"; };
 		649D394429598520005E1E89 /* BuyDiamondsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyDiamondsVC.xib; sourceTree = "<group>"; };
-		649D394829599288005E1E89 /* Sarabun */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sarabun; sourceTree = "<group>"; };
 		649D394B29599CE0005E1E89 /* DiamondCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondCell.swift; sourceTree = "<group>"; };
 		649D394C29599CE0005E1E89 /* DiamondCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiamondCell.xib; sourceTree = "<group>"; };
+		64AE6FD9296E5CC400A6AD2E /* Sarabun-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-Regular.ttf"; sourceTree = "<group>"; };
+		64AE6FDA296E5CC400A6AD2E /* Sarabun-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-ThinItalic.ttf"; sourceTree = "<group>"; };
+		64AE6FDB296E5CC500A6AD2E /* Sarabun-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-MediumItalic.ttf"; sourceTree = "<group>"; };
+		64AE6FDC296E5CC500A6AD2E /* Sarabun-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		64AE6FDD296E5CC500A6AD2E /* Sarabun-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-Light.ttf"; sourceTree = "<group>"; };
+		64AE6FDE296E5CC500A6AD2E /* Sarabun-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		64AE6FDF296E5CC500A6AD2E /* Sarabun-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-Medium.ttf"; sourceTree = "<group>"; };
+		64AE6FE0296E5CC500A6AD2E /* Sarabun-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-ExtraBold.ttf"; sourceTree = "<group>"; };
+		64AE6FE1296E5CC500A6AD2E /* Sarabun-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-Italic.ttf"; sourceTree = "<group>"; };
+		64AE6FE2296E5CC500A6AD2E /* Sarabun-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		64AE6FE3296E5CC500A6AD2E /* Sarabun-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-SemiBold.ttf"; sourceTree = "<group>"; };
+		64AE6FE4296E5CC500A6AD2E /* Sarabun-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-Thin.ttf"; sourceTree = "<group>"; };
+		64AE6FE5296E5CC500A6AD2E /* Sarabun-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-Bold.ttf"; sourceTree = "<group>"; };
+		64AE6FE6296E5CC500A6AD2E /* Sarabun-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-BoldItalic.ttf"; sourceTree = "<group>"; };
+		64AE6FE7296E5CC500A6AD2E /* Sarabun-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-LightItalic.ttf"; sourceTree = "<group>"; };
+		64AE6FE8296E5CC500A6AD2E /* Sarabun-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-ExtraLight.ttf"; sourceTree = "<group>"; };
+		64AE6FF9296E6D1500A6AD2E /* Sarabun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sarabun.swift; sourceTree = "<group>"; };
+		64AE6FFC296ECEA900A6AD2E /* WithdrawlCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawlCell.swift; sourceTree = "<group>"; };
+		64AE6FFD296ECEA900A6AD2E /* WithdrawlCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WithdrawlCell.xib; sourceTree = "<group>"; };
 		64D3A1BB2959A5D8007EC7E3 /* DiamondModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondModel.swift; sourceTree = "<group>"; };
 		64D3A1BE2959A8BA007EC7E3 /* IntExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExt.swift; sourceTree = "<group>"; };
 		64D3A1C4295C209A007EC7E3 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		64D3A1C6295C2E25007EC7E3 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		64E432EB296D5C42002261F9 /* WithdrawlVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WithdrawlVC.xib; sourceTree = "<group>"; };
+		64E432ED296D5C8F002261F9 /* WithdrawlVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawlVC.swift; sourceTree = "<group>"; };
+		64E432F3296D5E67002261F9 /* ToolbarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToolbarView.xib; sourceTree = "<group>"; };
+		64E432F5296D666B002261F9 /* ToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarView.swift; sourceTree = "<group>"; };
 		64EF85FC295C4154000F4EBB /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		64EF85FF295D75D2000F4EBB /* BuydiamondsBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuydiamondsBottomSheet.swift; sourceTree = "<group>"; };
 		64EF8600295D75D2000F4EBB /* BuydiamondsBottomSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuydiamondsBottomSheet.xib; sourceTree = "<group>"; };
@@ -108,9 +164,11 @@
 		49239700293EF96800CC84FA /* iOSUIKitXib */ = {
 			isa = PBXGroup;
 			children = (
+				64E432EA296D5A66002261F9 /* Withdrawal */,
 				64EF8608295D980A000F4EBB /* RewardAndTask */,
 				649D39422959849D005E1E89 /* BuyDiamonds */,
 				49239701293EF96800CC84FA /* AppDelegate.swift */,
+				649D394729599206005E1E89 /* Font */,
 				49239705293EF96800CC84FA /* ViewController.swift */,
 				49239715293EFAB600CC84FA /* ViewController.xib */,
 				49239717293EFB0200CC84FA /* AuthViewController.swift */,
@@ -122,6 +180,26 @@
 			path = iOSUIKitXib;
 			sourceTree = "<group>";
 		};
+		648EB72829716052001506AA /* DetailWithdrawal */ = {
+			isa = PBXGroup;
+			children = (
+				648EB72D29716148001506AA /* Cell */,
+				648EB729297160B6001506AA /* DetailWithdrawlVC.xib */,
+				648EB72B297160E3001506AA /* DetailWithdrawlVC.swift */,
+			);
+			path = DetailWithdrawal;
+			sourceTree = "<group>";
+		};
+		648EB72D29716148001506AA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				648EB72E2971616D001506AA /* DetailWithdrawlCell.swift */,
+				648EB72F2971616D001506AA /* DetailWithdrawlCell.xib */,
+				648EB73229716452001506AA /* DetailWithdrawl.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		649D39422959849D005E1E89 /* BuyDiamonds */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,7 +207,6 @@
 				64EF85FE295D75A4000F4EBB /* BuyDiamondsBottomSheet */,
 				64D3A1BD2959A8A5007EC7E3 /* Extension */,
 				649D394A29599C92005E1E89 /* Cell */,
-				649D394729599206005E1E89 /* Font */,
 				649D394329598520005E1E89 /* BuyDiamondsVC.swift */,
 				649D394429598520005E1E89 /* BuyDiamondsVC.xib */,
 			);
@@ -139,7 +216,7 @@
 		649D394729599206005E1E89 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				649D394829599288005E1E89 /* Sarabun */,
+				64AE6FD8296E5C8300A6AD2E /* Sarabun */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -154,6 +231,40 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		64AE6FD8296E5C8300A6AD2E /* Sarabun */ = {
+			isa = PBXGroup;
+			children = (
+				64AE6FF9296E6D1500A6AD2E /* Sarabun.swift */,
+				64AE6FE5296E5CC500A6AD2E /* Sarabun-Bold.ttf */,
+				64AE6FE6296E5CC500A6AD2E /* Sarabun-BoldItalic.ttf */,
+				64AE6FE0296E5CC500A6AD2E /* Sarabun-ExtraBold.ttf */,
+				64AE6FDE296E5CC500A6AD2E /* Sarabun-ExtraBoldItalic.ttf */,
+				64AE6FE8296E5CC500A6AD2E /* Sarabun-ExtraLight.ttf */,
+				64AE6FE2296E5CC500A6AD2E /* Sarabun-ExtraLightItalic.ttf */,
+				64AE6FE1296E5CC500A6AD2E /* Sarabun-Italic.ttf */,
+				64AE6FDD296E5CC500A6AD2E /* Sarabun-Light.ttf */,
+				64AE6FE7296E5CC500A6AD2E /* Sarabun-LightItalic.ttf */,
+				64AE6FDF296E5CC500A6AD2E /* Sarabun-Medium.ttf */,
+				64AE6FDB296E5CC500A6AD2E /* Sarabun-MediumItalic.ttf */,
+				64AE6FD9296E5CC400A6AD2E /* Sarabun-Regular.ttf */,
+				64AE6FE3296E5CC500A6AD2E /* Sarabun-SemiBold.ttf */,
+				64AE6FDC296E5CC500A6AD2E /* Sarabun-SemiBoldItalic.ttf */,
+				64AE6FE4296E5CC500A6AD2E /* Sarabun-Thin.ttf */,
+				64AE6FDA296E5CC400A6AD2E /* Sarabun-ThinItalic.ttf */,
+			);
+			path = Sarabun;
+			sourceTree = "<group>";
+		};
+		64AE6FFB296ECE6B00A6AD2E /* WithdrawlCell */ = {
+			isa = PBXGroup;
+			children = (
+				64AE6FFC296ECEA900A6AD2E /* WithdrawlCell.swift */,
+				64AE6FFD296ECEA900A6AD2E /* WithdrawlCell.xib */,
+				648EB726296FEFEF001506AA /* Withdrawl.swift */,
+			);
+			path = WithdrawlCell;
+			sourceTree = "<group>";
+		};
 		64D3A1BD2959A8A5007EC7E3 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +275,35 @@
 				642B58DF2966C30E0050B812 /* UILabelExt.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		64E432EA296D5A66002261F9 /* Withdrawal */ = {
+			isa = PBXGroup;
+			children = (
+				64E432EF296D5CCE002261F9 /* Widget */,
+				64E432EB296D5C42002261F9 /* WithdrawlVC.xib */,
+				64E432ED296D5C8F002261F9 /* WithdrawlVC.swift */,
+			);
+			path = Withdrawal;
+			sourceTree = "<group>";
+		};
+		64E432EF296D5CCE002261F9 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				648EB72829716052001506AA /* DetailWithdrawal */,
+				64AE6FFB296ECE6B00A6AD2E /* WithdrawlCell */,
+				64E432F2296D5E3F002261F9 /* ToolBar */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		64E432F2296D5E3F002261F9 /* ToolBar */ = {
+			isa = PBXGroup;
+			children = (
+				64E432F3296D5E67002261F9 /* ToolbarView.xib */,
+				64E432F5296D666B002261F9 /* ToolbarView.swift */,
+			);
+			path = ToolBar;
 			sourceTree = "<group>";
 		};
 		64EF85FE295D75A4000F4EBB /* BuyDiamondsBottomSheet */ = {
@@ -284,18 +424,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				64EF8611295E94E0000F4EBB /* RewardAndTaskVC.xib in Resources */,
+				64E432F4296D5E67002261F9 /* ToolbarView.xib in Resources */,
 				64EF8602295D75D2000F4EBB /* BuydiamondsBottomSheet.xib in Resources */,
+				64AE6FF0296E5CC500A6AD2E /* Sarabun-ExtraBold.ttf in Resources */,
+				64AE6FE9296E5CC500A6AD2E /* Sarabun-Regular.ttf in Resources */,
+				64AE6FF8296E5CC500A6AD2E /* Sarabun-ExtraLight.ttf in Resources */,
+				64AE6FEA296E5CC500A6AD2E /* Sarabun-ThinItalic.ttf in Resources */,
+				64AE6FF7296E5CC500A6AD2E /* Sarabun-LightItalic.ttf in Resources */,
+				648EB72A297160B6001506AA /* DetailWithdrawlVC.xib in Resources */,
 				4923971A293EFB0200CC84FA /* AuthViewController.xib in Resources */,
 				649D394629598520005E1E89 /* BuyDiamondsVC.xib in Resources */,
+				64AE6FFF296ECEA900A6AD2E /* WithdrawlCell.xib in Resources */,
+				64E432EC296D5C42002261F9 /* WithdrawlVC.xib in Resources */,
+				64AE6FEC296E5CC500A6AD2E /* Sarabun-SemiBoldItalic.ttf in Resources */,
+				64AE6FF6296E5CC500A6AD2E /* Sarabun-BoldItalic.ttf in Resources */,
 				64EF8629296346CB000F4EBB /* RewardItemView.xib in Resources */,
 				64EF8617295E971F000F4EBB /* LineView.xib in Resources */,
+				64AE6FEE296E5CC500A6AD2E /* Sarabun-ExtraBoldItalic.ttf in Resources */,
+				64AE6FED296E5CC500A6AD2E /* Sarabun-Light.ttf in Resources */,
+				64AE6FEB296E5CC500A6AD2E /* Sarabun-MediumItalic.ttf in Resources */,
+				64AE6FF1296E5CC500A6AD2E /* Sarabun-Italic.ttf in Resources */,
+				64AE6FF4296E5CC500A6AD2E /* Sarabun-Thin.ttf in Resources */,
 				4923970E293EF96900CC84FA /* LaunchScreen.storyboard in Resources */,
+				64AE6FEF296E5CC500A6AD2E /* Sarabun-Medium.ttf in Resources */,
+				64AE6FF5296E5CC500A6AD2E /* Sarabun-Bold.ttf in Resources */,
 				64EF8607295D7CB3000F4EBB /* HomeVC.xib in Resources */,
+				64AE6FF2296E5CC500A6AD2E /* Sarabun-ExtraLightItalic.ttf in Resources */,
 				649D394E29599CE0005E1E89 /* DiamondCell.xib in Resources */,
-				649D394929599288005E1E89 /* Sarabun in Resources */,
+				648EB7312971616D001506AA /* DetailWithdrawlCell.xib in Resources */,
 				49239716293EFAB600CC84FA /* ViewController.xib in Resources */,
 				4923970B293EF96900CC84FA /* Assets.xcassets in Resources */,
 				64EF8623295EC95F000F4EBB /* RewardView.xib in Resources */,
+				64AE6FF3296E5CC500A6AD2E /* Sarabun-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,24 +467,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				64EF8601295D75D2000F4EBB /* BuydiamondsBottomSheet.swift in Sources */,
+				64AE6FFE296ECEA900A6AD2E /* WithdrawlCell.swift in Sources */,
 				64D3A1C7295C2E25007EC7E3 /* UIViewExt.swift in Sources */,
+				648EB72C297160E3001506AA /* DetailWithdrawlVC.swift in Sources */,
 				64EF8625295ECBDD000F4EBB /* RewardType.swift in Sources */,
 				49239706293EF96800CC84FA /* ViewController.swift in Sources */,
 				49239719293EFB0200CC84FA /* AuthViewController.swift in Sources */,
 				649D394D29599CE0005E1E89 /* DiamondCell.swift in Sources */,
+				648EB73329716452001506AA /* DetailWithdrawl.swift in Sources */,
+				64AE6FFA296E6D1500A6AD2E /* Sarabun.swift in Sources */,
+				648EB727296FEFEF001506AA /* Withdrawl.swift in Sources */,
 				64EF8610295E94E0000F4EBB /* RewardAndTaskVC.swift in Sources */,
 				64D3A1C5295C209A007EC7E3 /* StringExt.swift in Sources */,
 				64EF8627296346B7000F4EBB /* RewardItemView.swift in Sources */,
 				64EF861B295E973C000F4EBB /* LineView.swift in Sources */,
 				64EF85FD295C4154000F4EBB /* UIButton.swift in Sources */,
 				64D3A1BF2959A8BA007EC7E3 /* IntExt.swift in Sources */,
+				64E432EE296D5C8F002261F9 /* WithdrawlVC.swift in Sources */,
 				649D394529598520005E1E89 /* BuyDiamondsVC.swift in Sources */,
 				64EF8606295D7CB3000F4EBB /* HomeVC.swift in Sources */,
 				64D3A1BC2959A5D8007EC7E3 /* DiamondModel.swift in Sources */,
 				64EF8621295EC8F6000F4EBB /* RewardView.swift in Sources */,
 				642B58E02966C30E0050B812 /* UILabelExt.swift in Sources */,
 				49239702293EF96800CC84FA /* AppDelegate.swift in Sources */,
+				648EB7302971616D001506AA /* DetailWithdrawlCell.swift in Sources */,
 				642B58E2296742330050B812 /* ButtonTapDelegate.swift in Sources */,
+				64E432F6296D666B002261F9 /* ToolbarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

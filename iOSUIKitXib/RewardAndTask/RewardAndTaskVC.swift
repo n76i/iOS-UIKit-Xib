@@ -34,7 +34,7 @@ class RewardAndTaskVC: UIViewController {
     func setupView() {
         lineViewTask.isHidden = true
         
-        self.view.backgroundColor = UIColor.white.withAlphaComponent(0)
+        self.view.backgroundColor = UIColor(named: "F8F8F6")
         space.backgroundColor = UIColor.white.withAlphaComponent(0)
         sheetView.backgroundColor = UIColor.black.withAlphaComponent(0)
         

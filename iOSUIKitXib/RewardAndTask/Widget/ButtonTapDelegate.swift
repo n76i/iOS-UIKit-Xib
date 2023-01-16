@@ -9,4 +9,5 @@ import Foundation
 
 protocol ButtonTapDelegate: AnyObject {
     func ontapReward(item: RewardModelView)
+    func ontapButton()
 }

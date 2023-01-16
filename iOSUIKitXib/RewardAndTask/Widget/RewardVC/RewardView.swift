@@ -151,6 +151,10 @@ class RewardView: UIView {
 }
 
 extension RewardView: ButtonTapDelegate {
+    func ontapButton() {
+        
+    }
+    
     func ontapReward(item: RewardModelView) {
         for i in dataReward {
             if(i === item) {
