@@ -17,20 +17,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var buyDiamondButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Home"
-        testVcButton.layer.cornerRadius = 50
+//        title = "Home"
+        testVcButton.layer.cornerRadius = 30
         testVcButton.layer.borderWidth = 3
         
-        tableVCButton.layer.cornerRadius = 50
+        tableVCButton.layer.cornerRadius = 30
         tableVCButton.layer.borderWidth = 3
         
-        collectionButton.layer.cornerRadius = 50
+        collectionButton.layer.cornerRadius = 30
         collectionButton.layer.borderWidth = 3
         
         customButton.layer.cornerRadius = 50
         customButton.layer.borderWidth = 3
         
-        buyDiamondButton.layer.cornerRadius = 50
+        buyDiamondButton.layer.cornerRadius = 30
         buyDiamondButton.layer.borderWidth = 3
     }
 
@@ -57,6 +57,11 @@ class ViewController: UIViewController {
     
     @IBAction func buttonDiamond(_ sender: Any) {
         let viewController = BuyDiamondsVC()
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    @IBAction func buttonWalletDiamond(_ sender: UIButton) {
+        let viewController = WalletDiamondsViewController()
         navigationController?.pushViewController(viewController, animated: true)
     }
 }

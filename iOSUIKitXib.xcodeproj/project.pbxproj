@@ -24,6 +24,13 @@
 		564907A5296BF17100CD768C /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 564907A3296BF17100CD768C /* TableViewController.xib */; };
 		564907A8296BF4DE00CD768C /* TestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564907A6296BF4DE00CD768C /* TestTableViewCell.swift */; };
 		564907A9296BF4DE00CD768C /* TestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 564907A7296BF4DE00CD768C /* TestTableViewCell.xib */; };
+		5691439829714325001E1E5E /* WalletDiamondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691439629714325001E1E5E /* WalletDiamondViewController.swift */; };
+		5691439929714325001E1E5E /* WalletDiamondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5691439729714325001E1E5E /* WalletDiamondViewController.xib */; };
+		5691439B2974538A001E1E5E /* UIViewSelec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691439A2974538A001E1E5E /* UIViewSelec.swift */; };
+		5691439E29753E01001E1E5E /* WalletDiamondsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691439C29753E01001E1E5E /* WalletDiamondsViewController.swift */; };
+		5691439F29753E01001E1E5E /* WalletDiamondsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5691439D29753E01001E1E5E /* WalletDiamondsViewController.xib */; };
+		569143A329754CF1001E1E5E /* buyDiamondCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569143A129754CF1001E1E5E /* buyDiamondCollectionViewCell.swift */; };
+		569143A429754CF1001E1E5E /* buyDiamondCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569143A229754CF1001E1E5E /* buyDiamondCollectionViewCell.xib */; };
 		569DA5C9296D59FB001003A1 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569DA5C7296D59FB001003A1 /* CollectionViewController.swift */; };
 		569DA5CA296D59FB001003A1 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569DA5C8296D59FB001003A1 /* CollectionViewController.xib */; };
 		569DA5CD296D5A44001003A1 /* TestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569DA5CB296D5A44001003A1 /* TestCollectionViewCell.swift */; };
@@ -71,6 +78,13 @@
 		564907A3296BF17100CD768C /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
 		564907A6296BF4DE00CD768C /* TestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewCell.swift; sourceTree = "<group>"; };
 		564907A7296BF4DE00CD768C /* TestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestTableViewCell.xib; sourceTree = "<group>"; };
+		5691439629714325001E1E5E /* WalletDiamondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletDiamondViewController.swift; sourceTree = "<group>"; };
+		5691439729714325001E1E5E /* WalletDiamondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletDiamondViewController.xib; sourceTree = "<group>"; };
+		5691439A2974538A001E1E5E /* UIViewSelec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewSelec.swift; sourceTree = "<group>"; };
+		5691439C29753E01001E1E5E /* WalletDiamondsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletDiamondsViewController.swift; sourceTree = "<group>"; };
+		5691439D29753E01001E1E5E /* WalletDiamondsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletDiamondsViewController.xib; sourceTree = "<group>"; };
+		569143A129754CF1001E1E5E /* buyDiamondCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buyDiamondCollectionViewCell.swift; sourceTree = "<group>"; };
+		569143A229754CF1001E1E5E /* buyDiamondCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = buyDiamondCollectionViewCell.xib; sourceTree = "<group>"; };
 		569DA5C7296D59FB001003A1 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		569DA5C8296D59FB001003A1 /* CollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
 		569DA5CB296D5A44001003A1 /* TestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -128,6 +142,7 @@
 		49239700293EF96800CC84FA /* iOSUIKitXib */ = {
 			isa = PBXGroup;
 			children = (
+				56914395297142E8001E1E5E /* Wallet Diamond */,
 				49239701293EF96800CC84FA /* AppDelegate.swift */,
 				49239705293EF96800CC84FA /* ViewController.swift */,
 				49239715293EFAB600CC84FA /* ViewController.xib */,
@@ -169,6 +184,27 @@
 				569DA5CC296D5A44001003A1 /* TestCollectionViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		56914395297142E8001E1E5E /* Wallet Diamond */ = {
+			isa = PBXGroup;
+			children = (
+				569143A029754C95001E1E5E /* CellCollect */,
+				5691439629714325001E1E5E /* WalletDiamondViewController.swift */,
+				5691439729714325001E1E5E /* WalletDiamondViewController.xib */,
+				5691439C29753E01001E1E5E /* WalletDiamondsViewController.swift */,
+				5691439D29753E01001E1E5E /* WalletDiamondsViewController.xib */,
+			);
+			path = "Wallet Diamond";
+			sourceTree = "<group>";
+		};
+		569143A029754C95001E1E5E /* CellCollect */ = {
+			isa = PBXGroup;
+			children = (
+				569143A129754CF1001E1E5E /* buyDiamondCollectionViewCell.swift */,
+				569143A229754CF1001E1E5E /* buyDiamondCollectionViewCell.xib */,
+			);
+			path = CellCollect;
 			sourceTree = "<group>";
 		};
 		569DA5CF296D6B34001003A1 /* Custom */ = {
@@ -275,6 +311,7 @@
 				64D3A1C4295C209A007EC7E3 /* StringExt.swift */,
 				64D3A1C6295C2E25007EC7E3 /* UIViewExt.swift */,
 				64EF85FC295C4154000F4EBB /* UIButton.swift */,
+				5691439A2974538A001E1E5E /* UIViewSelec.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -353,8 +390,11 @@
 				564907992966A30600CD768C /* SecondViewController.xib in Resources */,
 				49239716293EFAB600CC84FA /* ViewController.xib in Resources */,
 				564907952966703C00CD768C /* TestViewController.xib in Resources */,
+				5691439929714325001E1E5E /* WalletDiamondViewController.xib in Resources */,
 				5649079D2966D57900CD768C /* StackViewViewController.xib in Resources */,
 				564907A9296BF4DE00CD768C /* TestTableViewCell.xib in Resources */,
+				5691439F29753E01001E1E5E /* WalletDiamondsViewController.xib in Resources */,
+				569143A429754CF1001E1E5E /* buyDiamondCollectionViewCell.xib in Resources */,
 				4923970B293EF96900CC84FA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5691439829714325001E1E5E /* WalletDiamondViewController.swift in Sources */,
 				564907982966A30600CD768C /* SecondViewController.swift in Sources */,
 				64D3A1C7295C2E25007EC7E3 /* UIViewExt.swift in Sources */,
 				5649079C2966D57900CD768C /* StackViewViewController.swift in Sources */,
@@ -375,6 +416,7 @@
 				649D394D29599CE0005E1E89 /* DiamondCell.swift in Sources */,
 				569DA5DC296D6CB9001003A1 /* MyCollectionViewCell.swift in Sources */,
 				56B56225296FEA910055271F /* TestViewViewController.swift in Sources */,
+				569143A329754CF1001E1E5E /* buyDiamondCollectionViewCell.swift in Sources */,
 				64D3A1C5295C209A007EC7E3 /* StringExt.swift in Sources */,
 				569DA5C9296D59FB001003A1 /* CollectionViewController.swift in Sources */,
 				564907A02967C71A00CD768C /* PresentViewController.swift in Sources */,
@@ -385,6 +427,8 @@
 				649D394529598520005E1E89 /* BuyDiamondsVC.swift in Sources */,
 				569DA5D8296D6C8F001003A1 /* CollectionTableViewCell.swift in Sources */,
 				64D3A1BC2959A5D8007EC7E3 /* DiamondModel.swift in Sources */,
+				5691439E29753E01001E1E5E /* WalletDiamondsViewController.swift in Sources */,
+				5691439B2974538A001E1E5E /* UIViewSelec.swift in Sources */,
 				564907A4296BF17100CD768C /* TableViewController.swift in Sources */,
 				569DA5DF296E5232001003A1 /* Model.swift in Sources */,
 				49239702293EF96800CC84FA /* AppDelegate.swift in Sources */,

@@ -30,7 +30,7 @@ class BuyDiamondsVC: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
+//        self.navigationController?.setNavigationBarHidden(true, animated: false)
         setBackgroundImage()
         setupView()
         
@@ -55,8 +55,8 @@ class BuyDiamondsVC: UIViewController {
         //setup buy btn
 //        buyBtn.setTitle("NẠP", for: .normal)
 //        buyBtn.layoutIfNeeded()
-        let shape = CAShapeLayer()
-        buyBtn.applyGradient(colors: [ UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!], startPoint: CGPoint(x: 0.0, y: 0.8), endPoint: CGPoint(x: 1.0, y: 0.2), shape: shape)
+//        let shape = CAShapeLayer()
+//        buyBtn.applyGradient(colors: [ UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!], startPoint: CGPoint(x: 0.0, y: 0.8), endPoint: CGPoint(x: 1.0, y: 0.2), shape: shape)
     }
     
     func setBackgroundImage() {
@@ -66,15 +66,6 @@ class BuyDiamondsVC: UIViewController {
         view.insertSubview(backgroundImage, at: 0)
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }
 
