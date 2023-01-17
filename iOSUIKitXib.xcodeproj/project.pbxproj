@@ -22,6 +22,9 @@
 		648EB7302971616D001506AA /* DetailWithdrawlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648EB72E2971616D001506AA /* DetailWithdrawlCell.swift */; };
 		648EB7312971616D001506AA /* DetailWithdrawlCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 648EB72F2971616D001506AA /* DetailWithdrawlCell.xib */; };
 		648EB73329716452001506AA /* DetailWithdrawl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648EB73229716452001506AA /* DetailWithdrawl.swift */; };
+		648EB744297656A5001506AA /* TabbarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648EB742297656A5001506AA /* TabbarCell.swift */; };
+		648EB745297656A5001506AA /* TabbarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 648EB743297656A5001506AA /* TabbarCell.xib */; };
+		648EB747297659C6001506AA /* Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648EB746297659C6001506AA /* Tabbar.swift */; };
 		649D394529598520005E1E89 /* BuyDiamondsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649D394329598520005E1E89 /* BuyDiamondsVC.swift */; };
 		649D394629598520005E1E89 /* BuyDiamondsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 649D394429598520005E1E89 /* BuyDiamondsVC.xib */; };
 		649D394D29599CE0005E1E89 /* DiamondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649D394B29599CE0005E1E89 /* DiamondCell.swift */; };
@@ -87,6 +90,9 @@
 		648EB72E2971616D001506AA /* DetailWithdrawlCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWithdrawlCell.swift; sourceTree = "<group>"; };
 		648EB72F2971616D001506AA /* DetailWithdrawlCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailWithdrawlCell.xib; sourceTree = "<group>"; };
 		648EB73229716452001506AA /* DetailWithdrawl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWithdrawl.swift; sourceTree = "<group>"; };
+		648EB742297656A5001506AA /* TabbarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarCell.swift; sourceTree = "<group>"; };
+		648EB743297656A5001506AA /* TabbarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabbarCell.xib; sourceTree = "<group>"; };
+		648EB746297659C6001506AA /* Tabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar.swift; sourceTree = "<group>"; };
 		649D394329598520005E1E89 /* BuyDiamondsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyDiamondsVC.swift; sourceTree = "<group>"; };
 		649D394429598520005E1E89 /* BuyDiamondsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyDiamondsVC.xib; sourceTree = "<group>"; };
 		649D394B29599CE0005E1E89 /* DiamondCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondCell.swift; sourceTree = "<group>"; };
@@ -200,6 +206,16 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		648EB7412976566D001506AA /* TabbarCell */ = {
+			isa = PBXGroup;
+			children = (
+				648EB742297656A5001506AA /* TabbarCell.swift */,
+				648EB743297656A5001506AA /* TabbarCell.xib */,
+				648EB746297659C6001506AA /* Tabbar.swift */,
+			);
+			path = TabbarCell;
+			sourceTree = "<group>";
+		};
 		649D39422959849D005E1E89 /* BuyDiamonds */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,6 +306,7 @@
 		64E432EF296D5CCE002261F9 /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				648EB7412976566D001506AA /* TabbarCell */,
 				648EB72829716052001506AA /* DetailWithdrawal */,
 				64AE6FFB296ECE6B00A6AD2E /* WithdrawlCell */,
 				64E432F2296D5E3F002261F9 /* ToolBar */,
@@ -442,6 +459,7 @@
 				64EF8617295E971F000F4EBB /* LineView.xib in Resources */,
 				64AE6FEE296E5CC500A6AD2E /* Sarabun-ExtraBoldItalic.ttf in Resources */,
 				64AE6FED296E5CC500A6AD2E /* Sarabun-Light.ttf in Resources */,
+				648EB745297656A5001506AA /* TabbarCell.xib in Resources */,
 				64AE6FEB296E5CC500A6AD2E /* Sarabun-MediumItalic.ttf in Resources */,
 				64AE6FF1296E5CC500A6AD2E /* Sarabun-Italic.ttf in Resources */,
 				64AE6FF4296E5CC500A6AD2E /* Sarabun-Thin.ttf in Resources */,
@@ -469,6 +487,7 @@
 				64EF8601295D75D2000F4EBB /* BuydiamondsBottomSheet.swift in Sources */,
 				64AE6FFE296ECEA900A6AD2E /* WithdrawlCell.swift in Sources */,
 				64D3A1C7295C2E25007EC7E3 /* UIViewExt.swift in Sources */,
+				648EB747297659C6001506AA /* Tabbar.swift in Sources */,
 				648EB72C297160E3001506AA /* DetailWithdrawlVC.swift in Sources */,
 				64EF8625295ECBDD000F4EBB /* RewardType.swift in Sources */,
 				49239706293EF96800CC84FA /* ViewController.swift in Sources */,
@@ -481,6 +500,7 @@
 				64D3A1C5295C209A007EC7E3 /* StringExt.swift in Sources */,
 				64EF8627296346B7000F4EBB /* RewardItemView.swift in Sources */,
 				64EF861B295E973C000F4EBB /* LineView.swift in Sources */,
+				648EB744297656A5001506AA /* TabbarCell.swift in Sources */,
 				64EF85FD295C4154000F4EBB /* UIButton.swift in Sources */,
 				64D3A1BF2959A8BA007EC7E3 /* IntExt.swift in Sources */,
 				64E432EE296D5C8F002261F9 /* WithdrawlVC.swift in Sources */,

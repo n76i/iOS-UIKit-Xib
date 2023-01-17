@@ -8,6 +8,7 @@
 import Foundation
 
 enum WithdrawlSate: String {
+    case All = "Tất cả"
     case Success = "Thành công"
     case Awaiting = "Chờ x.lý"
     case Failed = "Thất bại"
@@ -22,6 +23,8 @@ extension WithdrawlSate {
             return datas.filter({(e) in e[0].state == .Awaiting})
         case .Failed:
             return datas.filter({(e) in e[0].state == .Failed})
+        case .All:
+            return datas
         }
     }
 }

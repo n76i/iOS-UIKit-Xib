@@ -50,7 +50,7 @@ class WithdrawlCell: UITableViewCell {
         self.contentView.backgroundColor = .white
         self.contentView.layer.cornerRadius = 8
         
-        gradientState = stateView.createGradient(colors: [UIColor(named: "FFDFFC")!.withAlphaComponent(0), UIColor(named: "FFECEC")!], startPoint: CGPoint(x: 0, y: 1), endPoint: CGPoint(x: 1, y: 0), shape: CAShapeLayer(), corner: 4)
+        gradientState = stateView.createGradient(colors: [UIColor(named: "FFDFFC")!.withAlphaComponent(0), UIColor(named: "Tutu")!], startPoint: CGPoint(x: 0, y: 1), endPoint: CGPoint(x: 1, y: 0), shape: CAShapeLayer(), corner: 4)
         
         if let sub = stateView.layer.sublayers?.first as? CAGradientLayer {
             sub.removeFromSuperlayer()
@@ -79,14 +79,14 @@ class WithdrawlCell: UITableViewCell {
     func setupState(state: WithdrawlSate) {
         switch state {
         case .Success:
-            stateView.backgroundColor = UIColor(named: "51E1D4")
+            stateView.backgroundColor = UIColor(named: "NeonNazar")
             stateView.layer.cornerRadius = 4
             
             stateTxt.text = state.rawValue
             stateTxt.textColor = .white
             
         case .Awaiting:
-            stateTxt.gradientColorText(colors: [UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!])
+            stateTxt.gradientColorText(colors: [UIColor(named: "SweetCandiedPurple")!, UIColor(named: "PortlandOrange")!])
             stateTxt.text = state.rawValue
             
             stateView.backgroundColor = .white
@@ -96,11 +96,12 @@ class WithdrawlCell: UITableViewCell {
 
         case .Failed:
             stateTxt.text = state.rawValue
-            stateView.backgroundColor = UIColor(named: "FF507F")
+            stateView.backgroundColor = UIColor(named: "WildWatermelon")
             stateView.layer.cornerRadius = 4
             
             stateTxt.textColor = .white
-
+        case .All:
+            break
         }
     }
 }

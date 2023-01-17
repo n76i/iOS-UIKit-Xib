@@ -36,6 +36,6 @@ class LineView: UIView {
 
         self.addSubview(contentView)
         
-        subView.applyGradient(colors: [ UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!], startPoint: CGPoint(x: 0.0, y: 0.5), endPoint: CGPoint(x: 1.0, y: 0.5), shape: CAShapeLayer(), corner: 3)
+        subView.applyGradient(colors: [ UIColor(named: "SweetCandiedPurple")!, UIColor(named: "PortlandOrange")!], startPoint: CGPoint(x: 0.0, y: 0.5), endPoint: CGPoint(x: 1.0, y: 0.5), shape: CAShapeLayer(), corner: 3)
     }
 }

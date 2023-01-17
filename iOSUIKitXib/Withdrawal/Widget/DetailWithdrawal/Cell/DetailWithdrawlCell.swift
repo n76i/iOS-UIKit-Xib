@@ -29,7 +29,7 @@ class DetailWithdrawlCell: UITableViewCell {
         valueTxt.font = UIFont.sarabunFont(type: .SarabunRegular, size: 14)
         stateTxt.font = UIFont.sarabunFont(type: .SarabunSemiBold, size: 12)
         
-        gradientState = stateView.createGradient(colors: [UIColor(named: "FFDFFC")!.withAlphaComponent(0), UIColor(named: "FFECEC")!], startPoint: CGPoint(x: 0, y: 1), endPoint: CGPoint(x: 1, y: 0), shape: CAShapeLayer(), corner: 4)
+        gradientState = stateView.createGradient(colors: [UIColor(named: "FFDFFC")!.withAlphaComponent(0), UIColor(named: "Tutu")!], startPoint: CGPoint(x: 0, y: 1), endPoint: CGPoint(x: 1, y: 0), shape: CAShapeLayer(), corner: 4)
         
         if let sub = stateView.layer.sublayers?.first as? CAGradientLayer {
             sub.removeFromSuperlayer()
@@ -55,7 +55,7 @@ class DetailWithdrawlCell: UITableViewCell {
     func setupState(state: WithdrawlSate) {
         switch state {
         case .Success:
-            stateView.backgroundColor = UIColor(named: "51E1D4")
+            stateView.backgroundColor = UIColor(named: "NeonNazar")
             stateView.layer.cornerRadius = 4
             
             stateTxt.text = state.rawValue
@@ -72,11 +72,12 @@ class DetailWithdrawlCell: UITableViewCell {
 
         case .Failed:
             stateTxt.text = state.rawValue
-            stateView.backgroundColor = UIColor(named: "FF507F")
+            stateView.backgroundColor = UIColor(named: "WildWatermelon")
             stateView.layer.cornerRadius = 4
             
             stateTxt.textColor = .white
-
+        case .All:
+            break
         }
     }
 

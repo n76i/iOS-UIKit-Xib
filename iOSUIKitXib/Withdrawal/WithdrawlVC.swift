@@ -10,24 +10,13 @@ import UIKit
 class WithdrawlVC: UIViewController {
     var data: [[Withdrawl]] = []
     
+    @IBOutlet weak var empty_img: UIImageView!
     @IBOutlet weak var withdrawlTableView: UITableView!
-    @IBOutlet private weak var labelTab1: UILabel!
-    @IBOutlet weak var tab1: UIView!
-    @IBOutlet private weak var lineBottomTab1: LineView!
     
-    @IBOutlet weak var tab2: UIView!
-    @IBOutlet private weak var labelTab2: UILabel!
-    @IBOutlet private weak var lineBottomTab2: LineView!
+    @IBOutlet weak var tabbar: UICollectionView!
     
-    @IBOutlet weak var tab3: UIView!
-    @IBOutlet private weak var labelTab3: UILabel!
-    @IBOutlet private weak var lineBottomTab3: LineView!
     
-    @IBOutlet weak var tab4: UIView!
-    @IBOutlet private weak var lineBottomTab4: LineView!
-    @IBOutlet private weak var labelTab4: UILabel!
-    
-//    let gradient
+    //    let gradient
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +25,6 @@ class WithdrawlVC: UIViewController {
         
         //set background screen
         setBackgroundImage()
-        
         //setup view
         setupView()
         
@@ -44,9 +32,24 @@ class WithdrawlVC: UIViewController {
         withdrawlTableView.dataSource = self
         withdrawlTableView.register(UINib(nibName: "WithdrawlCell", bundle: nil), forCellReuseIdentifier: "WithdrawlCell")
         withdrawlTableView.separatorStyle = .none
+        
+        tabbar.delegate = self
+        tabbar.dataSource = self
+        tabbar.register(UINib(nibName: "TabbarCell", bundle: nil), forCellWithReuseIdentifier: "TabbarCell")
+    }
+    
+    func showContentView() {
+        if(data.isEmpty) {
+            empty_img.isHidden = false
+            withdrawlTableView.isHidden = true
+        } else {
+            empty_img.isHidden = true
+            withdrawlTableView.isHidden = false
+        }
     }
     
     func setBackgroundImage() {
+        
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "gradient_bgr_image")
         backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
@@ -55,84 +58,12 @@ class WithdrawlVC: UIViewController {
     
     func setupView() {
         data.append(contentsOf: dataWthdrawlVC)
-        //setup defaul tab1
-        labelTab1.gradientColorText(colors: [UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!])
-        labelTab1.font = UIFont.sarabunFont(type: .SarabunRegular, size: 14)
-        
-        labelTab2.textColor = UIColor(named: "555050")
-        lineBottomTab2.isHidden = true
-        labelTab3.textColor = UIColor(named: "555050")
-        lineBottomTab3.isHidden = true
-        labelTab4.textColor = UIColor(named: "555050")
-        lineBottomTab4.isHidden = true
-        
-        //set action tab
-        tab1.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tab1Action(_:))))
-        tab2.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tab2Action(_:))))
-        tab3.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tab3Action(_:))))
-        tab4.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tab4Action(_:))))
+        showContentView()
     }
     
-    @objc func tab1Action(_ sender: Any) {
+    func filterData(state: WithdrawlSate) {
         data.removeAll()
-        data.append(contentsOf: dataWthdrawlVC)
-        labelTab1.gradientColorText(colors: [UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!])
-        lineBottomTab1.isHidden = false
-        labelTab2.textColor = UIColor(named: "555050")
-        lineBottomTab2.isHidden = true
-        labelTab3.textColor = UIColor(named: "555050")
-        lineBottomTab3.isHidden = true
-        labelTab4.textColor = UIColor(named: "555050")
-        lineBottomTab4.isHidden = true
-        
-        withdrawlTableView.reloadData()
-    }
-    
-    @objc func tab2Action(_ sender: Any) {
-        data.removeAll()
-        data.append(contentsOf: WithdrawlSate.Success.filterList(datas: dataWthdrawlVC))
-
-        labelTab2.gradientColorText(colors: [UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!])
-        lineBottomTab2.isHidden = false
-        labelTab1.textColor = UIColor(named: "555050")
-        lineBottomTab1.isHidden = true
-        labelTab3.textColor = UIColor(named: "555050")
-        lineBottomTab3.isHidden = true
-        labelTab4.textColor = UIColor(named: "555050")
-        lineBottomTab4.isHidden = true
-        
-        withdrawlTableView.reloadData()
-    }
-    
-    @objc func tab3Action(_ sender: Any) {
-        data.removeAll()
-        data.append(contentsOf: WithdrawlSate.Awaiting.filterList(datas: dataWthdrawlVC))
-
-        labelTab3.gradientColorText(colors: [UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!])
-        lineBottomTab3.isHidden = false
-        labelTab2.textColor = UIColor(named: "555050")
-        lineBottomTab2.isHidden = true
-        labelTab1.textColor = UIColor(named: "555050")
-        lineBottomTab1.isHidden = true
-        labelTab4.textColor = UIColor(named: "555050")
-        lineBottomTab4.isHidden = true
-        
-        withdrawlTableView.reloadData()
-    }
-    
-    @objc func tab4Action(_ sender: Any) {
-        data.removeAll()
-        data.append(contentsOf: WithdrawlSate.Failed.filterList(datas: dataWthdrawlVC))
-        
-        labelTab4.gradientColorText(colors: [UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!])
-        lineBottomTab4.isHidden = false
-        labelTab2.textColor = UIColor(named: "555050")
-        lineBottomTab2.isHidden = true
-        labelTab3.textColor = UIColor(named: "555050")
-        lineBottomTab3.isHidden = true
-        labelTab1.textColor = UIColor(named: "555050")
-        lineBottomTab1.isHidden = true
-        
+        data.append(contentsOf: state.filterList(datas: dataWthdrawlVC))
         withdrawlTableView.reloadData()
     }
 }
@@ -163,10 +94,61 @@ extension WithdrawlVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0
     }
-
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc: DetailWithdrawlVC = DetailWithdrawlVC()
         vc.id = data[indexPath.section][indexPath.row].id
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
+
+extension WithdrawlVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return dataTabbar.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = tabbar.dequeueReusableCell(withReuseIdentifier: "TabbarCell", for: indexPath) as! TabbarCell
+        
+        if(dataTabbar[indexPath.row] === dataTabbar.first) {
+            cell.setUpData(data: dataTabbar[indexPath.row], isShowLeadingLine: false)
+        } else {
+            cell.setUpData(data: dataTabbar[indexPath.row], isShowLeadingLine: true)
+        }
+        
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let width = tabbar.bounds.size.width / 4.0
+        
+        return CGSize(width: width, height: 30)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        for tab in dataTabbar {
+            if(tab === dataTabbar[indexPath.row]) {
+                tab.isSelect = true
+            } else {
+                tab.isSelect = false
+            }
+        }
+        
+        tabbar.reloadData()
+        filterData(state: dataTabbar[indexPath.row].state)
+    }
+}
+
+
