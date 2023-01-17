@@ -89,7 +89,7 @@
             <size key="customSize" width="113" height="62"/>
             <connections>
                 <outlet property="customView" destination="jID-Qd-ZBR" id="9Ga-k1-MZh"/>
-                <outlet property="diamondLabel" destination="1dE-50-CPC" id="6ZO-s6-TMW"/>
+                <outlet property="numberDiamondLabel" destination="1dE-50-CPC" id="6ZO-s6-TMW"/>
                 <outlet property="saleImage" destination="vqE-Bb-bI5" id="1gz-n3-RN7"/>
                 <outlet property="vndLabel" destination="Vry-aR-vs8" id="KvA-AE-BCC"/>
             </connections>

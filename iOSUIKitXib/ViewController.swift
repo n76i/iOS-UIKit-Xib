@@ -18,6 +18,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        title = "Home"
+        let backButton = UIBarButtonItem(title: " ", style: .plain, target: self, action: nil)
+        navigationItem.backBarButtonItem = backButton
+        navigationItem.backBarButtonItem?.tintColor = .black
+        
         testVcButton.layer.cornerRadius = 30
         testVcButton.layer.borderWidth = 3
         

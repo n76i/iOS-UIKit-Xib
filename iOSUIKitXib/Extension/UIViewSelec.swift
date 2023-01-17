@@ -9,17 +9,46 @@ import Foundation
 import UIKit
 
 extension UIView {
+    
+    
+    func setGradientBorder(
+           width: CGFloat,
+           colors: [UIColor],
+           startPoint: CGPoint = CGPoint(x: 0.5, y: 0),
+           endPoint: CGPoint = CGPoint(x: 0.5, y: 1)
+       ) {
+//           let existedBorder = CAGradientLayer()
+           let gradient = CAGradientLayer()
+           gradient.frame = bounds
+           gradient.colors = colors.map { return $0.cgColor }
+           gradient.startPoint = startPoint
+           gradient.endPoint = endPoint
+           
+           let mask = CAShapeLayer()
+           mask.path = UIBezierPath(roundedRect: bounds, cornerRadius: 8).cgPath
+           mask.fillColor = UIColor.clear.cgColor
+           mask.strokeColor = UIColor.white.cgColor
+           mask.lineWidth = width
+           
+           gradient.mask = mask
+           layer.addSublayer(gradient)
+//           let exists = existedBorder != nil
+//           if !exists {
+//               layer.addSublayer(gradient)
+//           }
+       }
     func gradientButton(_ buttonText: UIButton, startColor:UIColor, endColor:UIColor) {
-
-            var button: UIButton = UIButton(frame: self.bounds)
-            button = buttonText
-            let gradient = CAGradientLayer()
-            gradient.colors = [startColor.cgColor, endColor.cgColor]
-            gradient.startPoint = CGPoint(x: 0.0, y: 0.5)
-            gradient.endPoint = CGPoint(x: 1.0, y: 0.5)
-            gradient.frame = self.bounds
-            self.layer.insertSublayer(gradient, at: 0)
-            self.mask = button
+        //        var button = buttonText
+        //        button = UIButton(frame: self.bounds)
+        var button: UIButton = UIButton(frame: self.bounds)
+        button = buttonText
+        let gradient = CAGradientLayer()
+        gradient.colors = [startColor.cgColor, endColor.cgColor]
+        gradient.startPoint = CGPoint(x: 0.0, y: 0.5)
+        gradient.endPoint = CGPoint(x: 1.0, y: 0.5)
+        gradient.frame = self.bounds
+        self.layer.insertSublayer(gradient, at: 0)
+        self.mask = button
         //        // Create a gradient layer
         //        let gradient = CAGradientLayer()
         //
@@ -38,8 +67,22 @@ extension UIView {
         //
         //        // Tha magic! Set the button as the views mask
         //        viewDiamondButton.mask = diamondButton
-
-        }
+        
+    }
+    func gradientButton2(_ view: UIView, _ buttonText: UIButton, startColor:UIColor, endColor:UIColor) {
+        
+        var view1: UIView = UIView(frame: self.bounds)
+        view1 = view
+        var button: UIButton = UIButton(frame: view1.bounds)
+        button = buttonText
+        let gradient = CAGradientLayer()
+        gradient.colors = [startColor.cgColor, endColor.cgColor]
+        gradient.startPoint = CGPoint(x: 0.0, y: 0.5)
+        gradient.endPoint = CGPoint(x: 1.0, y: 0.5)
+        gradient.frame = view1.bounds
+        view1.layer.insertSublayer(gradient, at: 0)
+        view1.mask = button
+    }
 
     
     func applyGradient(colors: [UIColor], startPoint: CGPoint, endPoint: CGPoint, shape: CAShapeLayer?, corner: CGFloat) {
