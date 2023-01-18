@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var collectionButton: UIButton!
     @IBOutlet weak var customButton: UIButton!
     @IBOutlet weak var buyDiamondButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        title = "Home"
@@ -36,6 +37,7 @@ class ViewController: UIViewController {
         
         buyDiamondButton.layer.cornerRadius = 30
         buyDiamondButton.layer.borderWidth = 3
+        
     }
 
 

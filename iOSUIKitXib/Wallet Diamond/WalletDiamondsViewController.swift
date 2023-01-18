@@ -17,13 +17,8 @@ struct Diamond {
 class WalletDiamondsViewController: UIViewController {
     
     @IBOutlet weak var diamondButton: UIButton!
-    @IBOutlet weak var diamondVỉew: UIView!
-    
     @IBOutlet weak var rubyButton: UIButton!
-    @IBOutlet weak var rubyView: UIView!
-    
     @IBOutlet weak var roseButton: UIButton!
-    @IBOutlet weak var roseView: UIView!
     
     @IBOutlet weak var strokeView1: UIView!
     @IBOutlet weak var strokeView2: UIView!
@@ -53,15 +48,8 @@ class WalletDiamondsViewController: UIViewController {
         super.viewDidLoad()
         
         title = "18 Live +"
-//        UINavigationBarAppearance().titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Sarabun", size: 20)!, NSAttributedString.Key.foregroundColor: UIColor.black]
-      
-//        setNavigationBar()
-        setupButton()
         
-        strokeView1.layer.cornerRadius = 5
-        strokeView1.layer.borderColor = UIColor(red: 0.871, green: 0.845, blue: 0.845, alpha: 1).cgColor
-        strokeView2.layer.cornerRadius = 5
-        strokeView2.layer.borderColor = UIColor(red: 0.871, green: 0.845, blue: 0.845, alpha: 1).cgColor
+        setupSelectView()
         configCollectionView()
     }
     
@@ -72,21 +60,15 @@ class WalletDiamondsViewController: UIViewController {
         roseButton.tag = 2
         switch sender.tag {
         case 0:
-            print("btn1")
+            print("buton 1")
             setupViewDiamond()
         case 1:
-            print("select 2")
+            print("buton 2")
             setupViewRuby()
         default:
-            print("last button")
+            print("buton 3")
             setupViewRose()
         }
-    }
-    @IBAction func actionRuby(_ sender: UIButton) {
-//        setupViewRuby()
-    }
-    @IBAction func actionRose(_ sender: UIButton) {
-//        setupViewRose()
     }
     
     func configCollectionView() {
@@ -97,96 +79,55 @@ class WalletDiamondsViewController: UIViewController {
     }
 
     func setupViewDiamond() {
-        diamondButton.titleLabel?.font =  UIFont(name: "Sarabun-SemiBold", size: 14)
-//        diamondVỉew.gradientButton(diamondButton, startColor: UIColor(named: "8F4AFF")!, endColor: UIColor(named: "FF5B37")!)
-        diamondVỉew.gradientButton2(diamondVỉew, diamondButton, startColor: UIColor(named: "8F4AFF")!, endColor: UIColor(named: "FF5B37")!)
-        selectDiamondView.layer.cornerRadius = 1
+        diamondSuperView.isHidden = false
+        roseSuperView.isHidden = true
+        rubySuperView.isHidden = true
+        
+        selectDiamondView.isHidden = false
+        selectRubyView.isHidden = true
+        selectRoseView.isHidden = true
+        diamondButton.setTitleColor(UIColor(patternImage: UIImage.gradientButtonImage(bounds: diamondButton.bounds, colors: [UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!])), for: .normal)
         selectDiamondView.applyGradient(colors: [ UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!], startPoint: CGPoint(x: 0.0, y: 0.5), endPoint: CGPoint(x: 1.0, y: 0.5), shape: CAShapeLayer(), corner: 3)
         
-        rubyButton.titleLabel?.font =  UIFont(name: "Sarabun-SemiBold", size: 14)
-        rubyView.gradientButton2(rubyView, rubyButton, startColor: .black, endColor: .black)
-        selectRubyView.layer.cornerRadius = 1
-        selectRubyView.applyGradient(colors: [.clear, .clear], startPoint: CGPoint(x: 0.0, y: 0.5), endPoint: CGPoint(x: 1.0, y: 0.5), shape: CAShapeLayer(), corner: 3)
-
-        roseButton.titleLabel?.font =  UIFont(name: "Sarabun-SemiBold", size: 14)
-        roseView.gradientButton2(roseView, roseButton, startColor: .black, endColor: .black)
-        selectRoseView.layer.cornerRadius = 1
-        selectRoseView.applyGradient(colors: [.clear, .clear], startPoint: CGPoint(x: 0.0, y: 0.5), endPoint: CGPoint(x: 1.0, y: 0.5), shape: CAShapeLayer(), corner: 3)
+        rubyButton.setTitleColor(UIColor(named: "555050"), for: .normal)
+        roseButton.setTitleColor(UIColor(named: "555050"), for: .normal)
     }
     func setupViewRuby() {
+        diamondSuperView.isHidden = true
+        rubySuperView.isHidden = false
+        roseSuperView.isHidden = true
         
-        diamondButton.titleLabel?.font =  UIFont(name: "Sarabun-SemiBold", size: 14)
-        diamondButton.gradientButton2(diamondVỉew, diamondButton, startColor: .black, endColor: .black)
-        selectDiamondView.layer.cornerRadius = 1
-        selectDiamondView.applyGradient(colors: [.clear, .clear], startPoint: CGPoint(x: 0.0, y: 0.5), endPoint: CGPoint(x: 1.0, y: 0.5), shape: CAShapeLayer(), corner: 3)
-
-        roseButton.titleLabel?.font =  UIFont(name: "Sarabun-SemiBold", size: 14)
-        roseView.gradientButton2(roseView, roseButton, startColor: .black, endColor: .black)
-        selectRoseView.layer.cornerRadius = 1
-        selectRoseView.applyGradient(colors: [.clear, .clear], startPoint: CGPoint(x: 0.0, y: 0.5), endPoint: CGPoint(x: 1.0, y: 0.5), shape: CAShapeLayer(), corner: 3)
-        
-        rubyButton.titleLabel?.font =  UIFont(name: "Sarabun-SemiBold", size: 14)
-        rubyView.gradientButton2(rubyView, rubyButton, startColor: UIColor(named: "8F4AFF")!, endColor: UIColor(named: "FF5B37")!)
+        selectRubyView.isHidden = false
+        selectRoseView.isHidden = true
+        selectDiamondView.isHidden = true
+        rubyButton.setTitleColor(UIColor(patternImage: UIImage.gradientButtonImage(bounds: rubyButton.bounds, colors: [UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!])), for: .normal)
         selectRubyView.layer.cornerRadius = 1
         selectRubyView.applyGradient(colors: [ UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!], startPoint: CGPoint(x: 0.0, y: 0.5), endPoint: CGPoint(x: 1.0, y: 0.5), shape: CAShapeLayer(), corner: 3)
-    
+        
+        roseButton.setTitleColor(UIColor(named: "555050"), for: .normal)
+        diamondButton.setTitleColor(UIColor(named: "555050"), for: .normal)
     }
     func setupViewRose() {
+        diamondSuperView.isHidden = true
+        rubySuperView.isHidden = true
+        roseSuperView.isHidden = false
         
-//        rubyButton.setTitle("Ruby", for: .normal)
-        rubyButton.titleLabel?.font =  UIFont(name: "Sarabun-SemiBold", size: 14)
-        rubyView.gradientButton2(rubyView, rubyButton, startColor: .black, endColor: .black)
-        selectRubyView.layer.cornerRadius = 1
-        selectRubyView.applyGradient(colors: [.clear, .clear], startPoint: CGPoint(x: 0.0, y: 0.5), endPoint: CGPoint(x: 1.0, y: 0.5), shape: CAShapeLayer(), corner: 3)
-
-//        diamondButton.setTitle("Kim cương", for: .normal)
-        diamondButton.titleLabel?.font =  UIFont(name: "Sarabun-SemiBold", size: 14)
-        diamondButton.gradientButton2(diamondVỉew, diamondButton, startColor: .black, endColor: .black)
-        selectDiamondView.layer.cornerRadius = 1
-        selectDiamondView.applyGradient(colors: [.clear, .clear], startPoint: CGPoint(x: 0.0, y: 0.5), endPoint: CGPoint(x: 1.0, y: 0.5), shape: CAShapeLayer(), corner: 3)
-        
-//        roseButton.setTitle("Hoa hồng", for: .normal)
-        roseButton.titleLabel?.font =  UIFont(name: "Sarabun-SemiBold", size: 14)
-        roseView.gradientButton2(roseView, roseButton, startColor: UIColor(named: "8F4AFF")!, endColor: UIColor(named: "FF5B37")!)
-        selectRoseView.layer.cornerRadius = 1
+        selectRoseView.isHidden = false
+        selectRubyView.isHidden = true
+        selectDiamondView.isHidden = true
+        roseButton.setTitleColor(UIColor(patternImage: UIImage.gradientButtonImage(bounds: roseButton.bounds, colors: [UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!])), for: .normal)
         selectRoseView.applyGradient(colors: [ UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!], startPoint: CGPoint(x: 0.0, y: 0.5), endPoint: CGPoint(x: 1.0, y: 0.5), shape: CAShapeLayer(), corner: 3)
         
+        rubyButton.setTitleColor(UIColor(named: "555050"), for: .normal)
+        diamondButton.setTitleColor(UIColor(named: "555050"), for: .normal)
     }
-    func setupButton() {
-        diamondButton.titleLabel?.font =  UIFont(name: "Sarabun-SemiBold", size: 14)
-        diamondVỉew.gradientButton2(diamondVỉew, diamondButton, startColor: UIColor(named: "8F4AFF")!, endColor: UIColor(named: "FF5B37")!)
+    func setupSelectView() {
+        diamondSuperView.isHidden = false
         selectDiamondView.layer.cornerRadius = 1
-        selectDiamondView.applyGradient(colors: [UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!], startPoint: CGPoint(x: 0.0, y: 0.5), endPoint: CGPoint(x: 1.0, y: 0.5), shape: CAShapeLayer(), corner: 3)
-
-//        rubyButton.titleLabel?.font =  UIFont(name: "Sarabun-SemiBold", size: 14)
-//        rubyView.gradientButton(rubyButton, startColor: UIColor(named: "8F4AFF")!, endColor: UIColor(named: "FF5B37")!)
-//
-//        roseButton.titleLabel?.font =  UIFont(name: "Sarabun-SemiBold", size: 14)
-//        roseView.gradientButton(roseButton, startColor: UIColor(named: "8F4AFF")!, endColor: UIColor(named: "FF5B37")!)
-    }
-    func setNavigationBar() {
-
-        self.navigationItem.setHidesBackButton(true, animated:false)
-
-        //your custom view for back image with custom size
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 12.5, width: 12, height: 15))
-
-        if let imgBackArrow = UIImage(systemName: "chevron.backward") {
-            imageView.image = imgBackArrow
-            //Expand_left , chevron.backward
-        }
-        view.addSubview(imageView)
-
-        let backTap = UITapGestureRecognizer(target: self, action: #selector(backToMain))
-        view.addGestureRecognizer(backTap)
-
-        let leftBarButtonItem = UIBarButtonItem(customView: view )
-        self.navigationItem.leftBarButtonItem = leftBarButtonItem
-        navigationController?.navigationBar.tintColor = .black
-    }
-    @objc func backToMain() {
-        self.navigationController?.popViewController(animated: true)
+        selectRubyView.layer.cornerRadius = 1
+        selectRoseView.layer.cornerRadius = 1
+        diamondButton.setTitleColor(UIColor(patternImage: UIImage.gradientButtonImage(bounds: diamondButton.bounds, colors: [UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!])), for: .normal)
+        selectDiamondView.applyGradient(colors: [ UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!], startPoint: CGPoint(x: 0.0, y: 0.5), endPoint: CGPoint(x: 1.0, y: 0.5), shape: CAShapeLayer(), corner: 3)
     }
 }
 @available(iOS 13.0, *)
@@ -224,35 +165,16 @@ extension WalletDiamondsViewController: UICollectionViewDelegate, UICollectionVi
             cell.customView.backgroundColor =  UIColor(named: "SelectedCell")
             cell.layer.borderColor = gradientColor.cgColor
             cell.layer.borderWidth = 1.5
-//            cell.layer.masksToBounds = true
             cell.layer.cornerRadius = 8
             
             let cells = collectionView.cellForItem(at: self.selectIndexPath) as? buyDiamondCollectionViewCell
             cells?.customView.backgroundColor = UIColor(named: "CellDefault")
-//            cells?.layer.masksToBounds = true
             cells?.layer.borderColor = UIColor.systemBackground.cgColor
             cells?.layer.borderWidth = 0
-//            cells?.layer.masksToBounds = true
-//            cells?.layer.cornerRadius = 8
             self.selectIndexPath = indexPath
         }
             
     }
     
 }
-extension UICollectionViewCell{
-    static func gradientImage(bounds: CGRect, colors: [UIColor]) -> UIImage {
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = bounds
-        gradientLayer.colors = colors.map(\.cgColor)
 
-        // This makes it left to right, default is top to bottom
-        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
-        gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
-        let renderer = UIGraphicsImageRenderer(bounds: bounds)
-
-        return renderer.image { ctx in
-            gradientLayer.render(in: ctx.cgContext)
-        }
-    }
-}
