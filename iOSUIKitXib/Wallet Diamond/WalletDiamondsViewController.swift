@@ -142,9 +142,10 @@ extension WalletDiamondsViewController: UICollectionViewDelegate, UICollectionVi
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        let collectionViewWidth = collectionView.bounds.width
-//        return CGSize(width: collectionViewWidth/3, height: collectionViewWidth/3)
-        return CGSize(width: 109.0, height: 67.0)
+        let collectionViewWidth = UIScreen.main.bounds.width
+        let collectionViewHeight = collectionView.bounds.height
+        return CGSize(width: (collectionViewWidth - (16 + 46))/3 , height: (collectionViewHeight / 2) - 8)
+//        return CGSize(width: 109.0, height: 67.0)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 8
@@ -153,9 +154,9 @@ extension WalletDiamondsViewController: UICollectionViewDelegate, UICollectionVi
         return 8
     }
     //    //  set padding cho 4 cạnh colectionView
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return .init(top: 0, left: 23, bottom: 20, right: 23)
-    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+//        return .init(top: 0, left: 23, bottom: 0, right: 23)
+//    }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if selectIndexPath != indexPath {
             let cell = collectionView.cellForItem(at: indexPath) as! buyDiamondCollectionViewCell

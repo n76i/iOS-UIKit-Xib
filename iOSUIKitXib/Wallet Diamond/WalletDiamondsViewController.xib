@@ -43,10 +43,10 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GradientScreen" translatesAutoresizingMaskIntoConstraints="NO" id="OhE-A9-wDl">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GradientScreen" translatesAutoresizingMaskIntoConstraints="NO" id="OhE-A9-wDl">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image 12" translatesAutoresizingMaskIntoConstraints="NO" id="8Dq-L7-VSE">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image 12" translatesAutoresizingMaskIntoConstraints="NO" id="8Dq-L7-VSE">
                     <rect key="frame" x="0.0" y="300" width="375" height="512"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KHG-a1-jtW">
@@ -61,7 +61,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zhd-fq-ImQ">
                             <rect key="frame" x="16" y="0.0" width="343" height="103"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frame 31828" translatesAutoresizingMaskIntoConstraints="NO" id="dzh-eK-P1V">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frame 31828" translatesAutoresizingMaskIntoConstraints="NO" id="dzh-eK-P1V">
                                     <rect key="frame" x="0.0" y="0.0" width="343" height="103"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </imageView>
@@ -156,12 +156,12 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="eFf-17-uXh">
-                            <rect key="frame" x="0.0" y="146" width="375" height="160"/>
+                            <rect key="frame" x="23" y="146" width="329" height="160"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="160" id="igZ-1v-cPg"/>
                             </constraints>
-                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uA9-lS-25N">
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="uA9-lS-25N">
                                 <size key="itemSize" width="128" height="128"/>
                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                 <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -182,10 +182,10 @@
                         <constraint firstAttribute="trailing" secondItem="aLE-MR-4LM" secondAttribute="trailing" constant="16" id="Hkk-Ww-JiX"/>
                         <constraint firstItem="aLE-MR-4LM" firstAttribute="leading" secondItem="r14-L8-90n" secondAttribute="leading" constant="16" id="Jry-DS-HDQ"/>
                         <constraint firstItem="vZi-7d-FA5" firstAttribute="leading" secondItem="r14-L8-90n" secondAttribute="leading" constant="26" id="UDv-YS-0Yt"/>
-                        <constraint firstAttribute="trailing" secondItem="eFf-17-uXh" secondAttribute="trailing" id="UHb-ht-g5j"/>
+                        <constraint firstAttribute="trailing" secondItem="eFf-17-uXh" secondAttribute="trailing" constant="23" id="UHb-ht-g5j"/>
                         <constraint firstItem="eFf-17-uXh" firstAttribute="top" secondItem="vZi-7d-FA5" secondAttribute="bottom" constant="17" id="h4G-eg-yMc"/>
                         <constraint firstItem="Zhd-fq-ImQ" firstAttribute="leading" secondItem="r14-L8-90n" secondAttribute="leading" constant="16" id="jOQ-Qo-dlG"/>
-                        <constraint firstItem="eFf-17-uXh" firstAttribute="leading" secondItem="r14-L8-90n" secondAttribute="leading" id="mMf-GE-Vu3"/>
+                        <constraint firstItem="eFf-17-uXh" firstAttribute="leading" secondItem="r14-L8-90n" secondAttribute="leading" constant="23" id="mMf-GE-Vu3"/>
                         <constraint firstAttribute="trailing" secondItem="Zhd-fq-ImQ" secondAttribute="trailing" constant="16" id="mk8-nu-FMy"/>
                         <constraint firstItem="Zhd-fq-ImQ" firstAttribute="top" secondItem="r14-L8-90n" secondAttribute="top" id="va5-tx-H7y"/>
                     </constraints>
