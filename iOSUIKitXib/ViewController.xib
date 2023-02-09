@@ -9,6 +9,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Sarabun-Regular.ttf">
+            <string>Sarabun-Regular</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="iOSUIKitXib" customModuleProvider="target">
             <connections>
@@ -102,6 +107,24 @@
             </constraints>
             <point key="canvasLocation" x="-63.358778625954194" y="-11.267605633802818"/>
         </view>
+        <viewController id="0lZ-X9-8Ac">
+            <view key="view" contentMode="scaleToFill" id="yUs-Kg-Sbf">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ọdqfqnfq" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60A-2C-Df8">
+                        <rect key="frame" x="89" y="228" width="165" height="262"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="Sarabun-Regular" family="Sarabun" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <viewLayoutGuide key="safeArea" id="a9J-2t-TTo"/>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            </view>
+            <point key="canvasLocation" x="922.90076335877859" y="97.887323943661983"/>
+        </viewController>
     </objects>
     <resources>
         <namedColor name="8F4AFF">

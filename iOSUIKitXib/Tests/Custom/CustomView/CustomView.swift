@@ -30,6 +30,7 @@ class CustomView: UIView {
         self.addSubview(containView)
         containView.frame = self.bounds
         containView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        
         myLabelText.font = .systemFont(ofSize: 20)
         myImage.contentMode = .scaleAspectFill
         myImage.layer.cornerRadius = 100

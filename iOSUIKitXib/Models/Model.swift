@@ -8,6 +8,14 @@
 import Foundation
 import UIKit
 
+struct DataManager {
+    let showImage: String
+    let nameTitleLabel: String
+    let notifyImage: String
+    let nextImage: String
+    let isHiden: Bool
+}
+
 struct Models {
     let text: String
     let imageName: String
