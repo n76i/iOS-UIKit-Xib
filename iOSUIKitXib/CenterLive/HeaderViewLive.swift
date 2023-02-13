@@ -1,17 +1,15 @@
 //
-//  HeaderView.swift
+//  HeaderViewLive.swift
 //  iOSUIKitXib
 //
-//  Created by Van Ngoc An  on 09/02/2023.
+//  Created by Van Ngoc An  on 10/02/2023.
 //
 
 import UIKit
 
-class HeaderView: UIView {
-    
+class HeaderViewLive: UIView {
+
     @IBOutlet var containView: UIView!
-    
-    var callBack: (() -> Void)? = nil
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -21,21 +19,11 @@ class HeaderView: UIView {
         super.init(coder: coder)
         setupView()
     }
-    @IBAction func actionEvent(_ sender: Any) {
-        
-    }
-    @IBAction func actionCenterLive(_ sender: Any) {
-        
-        callBack?()
-        
-    }
-    
     
     private func setupView() {
-        Bundle.main.loadNibNamed("HeaderView", owner: self)
+        Bundle.main.loadNibNamed("HeaderViewLive", owner: self)
         self.addSubview(containView)
         containView.frame = self.bounds
         containView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     }
-
 }

@@ -146,7 +146,7 @@
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nạp kim cương" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZi-7d-FA5">
-                            <rect key="frame" x="26" y="103" width="125" height="26"/>
+                            <rect key="frame" x="26" y="115" width="125" height="26"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="26" id="Eg6-mv-3Ip"/>
                                 <constraint firstAttribute="width" constant="125" id="fre-YZ-0Mg"/>
@@ -156,7 +156,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="eFf-17-uXh">
-                            <rect key="frame" x="23" y="146" width="329" height="160"/>
+                            <rect key="frame" x="23" y="158" width="329" height="160"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="160" id="igZ-1v-cPg"/>
@@ -169,7 +169,7 @@
                             </collectionViewFlowLayout>
                         </collectionView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aLE-MR-4LM">
-                            <rect key="frame" x="16" y="322" width="343" height="1"/>
+                            <rect key="frame" x="16" y="334" width="343" height="1"/>
                             <color key="backgroundColor" red="0.96078431610000004" green="0.96078431610000004" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="K3O-C8-uWP"/>
@@ -177,7 +177,7 @@
                         </view>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="vZi-7d-FA5" firstAttribute="top" secondItem="Zhd-fq-ImQ" secondAttribute="bottom" id="DKN-K2-dS1"/>
+                        <constraint firstItem="vZi-7d-FA5" firstAttribute="top" secondItem="Zhd-fq-ImQ" secondAttribute="bottom" constant="12" id="DKN-K2-dS1"/>
                         <constraint firstItem="aLE-MR-4LM" firstAttribute="top" secondItem="eFf-17-uXh" secondAttribute="bottom" constant="16" id="FWt-ah-dJS"/>
                         <constraint firstAttribute="trailing" secondItem="aLE-MR-4LM" secondAttribute="trailing" constant="16" id="Hkk-Ww-JiX"/>
                         <constraint firstItem="aLE-MR-4LM" firstAttribute="leading" secondItem="r14-L8-90n" secondAttribute="leading" constant="16" id="Jry-DS-HDQ"/>

@@ -27,18 +27,23 @@ class ProfileViewController: UIViewController {
         [DataManager(showImage: "Đăng xuất", nameTitleLabel: "Đăng suất", notifyImage: "Group 31977", nextImage: "Group 8689", isHiden: true)]
     ]
     
-    var data = [
-        ["Thích", "Chơi", "Thể", "Thao"],
-        ["Văn", "Ngọc", "An", "Vĩnh", "Phúc"],
-        ["Vui", "Vẻ"],
-        ["Năng động"]
-    ]
-//    var section = [" ", " ", " ", " "]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+     
+        let backButton = UIBarButtonItem(title: " ", style: .plain, target: self, action: nil)
+        navigationItem.backBarButtonItem = backButton
+        backButton.tintColor = .black
+        
         
        configTableView()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
     func configTableView() {
         tableView.delegate = self
@@ -73,6 +78,9 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
         case 0:
 //            let header = HeaderView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 310))
             let header = HeaderView()
+            header.callBack = {
+                self.navigationController?.pushViewController(LiveCenterViewController(), animated: true)
+            }
             return header
         default:
             return nil

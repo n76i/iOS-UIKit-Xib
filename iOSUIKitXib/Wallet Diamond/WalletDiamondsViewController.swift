@@ -86,7 +86,7 @@ class WalletDiamondsViewController: UIViewController {
         selectDiamondView.isHidden = false
         selectRubyView.isHidden = true
         selectRoseView.isHidden = true
-        diamondButton.setTitleColor(UIColor(patternImage: UIImage.gradientButtonImage(bounds: diamondButton.bounds, colors: [UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!])), for: .normal)
+        diamondButton.setTitleColor(UIColor(patternImage: UIImage.gradientButtonImage(bounds: CGRect(x: 0, y: 0, width: 80, height: 29), colors: [UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!])), for: .normal)
         selectDiamondView.applyGradient(colors: [ UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!], startPoint: CGPoint(x: 0.0, y: 0.5), endPoint: CGPoint(x: 1.0, y: 0.5), shape: CAShapeLayer(), corner: 3)
         
         rubyButton.setTitleColor(UIColor(named: "555050"), for: .normal)
@@ -100,9 +100,9 @@ class WalletDiamondsViewController: UIViewController {
         selectRubyView.isHidden = false
         selectRoseView.isHidden = true
         selectDiamondView.isHidden = true
-        rubyButton.setTitleColor(UIColor(patternImage: UIImage.gradientButtonImage(bounds: rubyButton.bounds, colors: [UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!])), for: .normal)
+        rubyButton.setTitleColor(UIColor(patternImage: UIImage.gradientButtonImage(bounds: CGRect(x: 0, y: 0, width: 40, height: 29), colors: [UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!])), for: .normal)
         selectRubyView.layer.cornerRadius = 1
-        selectRubyView.applyGradient(colors: [ UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!], startPoint: CGPoint(x: 0.0, y: 0.5), endPoint: CGPoint(x: 1.0, y: 0.5), shape: CAShapeLayer(), corner: 3)
+        selectRubyView.applyGradient(colors: [UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!], startPoint: CGPoint(x: 0.0, y: 0.5), endPoint: CGPoint(x: 1.0, y: 0.5), shape: CAShapeLayer(), corner: 3)
         
         roseButton.setTitleColor(UIColor(named: "555050"), for: .normal)
         diamondButton.setTitleColor(UIColor(named: "555050"), for: .normal)
@@ -115,7 +115,7 @@ class WalletDiamondsViewController: UIViewController {
         selectRoseView.isHidden = false
         selectRubyView.isHidden = true
         selectDiamondView.isHidden = true
-        roseButton.setTitleColor(UIColor(patternImage: UIImage.gradientButtonImage(bounds: roseButton.bounds, colors: [UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!])), for: .normal)
+        roseButton.setTitleColor(UIColor(patternImage: UIImage.gradientButtonImage(bounds: CGRect(x: 0, y: 0, width: 70, height: 29), colors: [UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!])), for: .normal)
         selectRoseView.applyGradient(colors: [ UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!], startPoint: CGPoint(x: 0.0, y: 0.5), endPoint: CGPoint(x: 1.0, y: 0.5), shape: CAShapeLayer(), corner: 3)
         
         rubyButton.setTitleColor(UIColor(named: "555050"), for: .normal)
@@ -126,7 +126,7 @@ class WalletDiamondsViewController: UIViewController {
         selectDiamondView.layer.cornerRadius = 1
         selectRubyView.layer.cornerRadius = 1
         selectRoseView.layer.cornerRadius = 1
-        diamondButton.setTitleColor(UIColor(patternImage: UIImage.gradientButtonImage(bounds: diamondButton.bounds, colors: [UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!])), for: .normal)
+        diamondButton.setTitleColor(UIColor(patternImage: UIImage.gradientButtonImage(bounds: CGRect(x: 0, y: 0, width: 80, height: 29), colors: [UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!])), for: .normal)
         selectDiamondView.applyGradient(colors: [ UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!], startPoint: CGPoint(x: 0.0, y: 0.5), endPoint: CGPoint(x: 1.0, y: 0.5), shape: CAShapeLayer(), corner: 3)
     }
 }

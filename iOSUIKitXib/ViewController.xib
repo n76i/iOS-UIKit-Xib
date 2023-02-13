@@ -125,6 +125,51 @@
             </view>
             <point key="canvasLocation" x="922.90076335877859" y="97.887323943661983"/>
         </viewController>
+        <tabBarController id="o3p-eu-hPN">
+            <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bM8-7x-cZq">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            </tabBar>
+            <viewControllers>
+                <viewController id="D1e-Y0-v6H">
+                    <view key="view" contentMode="scaleToFill" id="fft-7P-MKq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ivS-Zq-xUw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="3KF-g2-ZYd"/>
+                </viewController>
+                <viewController id="DWx-85-cMH">
+                    <view key="view" contentMode="scaleToFill" id="fdZ-iX-eSa">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hRm-Sr-M7y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="c1F-0v-pJU"/>
+                </viewController>
+            </viewControllers>
+            <point key="canvasLocation" x="1773" y="6"/>
+        </tabBarController>
+        <viewController id="9a1-IR-ucV">
+            <view key="view" contentMode="scaleToFill" id="TOy-oV-Me4">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6pv-eb-8Id">
+                        <rect key="frame" x="178" y="334" width="97" height="34"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <viewLayoutGuide key="safeArea" id="xcb-qM-6cz"/>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            </view>
+            <point key="canvasLocation" x="2619" y="-69"/>
+        </viewController>
     </objects>
     <resources>
         <namedColor name="8F4AFF">

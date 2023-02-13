@@ -35,6 +35,21 @@
 		5691439F29753E01001E1E5E /* WalletDiamondsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5691439D29753E01001E1E5E /* WalletDiamondsViewController.xib */; };
 		569143A329754CF1001E1E5E /* buyDiamondCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569143A129754CF1001E1E5E /* buyDiamondCollectionViewCell.swift */; };
 		569143A429754CF1001E1E5E /* buyDiamondCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569143A229754CF1001E1E5E /* buyDiamondCollectionViewCell.xib */; };
+		569B720A2995E0FE00104EE5 /* OptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569B72082995E0FE00104EE5 /* OptionTableViewCell.swift */; };
+		569B720B2995E0FE00104EE5 /* OptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569B72092995E0FE00104EE5 /* OptionTableViewCell.xib */; };
+		569B720E2995E1AC00104EE5 /* LiveCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569B720C2995E1AC00104EE5 /* LiveCenterViewController.swift */; };
+		569B720F2995E1AC00104EE5 /* LiveCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569B720D2995E1AC00104EE5 /* LiveCenterViewController.xib */; };
+		569B72122995E39300104EE5 /* HeaderViewLive.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569B72112995E39300104EE5 /* HeaderViewLive.xib */; };
+		569B72142995E51300104EE5 /* HeaderViewLive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569B72132995E51300104EE5 /* HeaderViewLive.swift */; };
+		569B721829961D6B00104EE5 /* VideoPlaybackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569B721629961D6B00104EE5 /* VideoPlaybackViewController.swift */; };
+		569B721929961D6B00104EE5 /* VideoPlaybackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569B721729961D6B00104EE5 /* VideoPlaybackViewController.xib */; };
+		569B721C2996261800104EE5 /* ListVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569B721A2996261800104EE5 /* ListVideoTableViewCell.swift */; };
+		569B721D2996261800104EE5 /* ListVideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569B721B2996261800104EE5 /* ListVideoTableViewCell.xib */; };
+		569B722129962B1000104EE5 /* ListPostedVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569B721F29962B1000104EE5 /* ListPostedVideoTableViewCell.swift */; };
+		569B722229962B1000104EE5 /* ListPostedVideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569B722029962B1000104EE5 /* ListPostedVideoTableViewCell.xib */; };
+		569B722429964DFF00104EE5 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569B722329964DFF00104EE5 /* BaseTableViewCell.swift */; };
+		569B72682999D82500104EE5 /* EditVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569B72662999D82500104EE5 /* EditVideoViewController.swift */; };
+		569B72692999D82500104EE5 /* EditVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569B72672999D82500104EE5 /* EditVideoViewController.xib */; };
 		569DA5C9296D59FB001003A1 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569DA5C7296D59FB001003A1 /* CollectionViewController.swift */; };
 		569DA5CA296D59FB001003A1 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569DA5C8296D59FB001003A1 /* CollectionViewController.xib */; };
 		569DA5CD296D5A44001003A1 /* TestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569DA5CB296D5A44001003A1 /* TestCollectionViewCell.swift */; };
@@ -93,6 +108,21 @@
 		5691439D29753E01001E1E5E /* WalletDiamondsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletDiamondsViewController.xib; sourceTree = "<group>"; };
 		569143A129754CF1001E1E5E /* buyDiamondCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buyDiamondCollectionViewCell.swift; sourceTree = "<group>"; };
 		569143A229754CF1001E1E5E /* buyDiamondCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = buyDiamondCollectionViewCell.xib; sourceTree = "<group>"; };
+		569B72082995E0FE00104EE5 /* OptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionTableViewCell.swift; sourceTree = "<group>"; };
+		569B72092995E0FE00104EE5 /* OptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionTableViewCell.xib; sourceTree = "<group>"; };
+		569B720C2995E1AC00104EE5 /* LiveCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCenterViewController.swift; sourceTree = "<group>"; };
+		569B720D2995E1AC00104EE5 /* LiveCenterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveCenterViewController.xib; sourceTree = "<group>"; };
+		569B72112995E39300104EE5 /* HeaderViewLive.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderViewLive.xib; sourceTree = "<group>"; };
+		569B72132995E51300104EE5 /* HeaderViewLive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewLive.swift; sourceTree = "<group>"; };
+		569B721629961D6B00104EE5 /* VideoPlaybackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlaybackViewController.swift; sourceTree = "<group>"; };
+		569B721729961D6B00104EE5 /* VideoPlaybackViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoPlaybackViewController.xib; sourceTree = "<group>"; };
+		569B721A2996261800104EE5 /* ListVideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVideoTableViewCell.swift; sourceTree = "<group>"; };
+		569B721B2996261800104EE5 /* ListVideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListVideoTableViewCell.xib; sourceTree = "<group>"; };
+		569B721F29962B1000104EE5 /* ListPostedVideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostedVideoTableViewCell.swift; sourceTree = "<group>"; };
+		569B722029962B1000104EE5 /* ListPostedVideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPostedVideoTableViewCell.xib; sourceTree = "<group>"; };
+		569B722329964DFF00104EE5 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		569B72662999D82500104EE5 /* EditVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVideoViewController.swift; sourceTree = "<group>"; };
+		569B72672999D82500104EE5 /* EditVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditVideoViewController.xib; sourceTree = "<group>"; };
 		569DA5C7296D59FB001003A1 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		569DA5C8296D59FB001003A1 /* CollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
 		569DA5CB296D5A44001003A1 /* TestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -156,6 +186,9 @@
 				4923970A293EF96900CC84FA /* Assets.xcassets */,
 				4923970C293EF96900CC84FA /* LaunchScreen.storyboard */,
 				4923970F293EF96900CC84FA /* Info.plist */,
+				569B72652999D7FE00104EE5 /* EditVideo */,
+				569B721529961CE900104EE5 /* VideoPlayback */,
+				569B72072995E05000104EE5 /* CenterLive */,
 				563FC2FF29948C24009254DE /* Profile */,
 				56914395297142E8001E1E5E /* Wallet Diamond */,
 				649D39422959849D005E1E89 /* BuyDiamonds */,
@@ -236,6 +269,58 @@
 				569143A229754CF1001E1E5E /* buyDiamondCollectionViewCell.xib */,
 			);
 			path = CellCollect;
+			sourceTree = "<group>";
+		};
+		569B72072995E05000104EE5 /* CenterLive */ = {
+			isa = PBXGroup;
+			children = (
+				569B720C2995E1AC00104EE5 /* LiveCenterViewController.swift */,
+				569B720D2995E1AC00104EE5 /* LiveCenterViewController.xib */,
+				569B72102995E1BD00104EE5 /* Cell */,
+				569B72132995E51300104EE5 /* HeaderViewLive.swift */,
+				569B72112995E39300104EE5 /* HeaderViewLive.xib */,
+			);
+			path = CenterLive;
+			sourceTree = "<group>";
+		};
+		569B72102995E1BD00104EE5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				569B72082995E0FE00104EE5 /* OptionTableViewCell.swift */,
+				569B72092995E0FE00104EE5 /* OptionTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		569B721529961CE900104EE5 /* VideoPlayback */ = {
+			isa = PBXGroup;
+			children = (
+				569B721629961D6B00104EE5 /* VideoPlaybackViewController.swift */,
+				569B721729961D6B00104EE5 /* VideoPlaybackViewController.xib */,
+				569B721E2996261E00104EE5 /* Cell */,
+			);
+			path = VideoPlayback;
+			sourceTree = "<group>";
+		};
+		569B721E2996261E00104EE5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				569B721A2996261800104EE5 /* ListVideoTableViewCell.swift */,
+				569B721B2996261800104EE5 /* ListVideoTableViewCell.xib */,
+				569B721F29962B1000104EE5 /* ListPostedVideoTableViewCell.swift */,
+				569B722029962B1000104EE5 /* ListPostedVideoTableViewCell.xib */,
+				569B722329964DFF00104EE5 /* BaseTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		569B72652999D7FE00104EE5 /* EditVideo */ = {
+			isa = PBXGroup;
+			children = (
+				569B72662999D82500104EE5 /* EditVideoViewController.swift */,
+				569B72672999D82500104EE5 /* EditVideoViewController.xib */,
+			);
+			path = EditVideo;
 			sourceTree = "<group>";
 		};
 		569DA5CF296D6B34001003A1 /* Custom */ = {
@@ -407,10 +492,15 @@
 				569DA5DD296D6CB9001003A1 /* MyCollectionViewCell.xib in Resources */,
 				569DA5CA296D59FB001003A1 /* CollectionViewController.xib in Resources */,
 				569DA5D3296D6B71001003A1 /* CustomCollecVsTableViewController.xib in Resources */,
+				569B721929961D6B00104EE5 /* VideoPlaybackViewController.xib in Resources */,
 				56B56226296FEA910055271F /* TestViewViewController.xib in Resources */,
 				564907A12967C71A00CD768C /* PresentViewController.xib in Resources */,
 				564907A5296BF17100CD768C /* TableViewController.xib in Resources */,
+				569B721D2996261800104EE5 /* ListVideoTableViewCell.xib in Resources */,
 				4923970E293EF96900CC84FA /* LaunchScreen.storyboard in Resources */,
+				569B72692999D82500104EE5 /* EditVideoViewController.xib in Resources */,
+				569B720F2995E1AC00104EE5 /* LiveCenterViewController.xib in Resources */,
+				569B722229962B1000104EE5 /* ListPostedVideoTableViewCell.xib in Resources */,
 				563FC3052994965C009254DE /* HeaderView.xib in Resources */,
 				649D394E29599CE0005E1E89 /* DiamondCell.xib in Resources */,
 				649D394929599288005E1E89 /* Sarabun in Resources */,
@@ -418,6 +508,7 @@
 				569DA5CE296D5A44001003A1 /* TestCollectionViewCell.xib in Resources */,
 				564907992966A30600CD768C /* SecondViewController.xib in Resources */,
 				49239716293EFAB600CC84FA /* ViewController.xib in Resources */,
+				569B72122995E39300104EE5 /* HeaderViewLive.xib in Resources */,
 				564907952966703C00CD768C /* TestViewController.xib in Resources */,
 				563FC30329948C77009254DE /* ProfileViewController.xib in Resources */,
 				563FC30C2994CEF1009254DE /* ListSettingTableViewCell.xib in Resources */,
@@ -425,6 +516,7 @@
 				564907A9296BF4DE00CD768C /* TestTableViewCell.xib in Resources */,
 				5691439F29753E01001E1E5E /* WalletDiamondsViewController.xib in Resources */,
 				569143A429754CF1001E1E5E /* buyDiamondCollectionViewCell.xib in Resources */,
+				569B720B2995E0FE00104EE5 /* OptionTableViewCell.xib in Resources */,
 				4923970B293EF96900CC84FA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,22 +531,30 @@
 				564907982966A30600CD768C /* SecondViewController.swift in Sources */,
 				64D3A1C7295C2E25007EC7E3 /* UIViewExt.swift in Sources */,
 				5649079C2966D57900CD768C /* StackViewViewController.swift in Sources */,
+				569B72142995E51300104EE5 /* HeaderViewLive.swift in Sources */,
+				569B722429964DFF00104EE5 /* BaseTableViewCell.swift in Sources */,
 				49239706293EF96800CC84FA /* ViewController.swift in Sources */,
 				564907942966703C00CD768C /* TestViewController.swift in Sources */,
 				564907A8296BF4DE00CD768C /* TestTableViewCell.swift in Sources */,
 				563FC30B2994CEF1009254DE /* ListSettingTableViewCell.swift in Sources */,
 				563FC30229948C77009254DE /* ProfileViewController.swift in Sources */,
+				569B720A2995E0FE00104EE5 /* OptionTableViewCell.swift in Sources */,
 				649D394D29599CE0005E1E89 /* DiamondCell.swift in Sources */,
+				569B721C2996261800104EE5 /* ListVideoTableViewCell.swift in Sources */,
 				569DA5DC296D6CB9001003A1 /* MyCollectionViewCell.swift in Sources */,
+				569B720E2995E1AC00104EE5 /* LiveCenterViewController.swift in Sources */,
 				56B56225296FEA910055271F /* TestViewViewController.swift in Sources */,
 				569143A329754CF1001E1E5E /* buyDiamondCollectionViewCell.swift in Sources */,
 				64D3A1C5295C209A007EC7E3 /* StringExt.swift in Sources */,
 				569DA5C9296D59FB001003A1 /* CollectionViewController.swift in Sources */,
+				569B722129962B1000104EE5 /* ListPostedVideoTableViewCell.swift in Sources */,
 				564907A02967C71A00CD768C /* PresentViewController.swift in Sources */,
 				569DA5EB296FE0EC001003A1 /* CustomView.swift in Sources */,
 				64EF85FD295C4154000F4EBB /* UIButton.swift in Sources */,
 				569DA5CD296D5A44001003A1 /* TestCollectionViewCell.swift in Sources */,
 				64D3A1BF2959A8BA007EC7E3 /* IntExt.swift in Sources */,
+				569B721829961D6B00104EE5 /* VideoPlaybackViewController.swift in Sources */,
+				569B72682999D82500104EE5 /* EditVideoViewController.swift in Sources */,
 				649D394529598520005E1E89 /* BuyDiamondsVC.swift in Sources */,
 				569DA5D8296D6C8F001003A1 /* CollectionTableViewCell.swift in Sources */,
 				64D3A1BC2959A5D8007EC7E3 /* DiamondModel.swift in Sources */,

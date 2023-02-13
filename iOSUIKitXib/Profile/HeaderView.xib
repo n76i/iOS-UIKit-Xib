@@ -61,16 +61,16 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uhd-du-6r7">
-                    <rect key="frame" x="126" y="176" width="123" height="19"/>
+                    <rect key="frame" x="30.333333333333343" y="176" width="314.33333333333326" height="19"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID: 12346877" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyt-dM-W2h">
-                            <rect key="frame" x="0.0" y="0.0" width="70" height="19"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID: 1234687700000000000000000000000000000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyt-dM-W2h">
+                            <rect key="frame" x="0.0" y="0.0" width="261.33333333333331" height="19"/>
                             <fontDescription key="fontDescription" name="Sarabun-Regular" family="Sarabun" pointSize="12"/>
                             <color key="textColor" red="0.60784316059999999" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sfv-Q2-bmr">
-                            <rect key="frame" x="78" y="0.0" width="45" height="19"/>
+                            <rect key="frame" x="269.33333333333337" y="0.0" width="45" height="19"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="19" id="qty-rq-7ju"/>
                             </constraints>

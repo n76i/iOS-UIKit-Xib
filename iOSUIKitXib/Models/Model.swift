@@ -15,6 +15,10 @@ struct DataManager {
     let nextImage: String
     let isHiden: Bool
 }
+struct DataVideo {
+    let nameImage: String
+    let titleString: String
+}
 
 struct Models {
     let text: String
