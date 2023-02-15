@@ -127,7 +127,7 @@ class WalletDiamondsViewController: UIViewController {
         selectRubyView.layer.cornerRadius = 1
         selectRoseView.layer.cornerRadius = 1
         diamondButton.setTitleColor(UIColor(patternImage: UIImage.gradientButtonImage(bounds: CGRect(x: 0, y: 0, width: 80, height: 29), colors: [UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!])), for: .normal)
-        selectDiamondView.applyGradient(colors: [ UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!], startPoint: CGPoint(x: 0.0, y: 0.5), endPoint: CGPoint(x: 1.0, y: 0.5), shape: CAShapeLayer(), corner: 3)
+        selectDiamondView.applyGradient(colors: [UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!], startPoint: CGPoint(x: 0.0, y: 0.5), endPoint: CGPoint(x: 1.0, y: 0.5), shape: CAShapeLayer(), corner: 3)
     }
 }
 @available(iOS 13.0, *)

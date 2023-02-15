@@ -27,13 +27,13 @@
                         <rect key="frame" x="205" y="12" width="232" height="176"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload up to eight 7-inch tablet screenshots. Screen shots must be" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P24-CT-f4Z">
-                                <rect key="frame" x="0.0" y="0.0" width="232" height="36.666666666666664"/>
+                                <rect key="frame" x="0.0" y="0.0" width="232" height="123"/>
                                 <fontDescription key="fontDescription" name="Sarabun-Regular" family="Sarabun" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15:30   08/02/2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gW6-se-ch9">
-                                <rect key="frame" x="0.0" y="40.666666666666664" width="232" height="18"/>
+                                <rect key="frame" x="0.0" y="127" width="232" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="XXW-0x-HQu"/>
                                 </constraints>

@@ -50,6 +50,12 @@
 		569B722429964DFF00104EE5 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569B722329964DFF00104EE5 /* BaseTableViewCell.swift */; };
 		569B72682999D82500104EE5 /* EditVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569B72662999D82500104EE5 /* EditVideoViewController.swift */; };
 		569B72692999D82500104EE5 /* EditVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569B72672999D82500104EE5 /* EditVideoViewController.xib */; };
+		569B7270299B226C00104EE5 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569B726E299B226C00104EE5 /* Cell.swift */; };
+		569B7271299B226C00104EE5 /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569B726F299B226C00104EE5 /* Cell.xib */; };
+		569B7275299B303E00104EE5 /* GiveAGiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569B7273299B303E00104EE5 /* GiveAGiftViewController.swift */; };
+		569B7276299B303E00104EE5 /* GiveAGiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569B7274299B303E00104EE5 /* GiveAGiftViewController.xib */; };
+		569B7278299B63D700104EE5 /* BoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569B7277299B63D700104EE5 /* BoxView.xib */; };
+		569B727A299B6D1600104EE5 /* BoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569B7279299B6D1600104EE5 /* BoxView.swift */; };
 		569DA5C9296D59FB001003A1 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569DA5C7296D59FB001003A1 /* CollectionViewController.swift */; };
 		569DA5CA296D59FB001003A1 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569DA5C8296D59FB001003A1 /* CollectionViewController.xib */; };
 		569DA5CD296D5A44001003A1 /* TestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569DA5CB296D5A44001003A1 /* TestCollectionViewCell.swift */; };
@@ -65,6 +71,7 @@
 		569DA5EB296FE0EC001003A1 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569DA5EA296FE0EC001003A1 /* CustomView.swift */; };
 		56B56225296FEA910055271F /* TestViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B56223296FEA910055271F /* TestViewViewController.swift */; };
 		56B56226296FEA910055271F /* TestViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B56224296FEA910055271F /* TestViewViewController.xib */; };
+		56F9F2FE299BD9A0002E964D /* Modelsss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F9F2FD299BD9A0002E964D /* Modelsss.swift */; };
 		649D394529598520005E1E89 /* BuyDiamondsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649D394329598520005E1E89 /* BuyDiamondsVC.swift */; };
 		649D394629598520005E1E89 /* BuyDiamondsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 649D394429598520005E1E89 /* BuyDiamondsVC.xib */; };
 		649D394929599288005E1E89 /* Sarabun in Resources */ = {isa = PBXBuildFile; fileRef = 649D394829599288005E1E89 /* Sarabun */; };
@@ -123,6 +130,12 @@
 		569B722329964DFF00104EE5 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		569B72662999D82500104EE5 /* EditVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVideoViewController.swift; sourceTree = "<group>"; };
 		569B72672999D82500104EE5 /* EditVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditVideoViewController.xib; sourceTree = "<group>"; };
+		569B726E299B226C00104EE5 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		569B726F299B226C00104EE5 /* Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
+		569B7273299B303E00104EE5 /* GiveAGiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveAGiftViewController.swift; sourceTree = "<group>"; };
+		569B7274299B303E00104EE5 /* GiveAGiftViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GiveAGiftViewController.xib; sourceTree = "<group>"; };
+		569B7277299B63D700104EE5 /* BoxView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BoxView.xib; sourceTree = "<group>"; };
+		569B7279299B6D1600104EE5 /* BoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxView.swift; sourceTree = "<group>"; };
 		569DA5C7296D59FB001003A1 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		569DA5C8296D59FB001003A1 /* CollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
 		569DA5CB296D5A44001003A1 /* TestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -138,6 +151,7 @@
 		569DA5EA296FE0EC001003A1 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		56B56223296FEA910055271F /* TestViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewViewController.swift; sourceTree = "<group>"; };
 		56B56224296FEA910055271F /* TestViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewViewController.xib; sourceTree = "<group>"; };
+		56F9F2FD299BD9A0002E964D /* Modelsss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modelsss.swift; sourceTree = "<group>"; };
 		649D394329598520005E1E89 /* BuyDiamondsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyDiamondsVC.swift; sourceTree = "<group>"; };
 		649D394429598520005E1E89 /* BuyDiamondsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyDiamondsVC.xib; sourceTree = "<group>"; };
 		649D394829599288005E1E89 /* Sarabun */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sarabun; sourceTree = "<group>"; };
@@ -183,9 +197,12 @@
 				49239701293EF96800CC84FA /* AppDelegate.swift */,
 				49239705293EF96800CC84FA /* ViewController.swift */,
 				49239715293EFAB600CC84FA /* ViewController.xib */,
+				569B726E299B226C00104EE5 /* Cell.swift */,
+				569B726F299B226C00104EE5 /* Cell.xib */,
 				4923970A293EF96900CC84FA /* Assets.xcassets */,
 				4923970C293EF96900CC84FA /* LaunchScreen.storyboard */,
 				4923970F293EF96900CC84FA /* Info.plist */,
+				569B7272299B2FDE00104EE5 /* GiveGift */,
 				569B72652999D7FE00104EE5 /* EditVideo */,
 				569B721529961CE900104EE5 /* VideoPlayback */,
 				569B72072995E05000104EE5 /* CenterLive */,
@@ -321,6 +338,18 @@
 				569B72672999D82500104EE5 /* EditVideoViewController.xib */,
 			);
 			path = EditVideo;
+			sourceTree = "<group>";
+		};
+		569B7272299B2FDE00104EE5 /* GiveGift */ = {
+			isa = PBXGroup;
+			children = (
+				569B7273299B303E00104EE5 /* GiveAGiftViewController.swift */,
+				569B7274299B303E00104EE5 /* GiveAGiftViewController.xib */,
+				569B7279299B6D1600104EE5 /* BoxView.swift */,
+				569B7277299B63D700104EE5 /* BoxView.xib */,
+				56F9F2FD299BD9A0002E964D /* Modelsss.swift */,
+			);
+			path = GiveGift;
 			sourceTree = "<group>";
 		};
 		569DA5CF296D6B34001003A1 /* Custom */ = {
@@ -487,6 +516,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				569B7278299B63D700104EE5 /* BoxView.xib in Resources */,
 				569DA5E9296FE086001003A1 /* CustomView.xib in Resources */,
 				649D394629598520005E1E89 /* BuyDiamondsVC.xib in Resources */,
 				569DA5DD296D6CB9001003A1 /* MyCollectionViewCell.xib in Resources */,
@@ -512,8 +542,10 @@
 				564907952966703C00CD768C /* TestViewController.xib in Resources */,
 				563FC30329948C77009254DE /* ProfileViewController.xib in Resources */,
 				563FC30C2994CEF1009254DE /* ListSettingTableViewCell.xib in Resources */,
+				569B7271299B226C00104EE5 /* Cell.xib in Resources */,
 				5649079D2966D57900CD768C /* StackViewViewController.xib in Resources */,
 				564907A9296BF4DE00CD768C /* TestTableViewCell.xib in Resources */,
+				569B7276299B303E00104EE5 /* GiveAGiftViewController.xib in Resources */,
 				5691439F29753E01001E1E5E /* WalletDiamondsViewController.xib in Resources */,
 				569143A429754CF1001E1E5E /* buyDiamondCollectionViewCell.xib in Resources */,
 				569B720B2995E0FE00104EE5 /* OptionTableViewCell.xib in Resources */,
@@ -540,11 +572,13 @@
 				563FC30229948C77009254DE /* ProfileViewController.swift in Sources */,
 				569B720A2995E0FE00104EE5 /* OptionTableViewCell.swift in Sources */,
 				649D394D29599CE0005E1E89 /* DiamondCell.swift in Sources */,
+				569B727A299B6D1600104EE5 /* BoxView.swift in Sources */,
 				569B721C2996261800104EE5 /* ListVideoTableViewCell.swift in Sources */,
 				569DA5DC296D6CB9001003A1 /* MyCollectionViewCell.swift in Sources */,
 				569B720E2995E1AC00104EE5 /* LiveCenterViewController.swift in Sources */,
 				56B56225296FEA910055271F /* TestViewViewController.swift in Sources */,
 				569143A329754CF1001E1E5E /* buyDiamondCollectionViewCell.swift in Sources */,
+				569B7275299B303E00104EE5 /* GiveAGiftViewController.swift in Sources */,
 				64D3A1C5295C209A007EC7E3 /* StringExt.swift in Sources */,
 				569DA5C9296D59FB001003A1 /* CollectionViewController.swift in Sources */,
 				569B722129962B1000104EE5 /* ListPostedVideoTableViewCell.swift in Sources */,
@@ -561,10 +595,12 @@
 				5691439E29753E01001E1E5E /* WalletDiamondsViewController.swift in Sources */,
 				5691439B2974538A001E1E5E /* UIViewSelec.swift in Sources */,
 				564907A4296BF17100CD768C /* TableViewController.swift in Sources */,
+				56F9F2FE299BD9A0002E964D /* Modelsss.swift in Sources */,
 				569DA5DF296E5232001003A1 /* Model.swift in Sources */,
 				49239702293EF96800CC84FA /* AppDelegate.swift in Sources */,
 				569DA5D2296D6B71001003A1 /* CustomCollecVsTableViewController.swift in Sources */,
 				563FC3072994CB4E009254DE /* HeaderView.swift in Sources */,
+				569B7270299B226C00104EE5 /* Cell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,6 +746,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -737,6 +774,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
