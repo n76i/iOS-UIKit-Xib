@@ -69,6 +69,13 @@
 		569DA5DF296E5232001003A1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569DA5DE296E5232001003A1 /* Model.swift */; };
 		569DA5E9296FE086001003A1 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569DA5E8296FE086001003A1 /* CustomView.xib */; };
 		569DA5EB296FE0EC001003A1 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569DA5EA296FE0EC001003A1 /* CustomView.swift */; };
+		56AAD5B729A31A0B00B2832B /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AAD5B529A31A0B00B2832B /* ChartsViewController.swift */; };
+		56AAD5B829A31A0B00B2832B /* ChartsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56AAD5B629A31A0B00B2832B /* ChartsViewController.xib */; };
+		56AAD5BC29A36E0600B2832B /* TopDedicationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AAD5BA29A36E0600B2832B /* TopDedicationTableViewCell.swift */; };
+		56AAD5BD29A36E0600B2832B /* TopDedicationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56AAD5BB29A36E0600B2832B /* TopDedicationTableViewCell.xib */; };
+		56AAD5C029A3749C00B2832B /* Modelssss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AAD5BF29A3749C00B2832B /* Modelssss.swift */; };
+		56AAD5C329A38AAD00B2832B /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AAD5C129A38AAD00B2832B /* SheetViewController.swift */; };
+		56AAD5C429A38AAD00B2832B /* SheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56AAD5C229A38AAD00B2832B /* SheetViewController.xib */; };
 		56B56225296FEA910055271F /* TestViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B56223296FEA910055271F /* TestViewViewController.swift */; };
 		56B56226296FEA910055271F /* TestViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B56224296FEA910055271F /* TestViewViewController.xib */; };
 		56F9F2FE299BD9A0002E964D /* Modelsss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F9F2FD299BD9A0002E964D /* Modelsss.swift */; };
@@ -149,6 +156,13 @@
 		569DA5DE296E5232001003A1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		569DA5E8296FE086001003A1 /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
 		569DA5EA296FE0EC001003A1 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		56AAD5B529A31A0B00B2832B /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
+		56AAD5B629A31A0B00B2832B /* ChartsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartsViewController.xib; sourceTree = "<group>"; };
+		56AAD5BA29A36E0600B2832B /* TopDedicationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopDedicationTableViewCell.swift; sourceTree = "<group>"; };
+		56AAD5BB29A36E0600B2832B /* TopDedicationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopDedicationTableViewCell.xib; sourceTree = "<group>"; };
+		56AAD5BF29A3749C00B2832B /* Modelssss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modelssss.swift; sourceTree = "<group>"; };
+		56AAD5C129A38AAD00B2832B /* SheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewController.swift; sourceTree = "<group>"; };
+		56AAD5C229A38AAD00B2832B /* SheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SheetViewController.xib; sourceTree = "<group>"; };
 		56B56223296FEA910055271F /* TestViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewViewController.swift; sourceTree = "<group>"; };
 		56B56224296FEA910055271F /* TestViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewViewController.xib; sourceTree = "<group>"; };
 		56F9F2FD299BD9A0002E964D /* Modelsss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modelsss.swift; sourceTree = "<group>"; };
@@ -202,6 +216,7 @@
 				4923970A293EF96900CC84FA /* Assets.xcassets */,
 				4923970C293EF96900CC84FA /* LaunchScreen.storyboard */,
 				4923970F293EF96900CC84FA /* Info.plist */,
+				56F9F2FF299DD97D002E964D /* Charts */,
 				569B7272299B2FDE00104EE5 /* GiveGift */,
 				569B72652999D7FE00104EE5 /* EditVideo */,
 				569B721529961CE900104EE5 /* VideoPlayback */,
@@ -409,6 +424,15 @@
 			path = CustomView;
 			sourceTree = "<group>";
 		};
+		56AAD5B929A36D9300B2832B /* Cellsss */ = {
+			isa = PBXGroup;
+			children = (
+				56AAD5BA29A36E0600B2832B /* TopDedicationTableViewCell.swift */,
+				56AAD5BB29A36E0600B2832B /* TopDedicationTableViewCell.xib */,
+			);
+			path = Cellsss;
+			sourceTree = "<group>";
+		};
 		56B5625429713BAE0055271F /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -416,6 +440,20 @@
 				569DA5CF296D6B34001003A1 /* Custom */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		56F9F2FF299DD97D002E964D /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				56AAD5B929A36D9300B2832B /* Cellsss */,
+				56AAD5B529A31A0B00B2832B /* ChartsViewController.swift */,
+				56AAD5B629A31A0B00B2832B /* ChartsViewController.xib */,
+				56AAD5BF29A3749C00B2832B /* Modelssss.swift */,
+				56AAD5C129A38AAD00B2832B /* SheetViewController.swift */,
+				56AAD5C229A38AAD00B2832B /* SheetViewController.xib */,
+			);
+			name = Charts;
+			path = "Chát";
 			sourceTree = "<group>";
 		};
 		649D39422959849D005E1E89 /* BuyDiamonds */ = {
@@ -518,6 +556,7 @@
 			files = (
 				569B7278299B63D700104EE5 /* BoxView.xib in Resources */,
 				569DA5E9296FE086001003A1 /* CustomView.xib in Resources */,
+				56AAD5B829A31A0B00B2832B /* ChartsViewController.xib in Resources */,
 				649D394629598520005E1E89 /* BuyDiamondsVC.xib in Resources */,
 				569DA5DD296D6CB9001003A1 /* MyCollectionViewCell.xib in Resources */,
 				569DA5CA296D59FB001003A1 /* CollectionViewController.xib in Resources */,
@@ -528,11 +567,13 @@
 				564907A5296BF17100CD768C /* TableViewController.xib in Resources */,
 				569B721D2996261800104EE5 /* ListVideoTableViewCell.xib in Resources */,
 				4923970E293EF96900CC84FA /* LaunchScreen.storyboard in Resources */,
+				56AAD5BD29A36E0600B2832B /* TopDedicationTableViewCell.xib in Resources */,
 				569B72692999D82500104EE5 /* EditVideoViewController.xib in Resources */,
 				569B720F2995E1AC00104EE5 /* LiveCenterViewController.xib in Resources */,
 				569B722229962B1000104EE5 /* ListPostedVideoTableViewCell.xib in Resources */,
 				563FC3052994965C009254DE /* HeaderView.xib in Resources */,
 				649D394E29599CE0005E1E89 /* DiamondCell.xib in Resources */,
+				56AAD5C429A38AAD00B2832B /* SheetViewController.xib in Resources */,
 				649D394929599288005E1E89 /* Sarabun in Resources */,
 				569DA5D9296D6C8F001003A1 /* CollectionTableViewCell.xib in Resources */,
 				569DA5CE296D5A44001003A1 /* TestCollectionViewCell.xib in Resources */,
@@ -571,14 +612,17 @@
 				563FC30B2994CEF1009254DE /* ListSettingTableViewCell.swift in Sources */,
 				563FC30229948C77009254DE /* ProfileViewController.swift in Sources */,
 				569B720A2995E0FE00104EE5 /* OptionTableViewCell.swift in Sources */,
+				56AAD5BC29A36E0600B2832B /* TopDedicationTableViewCell.swift in Sources */,
 				649D394D29599CE0005E1E89 /* DiamondCell.swift in Sources */,
 				569B727A299B6D1600104EE5 /* BoxView.swift in Sources */,
 				569B721C2996261800104EE5 /* ListVideoTableViewCell.swift in Sources */,
 				569DA5DC296D6CB9001003A1 /* MyCollectionViewCell.swift in Sources */,
+				56AAD5B729A31A0B00B2832B /* ChartsViewController.swift in Sources */,
 				569B720E2995E1AC00104EE5 /* LiveCenterViewController.swift in Sources */,
 				56B56225296FEA910055271F /* TestViewViewController.swift in Sources */,
 				569143A329754CF1001E1E5E /* buyDiamondCollectionViewCell.swift in Sources */,
 				569B7275299B303E00104EE5 /* GiveAGiftViewController.swift in Sources */,
+				56AAD5C329A38AAD00B2832B /* SheetViewController.swift in Sources */,
 				64D3A1C5295C209A007EC7E3 /* StringExt.swift in Sources */,
 				569DA5C9296D59FB001003A1 /* CollectionViewController.swift in Sources */,
 				569B722129962B1000104EE5 /* ListPostedVideoTableViewCell.swift in Sources */,
@@ -597,6 +641,7 @@
 				564907A4296BF17100CD768C /* TableViewController.swift in Sources */,
 				56F9F2FE299BD9A0002E964D /* Modelsss.swift in Sources */,
 				569DA5DF296E5232001003A1 /* Model.swift in Sources */,
+				56AAD5C029A3749C00B2832B /* Modelssss.swift in Sources */,
 				49239702293EF96800CC84FA /* AppDelegate.swift in Sources */,
 				569DA5D2296D6B71001003A1 /* CustomCollecVsTableViewController.swift in Sources */,
 				563FC3072994CB4E009254DE /* HeaderView.swift in Sources */,

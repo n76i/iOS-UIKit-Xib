@@ -15,7 +15,7 @@ enum StateReward {
     case wait
 }
 
-class DataReward {
+struct DataReward {
     var imageName: String
     var stateReward: StateReward
     
@@ -35,7 +35,7 @@ public final class ButtonProgressView: UIView {
     public var progressTintColor: UIColor = .black { didSet{ setNeedsLayout() } }
 
     public var trackTintColor: UIColor = .lightGray { didSet { setNeedsLayout() } }
-
+//
 //    public var progress: CGFloat {
 //        get {
 //            return progressLayer.strokeEnd
@@ -50,7 +50,7 @@ public final class ButtonProgressView: UIView {
 //            }
 //        }
 //    }
-
+//
 //    // Private
 //    private let trackLayer = CAShapeLayer()
 //    private let progressLayer = CAShapeLayer()
@@ -101,7 +101,7 @@ public final class ButtonProgressView: UIView {
 //        )
 //        label.attributedText = attributedText
 //    }
-
+//
 //    // MARK: - Methods
 //    private func configure() {
 //        addSubview(label)

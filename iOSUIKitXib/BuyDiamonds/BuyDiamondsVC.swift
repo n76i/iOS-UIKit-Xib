@@ -8,15 +8,6 @@
 import UIKit
 
 class BuyDiamondsVC: UIViewController {
-    let diamondsData: [DiamondModel] = [
-        DiamondModel(diamondNumber: 69, money: 100000, isSelect: true),
-        DiamondModel(diamondNumber: 139, money: 100000, isSelect: false),
-        DiamondModel(diamondNumber: 349, money: 100000, isSelect: false),
-        DiamondModel(diamondNumber: 699, money: 100000, isSelect: false),
-        DiamondModel(diamondNumber: 3499, money: 100000, isSelect: false),
-        DiamondModel(diamondNumber: 6999, money: 100000, isSelect: false),
-    ]
-    
     
     @IBOutlet weak var diamondView: UIView!
     @IBOutlet weak var diamondCurrentTxt: UILabel!
@@ -25,6 +16,16 @@ class BuyDiamondsVC: UIViewController {
     
     @IBOutlet weak var buyBtn: UIButton!
     @IBOutlet weak var diamondsClv: UICollectionView!
+    
+    let diamondsData: [DiamondModel] = [
+        DiamondModel(diamondNumber: 69, money: 100000),
+        DiamondModel(diamondNumber: 139, money: 100000),
+        DiamondModel(diamondNumber: 349, money: 100000),
+        DiamondModel(diamondNumber: 699, money: 100000),
+        DiamondModel(diamondNumber: 3499, money: 100000),
+        DiamondModel(diamondNumber: 6999, money: 100000),
+    ]
+    var selectIndexPath: IndexPath = [1, 0]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,10 +54,12 @@ class BuyDiamondsVC: UIViewController {
         diamondView.layer.cornerRadius = 8
         
         //setup buy btn
-//        buyBtn.setTitle("NẠP", for: .normal)
+        buyBtn.setTitle("NẠP", for: .normal)
 //        buyBtn.layoutIfNeeded()
-//        let shape = CAShapeLayer()
-//        buyBtn.applyGradient(colors: [ UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!], startPoint: CGPoint(x: 0.0, y: 0.8), endPoint: CGPoint(x: 1.0, y: 0.2), shape: shape)
+        buyBtn.clipsToBounds = true
+        buyBtn.layer.cornerRadius = 20
+        let shape = CAShapeLayer()
+        buyBtn.applyGradient(colors: [ UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!], startPoint: CGPoint(x: 0.0, y: 0.8), endPoint: CGPoint(x: 1.0, y: 0.2), shape: shape, corner: 3)
     }
     
     func setBackgroundImage() {
@@ -65,8 +68,6 @@ class BuyDiamondsVC: UIViewController {
         backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
         view.insertSubview(backgroundImage, at: 0)
     }
-    
-    
 }
 
 extension BuyDiamondsVC: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
@@ -78,6 +79,8 @@ extension BuyDiamondsVC: UICollectionViewDelegate, UICollectionViewDelegateFlowL
         let cell = diamondsClv.dequeueReusableCell(withReuseIdentifier: "DiamondCell", for: indexPath) as! DiamondCell
         
         cell.setupView(model: diamondsData[indexPath.row])
+        cell.backgroundColor = UIColor(named: "F5F5F5")
+        cell.layer.cornerRadius = 8
         
         return cell
     }
@@ -91,19 +94,25 @@ extension BuyDiamondsVC: UICollectionViewDelegate, UICollectionViewDelegateFlowL
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 10
     }
-    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(diamondsData[indexPath.row].diamondNumber)
-        
-        for e in diamondsData {
-            if (e.diamondNumber == diamondsData[indexPath.row].diamondNumber) {
-                e.isSelect = true
-            } else {
-                e.isSelect = false
-            }
+    
+        if selectIndexPath != indexPath {
+            let cell = collectionView.cellForItem(at: indexPath) as! DiamondCell
+
+            let gradientBorder = UICollectionViewCell.gradientImage(bounds: cell.bounds, colors: [UIColor(named: "ColorBorCell1")!, UIColor(named: "ColorBorCell2")!, UIColor(named: "ColorBorCell3")!])
+            let gradientColor = UIColor(patternImage: gradientBorder)
+            cell.backgroundColor =  UIColor(named: "SelectedCell")
+            cell.layer.borderColor = gradientColor.cgColor
+            cell.layer.borderWidth = 1.5
+            cell.layer.cornerRadius = 8
+            
+            let cells = collectionView.cellForItem(at: self.selectIndexPath) as? DiamondCell
+            cells?.backgroundColor = UIColor(named: "CellDefault")
+            cells?.layer.borderColor = UIColor.systemBackground.cgColor
+            cells?.layer.borderWidth = 0
+            self.selectIndexPath = indexPath
         }
-        
-        
+
     }
 }
 

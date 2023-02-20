@@ -17,12 +17,12 @@ class GiveAGiftViewController: UIViewController {
     @IBOutlet weak var viewReward: UIView!
     
     @IBOutlet weak var view1: BoxView!
-    @IBOutlet weak var view2: BoxView!
-    @IBOutlet weak var view3: BoxView!
-    @IBOutlet weak var view4: BoxView!
-    @IBOutlet weak var view5: BoxView!
-    @IBOutlet weak var view6: BoxView!
-    
+    // disable view 1
+    @IBOutlet var vBoxs: [BoxView]!
+    // 25 = 5 * 5
+    private var maxCouting = 25
+    private var step = 0
+    private var count = 5
     
     var dataReward: [DataReward] = [
         DataReward(imageName: "Box1", stateReward: StateReward.open),
@@ -34,9 +34,6 @@ class GiveAGiftViewController: UIViewController {
     ]
     
     var timer: Timer?
-    var totalTime = 5
-    var indexCoutdown = -1
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.setNavigationBarHidden(true, animated: false)
@@ -45,9 +42,8 @@ class GiveAGiftViewController: UIViewController {
         oneButton.setTitleColor(UIColor(patternImage: UIImage.gradientButtonImage(bounds: oneButton.bounds, colors: [UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!])), for: .normal)
         botImage2.isHidden = true
         viewReward.isHidden = false
-        indexCountDown()
-        timerCountDown()
         setupView()
+        setTimer()
     }
 
     @IBAction func rewardAction(_ sender: Any) {
@@ -65,102 +61,53 @@ class GiveAGiftViewController: UIViewController {
         twoButton.setTitleColor(UIColor(patternImage: UIImage.gradientButtonImage(bounds: CGRect(x: 0, y: 0, width: 148, height: 23), colors: [UIColor(named: "8F4AFF")!, UIColor(named: "FF5B37")!])), for: .normal)
         oneButton.setTitleColor(.lightGray, for: .normal)
     }
-    func indexCountDown() {
-        for i in 0..<dataReward.count {
-            if dataReward[i].stateReward == StateReward.countDown {
-                indexCoutdown = i
+    func setTimer() {
+        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { [unowned self] timer in
+            
+            if maxCouting == 0 {
+                timer.invalidate()
+                self.timer = nil
+                return
             }
-        }
-    }
-    func timerCountDown() {
-        self.timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
-            self?.totalTime -= 1
-            if self?.totalTime == -1 {
-                self?.changeCountdown()
-            } else if let totalTime = self?.totalTime {
-                switch self?.indexCoutdown {
-                case 0:
-                    self?.view1.countDown(value: totalTime)
-                case 1:
-                    self?.view2.countDown(value: totalTime)
-                case 2:
-                    self?.view3.countDown(value: totalTime)
-                case 3:
-                    self?.view4.countDown(value: totalTime)
-                case 4:
-                    self?.view5.countDown(value: totalTime)
-                case 5:
-                    self?.view6.countDown(value: totalTime)
-                default:
-                    break
-                }
+//            print("ITEM \(maxCouting % 5)")
+            if maxCouting % 5 == 0 {
+                self.vBoxs[step].startAnimation(seconds: 5)
+                self.step += 1
+//                print("step= = \(step)")
             }
-        }
+            self.maxCouting -= 1
+            self.count -= 1
+            self.vBoxs[step - 1].countDown(value: count)
+            if count == 0 {
+                count = 5
+            }
+//            print("Count \(count)")
+            print(maxCouting)
+            if maxCouting == 20 {
+              updateView(index: 0, image: "Box1")
+            } else if maxCouting == 15 {
+                updateView(index: 1, image: "Box4")
+            } else if maxCouting == 10 {
+               updateView(index: 2, image: "Box2")
+            } else if maxCouting == 5 {
+               updateView(index: 3, image: "Box3")
+            } else if maxCouting == 0 {
+                updateView(index: 4, image: "Box5")
+            }
+        })
     }
-    func changeCountdown() {
-        
-        dataReward[indexCoutdown].stateReward = StateReward.open
-        if indexCoutdown < 5 {
-            totalTime = 5
-            dataReward[indexCoutdown + 1].stateReward = StateReward.countDown
-            indexCoutdown += 1
-        } else {
-            indexCoutdown = 0
-            self.timer?.invalidate()
-        }
-        indexCountDown()
-        setupView()
-    }
-    
     func setupView() {
         view1.setupView(data: dataReward[0])
-        let tapBox1 = UITapGestureRecognizer(target: self, action: #selector(tapOpenBox1))
-        view1.viewOpen.addGestureRecognizer(tapBox1)
-        view2.setupView(data: dataReward[1])
-        let tapBox2 = UITapGestureRecognizer(target: self, action: #selector(tapOpenBox2))
-        view2.viewOpen.addGestureRecognizer(tapBox2)
-        view3.setupView(data: dataReward[2])
-        let tapBox3 = UITapGestureRecognizer(target: self, action: #selector(tapOpenBox3))
-        view3.viewOpen.addGestureRecognizer(tapBox3)
-        view4.setupView(data: dataReward[3])
-        let tapBox4 = UITapGestureRecognizer(target: self, action: #selector(tapOpenBox4))
-        view4.viewOpen.addGestureRecognizer(tapBox4)
-        view5.setupView(data: dataReward[4])
-        let tapBox5 = UITapGestureRecognizer(target: self, action: #selector(tapOpenBox5))
-        view5.viewOpen.addGestureRecognizer(tapBox5)
-        view6.setupView(data: dataReward[5])
-        let tapBox6 = UITapGestureRecognizer(target: self, action: #selector(tapOpenBox6))
-        view6.viewOpen.addGestureRecognizer(tapBox6)
+        view1.tapView()
+        vBoxs[0].setupView(data: dataReward[1])
+        vBoxs[1].setupView(data: dataReward[2])
+        vBoxs[2].setupView(data: dataReward[3])
+        vBoxs[3].setupView(data: dataReward[4])
+        vBoxs[4].setupView(data: dataReward[5])
     }
-    
-    @objc private func tapOpenBox1() {
-        view1.imageView.image = UIImage(named: "Rose")
-        view1.viewOpen.isHidden = true
-        view1.viewFlower.isHidden = false
-    }
-    @objc private func tapOpenBox2() {
-        view2.imageView.image = UIImage(named: "Rose")
-        view2.viewOpen.isHidden = true
-        view2.viewFlower.isHidden = false
-    }
-    @objc private func tapOpenBox3() {
-        view3.imageView.image = UIImage(named: "Rose")
-        view3.viewOpen.isHidden = true
-        view3.viewFlower.isHidden = false
-    }
-    @objc private func tapOpenBox4() {
-        view4.imageView.image = UIImage(named: "Rose")
-        view4.viewOpen.isHidden = true
-        view4.viewFlower.isHidden = false
-    }
-    @objc private func tapOpenBox5() {
-        view5.imageView.image = UIImage(named: "Rose")
-        view5.viewOpen.isHidden = true
-        view5.viewFlower.isHidden = false
-    }
-    @objc private func tapOpenBox6() {
-        view6.imageView.image = UIImage(named: "Rose")
-        view6.viewOpen.isHidden = true
-        view6.viewFlower.isHidden = false
+    func updateView(index: Int, image: String) {
+        self.vBoxs[index].openBox(image: image)
+        self.vBoxs[index].shapeView.isHidden = true
+        self.vBoxs[index].tapView()
     }
 }

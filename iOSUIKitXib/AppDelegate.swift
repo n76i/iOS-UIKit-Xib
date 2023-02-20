@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
 //        let vc  = ProfileViewController()
 //        window?.rootViewController = vc
-        window?.rootViewController = UINavigationController(rootViewController: GiveAGiftViewController())
+        window?.rootViewController = UINavigationController(rootViewController: ChartsViewController())
         window?.makeKeyAndVisible()
         return true
     }

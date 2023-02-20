@@ -63,6 +63,33 @@ extension UIView {
 ////        gradient.zPosition = 0
 //    }
     
+//    func genderData() {
+//        if var item0 = dataReward.first(where: {$0.stateReward == .countDown}) {
+//            item0.stateReward = .open
+//            if let index = dataReward.firstIndex(where: {$0.stateReward == .countDown}) {
+//                dataReward[index] = item0
+////                print(index)
+//            }
+//        }
+//        if var item1 = dataReward.first(where: {$0.stateReward == .wait}) {
+//            item1.stateReward = .countDown
+//            if let index = dataReward.firstIndex(where: {$0.stateReward == .wait}) {
+//                dataReward[index] = item1
+//            }
+//        }
+//        indexCountDown()
+//        updateViewTimer()
+//        updateView()
+////        isHiddenShapeView()
+////        setupView()
+//        if dataReward.first(where: {$0.stateReward == .countDown}) != nil {
+//            setTimer()
+//        } else {
+//            self.timeLeft = 5
+//            self.timer?.invalidate()
+//            self.timer = nil
+//        }
+//    }
     func roundCorners(_ corners: UIRectCorner, radius: CGFloat) {
          let path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
          let mask = CAShapeLayer()
