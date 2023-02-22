@@ -10,6 +10,7 @@ import Foundation
 struct DataRanking {
     let topRankingImage: String
     let topRankingLabel: String
+    let nameUser: String
     let numberHeart: String
     let ishiddenRanking: Bool
 }

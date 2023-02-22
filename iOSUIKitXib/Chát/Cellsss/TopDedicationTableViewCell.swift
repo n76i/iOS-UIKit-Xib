@@ -12,7 +12,7 @@ class TopDedicationTableViewCell: UITableViewCell {
     @IBOutlet weak var topRankingImage: UIImageView!
     @IBOutlet weak var topRankingLabel: UILabel!
     @IBOutlet weak var numberHeartLabel: UILabel!
-    
+    @IBOutlet weak var nameUserLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
        
@@ -20,6 +20,7 @@ class TopDedicationTableViewCell: UITableViewCell {
     func bindData(data: DataRanking) {
         topRankingImage.image = UIImage(named: data.topRankingImage)
         topRankingLabel.text = data.topRankingLabel
+        nameUserLabel.text = data.nameUser
         numberHeartLabel.text = data.numberHeart
         topRankingLabel.isHidden = data.ishiddenRanking
     }

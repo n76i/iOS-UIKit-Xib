@@ -12,6 +12,18 @@ class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let fm = FileManager.default
+        let path = Bundle.main.resourcePath!
+        let items = try! fm.contentsOfDirectory(atPath: path)
+
+        for item in items {
+//            if item.hasPrefix("An") {
+//                // this is a picture to load!
+//                print("\(item)")
+//            }
+            print("\(item)")
+        }
         title = "Second"
         let goVC = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(leftAction))
         let dismissButtonItem = UIBarButtonItem(title: "Dissmis", style: .done, target: self, action: #selector(onDissmisVC))

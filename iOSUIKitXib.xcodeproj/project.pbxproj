@@ -69,13 +69,20 @@
 		569DA5DF296E5232001003A1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569DA5DE296E5232001003A1 /* Model.swift */; };
 		569DA5E9296FE086001003A1 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569DA5E8296FE086001003A1 /* CustomView.xib */; };
 		569DA5EB296FE0EC001003A1 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569DA5EA296FE0EC001003A1 /* CustomView.swift */; };
-		56AAD5B729A31A0B00B2832B /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AAD5B529A31A0B00B2832B /* ChartsViewController.swift */; };
-		56AAD5B829A31A0B00B2832B /* ChartsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56AAD5B629A31A0B00B2832B /* ChartsViewController.xib */; };
+		56AAD5B729A31A0B00B2832B /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AAD5B529A31A0B00B2832B /* RankingViewController.swift */; };
+		56AAD5B829A31A0B00B2832B /* RankingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56AAD5B629A31A0B00B2832B /* RankingViewController.xib */; };
 		56AAD5BC29A36E0600B2832B /* TopDedicationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AAD5BA29A36E0600B2832B /* TopDedicationTableViewCell.swift */; };
 		56AAD5BD29A36E0600B2832B /* TopDedicationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56AAD5BB29A36E0600B2832B /* TopDedicationTableViewCell.xib */; };
 		56AAD5C029A3749C00B2832B /* Modelssss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AAD5BF29A3749C00B2832B /* Modelssss.swift */; };
 		56AAD5C329A38AAD00B2832B /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AAD5C129A38AAD00B2832B /* SheetViewController.swift */; };
 		56AAD5C429A38AAD00B2832B /* SheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56AAD5C229A38AAD00B2832B /* SheetViewController.xib */; };
+		56AAD5C829A4A06600B2832B /* CashOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AAD5C629A4A06600B2832B /* CashOutViewController.swift */; };
+		56AAD5C929A4A06600B2832B /* CashOutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56AAD5C729A4A06600B2832B /* CashOutViewController.xib */; };
+		56AAD5CD29A4B82700B2832B /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AAD5CB29A4B82700B2832B /* HistoryTableViewCell.swift */; };
+		56AAD5CE29A4B82700B2832B /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56AAD5CC29A4B82700B2832B /* HistoryTableViewCell.xib */; };
+		56AAD5D029A4C2E900B2832B /* Modelll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AAD5CF29A4C2E900B2832B /* Modelll.swift */; };
+		56AAD5DB29A5AC8900B2832B /* WithdrawaDetaillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AAD5D929A5AC8900B2832B /* WithdrawaDetaillViewController.swift */; };
+		56AAD5DC29A5AC8900B2832B /* WithdrawaDetaillViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56AAD5DA29A5AC8900B2832B /* WithdrawaDetaillViewController.xib */; };
 		56B56225296FEA910055271F /* TestViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B56223296FEA910055271F /* TestViewViewController.swift */; };
 		56B56226296FEA910055271F /* TestViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B56224296FEA910055271F /* TestViewViewController.xib */; };
 		56F9F2FE299BD9A0002E964D /* Modelsss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F9F2FD299BD9A0002E964D /* Modelsss.swift */; };
@@ -156,13 +163,20 @@
 		569DA5DE296E5232001003A1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		569DA5E8296FE086001003A1 /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
 		569DA5EA296FE0EC001003A1 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
-		56AAD5B529A31A0B00B2832B /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
-		56AAD5B629A31A0B00B2832B /* ChartsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartsViewController.xib; sourceTree = "<group>"; };
+		56AAD5B529A31A0B00B2832B /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
+		56AAD5B629A31A0B00B2832B /* RankingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingViewController.xib; sourceTree = "<group>"; };
 		56AAD5BA29A36E0600B2832B /* TopDedicationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopDedicationTableViewCell.swift; sourceTree = "<group>"; };
 		56AAD5BB29A36E0600B2832B /* TopDedicationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopDedicationTableViewCell.xib; sourceTree = "<group>"; };
 		56AAD5BF29A3749C00B2832B /* Modelssss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modelssss.swift; sourceTree = "<group>"; };
 		56AAD5C129A38AAD00B2832B /* SheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewController.swift; sourceTree = "<group>"; };
 		56AAD5C229A38AAD00B2832B /* SheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SheetViewController.xib; sourceTree = "<group>"; };
+		56AAD5C629A4A06600B2832B /* CashOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashOutViewController.swift; sourceTree = "<group>"; };
+		56AAD5C729A4A06600B2832B /* CashOutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CashOutViewController.xib; sourceTree = "<group>"; };
+		56AAD5CB29A4B82700B2832B /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		56AAD5CC29A4B82700B2832B /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
+		56AAD5CF29A4C2E900B2832B /* Modelll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modelll.swift; sourceTree = "<group>"; };
+		56AAD5D929A5AC8900B2832B /* WithdrawaDetaillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawaDetaillViewController.swift; sourceTree = "<group>"; };
+		56AAD5DA29A5AC8900B2832B /* WithdrawaDetaillViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WithdrawaDetaillViewController.xib; sourceTree = "<group>"; };
 		56B56223296FEA910055271F /* TestViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewViewController.swift; sourceTree = "<group>"; };
 		56B56224296FEA910055271F /* TestViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewViewController.xib; sourceTree = "<group>"; };
 		56F9F2FD299BD9A0002E964D /* Modelsss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modelsss.swift; sourceTree = "<group>"; };
@@ -216,6 +230,7 @@
 				4923970A293EF96900CC84FA /* Assets.xcassets */,
 				4923970C293EF96900CC84FA /* LaunchScreen.storyboard */,
 				4923970F293EF96900CC84FA /* Info.plist */,
+				56AAD5C529A4A02200B2832B /* CashOutRubyHistory */,
 				56F9F2FF299DD97D002E964D /* Charts */,
 				569B7272299B2FDE00104EE5 /* GiveGift */,
 				569B72652999D7FE00104EE5 /* EditVideo */,
@@ -433,6 +448,28 @@
 			path = Cellsss;
 			sourceTree = "<group>";
 		};
+		56AAD5C529A4A02200B2832B /* CashOutRubyHistory */ = {
+			isa = PBXGroup;
+			children = (
+				56AAD5CA29A4B7FB00B2832B /* Cellll */,
+				56AAD5C629A4A06600B2832B /* CashOutViewController.swift */,
+				56AAD5C729A4A06600B2832B /* CashOutViewController.xib */,
+				56AAD5CF29A4C2E900B2832B /* Modelll.swift */,
+				56AAD5D929A5AC8900B2832B /* WithdrawaDetaillViewController.swift */,
+				56AAD5DA29A5AC8900B2832B /* WithdrawaDetaillViewController.xib */,
+			);
+			path = CashOutRubyHistory;
+			sourceTree = "<group>";
+		};
+		56AAD5CA29A4B7FB00B2832B /* Cellll */ = {
+			isa = PBXGroup;
+			children = (
+				56AAD5CB29A4B82700B2832B /* HistoryTableViewCell.swift */,
+				56AAD5CC29A4B82700B2832B /* HistoryTableViewCell.xib */,
+			);
+			path = Cellll;
+			sourceTree = "<group>";
+		};
 		56B5625429713BAE0055271F /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -446,8 +483,8 @@
 			isa = PBXGroup;
 			children = (
 				56AAD5B929A36D9300B2832B /* Cellsss */,
-				56AAD5B529A31A0B00B2832B /* ChartsViewController.swift */,
-				56AAD5B629A31A0B00B2832B /* ChartsViewController.xib */,
+				56AAD5B529A31A0B00B2832B /* RankingViewController.swift */,
+				56AAD5B629A31A0B00B2832B /* RankingViewController.xib */,
 				56AAD5BF29A3749C00B2832B /* Modelssss.swift */,
 				56AAD5C129A38AAD00B2832B /* SheetViewController.swift */,
 				56AAD5C229A38AAD00B2832B /* SheetViewController.xib */,
@@ -528,6 +565,7 @@
 				TargetAttributes = {
 					492396FD293EF96800CC84FA = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -556,8 +594,9 @@
 			files = (
 				569B7278299B63D700104EE5 /* BoxView.xib in Resources */,
 				569DA5E9296FE086001003A1 /* CustomView.xib in Resources */,
-				56AAD5B829A31A0B00B2832B /* ChartsViewController.xib in Resources */,
+				56AAD5B829A31A0B00B2832B /* RankingViewController.xib in Resources */,
 				649D394629598520005E1E89 /* BuyDiamondsVC.xib in Resources */,
+				56AAD5C929A4A06600B2832B /* CashOutViewController.xib in Resources */,
 				569DA5DD296D6CB9001003A1 /* MyCollectionViewCell.xib in Resources */,
 				569DA5CA296D59FB001003A1 /* CollectionViewController.xib in Resources */,
 				569DA5D3296D6B71001003A1 /* CustomCollecVsTableViewController.xib in Resources */,
@@ -565,6 +604,7 @@
 				56B56226296FEA910055271F /* TestViewViewController.xib in Resources */,
 				564907A12967C71A00CD768C /* PresentViewController.xib in Resources */,
 				564907A5296BF17100CD768C /* TableViewController.xib in Resources */,
+				56AAD5DC29A5AC8900B2832B /* WithdrawaDetaillViewController.xib in Resources */,
 				569B721D2996261800104EE5 /* ListVideoTableViewCell.xib in Resources */,
 				4923970E293EF96900CC84FA /* LaunchScreen.storyboard in Resources */,
 				56AAD5BD29A36E0600B2832B /* TopDedicationTableViewCell.xib in Resources */,
@@ -587,6 +627,7 @@
 				5649079D2966D57900CD768C /* StackViewViewController.xib in Resources */,
 				564907A9296BF4DE00CD768C /* TestTableViewCell.xib in Resources */,
 				569B7276299B303E00104EE5 /* GiveAGiftViewController.xib in Resources */,
+				56AAD5CE29A4B82700B2832B /* HistoryTableViewCell.xib in Resources */,
 				5691439F29753E01001E1E5E /* WalletDiamondsViewController.xib in Resources */,
 				569143A429754CF1001E1E5E /* buyDiamondCollectionViewCell.xib in Resources */,
 				569B720B2995E0FE00104EE5 /* OptionTableViewCell.xib in Resources */,
@@ -603,6 +644,7 @@
 			files = (
 				564907982966A30600CD768C /* SecondViewController.swift in Sources */,
 				64D3A1C7295C2E25007EC7E3 /* UIViewExt.swift in Sources */,
+				56AAD5C829A4A06600B2832B /* CashOutViewController.swift in Sources */,
 				5649079C2966D57900CD768C /* StackViewViewController.swift in Sources */,
 				569B72142995E51300104EE5 /* HeaderViewLive.swift in Sources */,
 				569B722429964DFF00104EE5 /* BaseTableViewCell.swift in Sources */,
@@ -610,6 +652,7 @@
 				564907942966703C00CD768C /* TestViewController.swift in Sources */,
 				564907A8296BF4DE00CD768C /* TestTableViewCell.swift in Sources */,
 				563FC30B2994CEF1009254DE /* ListSettingTableViewCell.swift in Sources */,
+				56AAD5DB29A5AC8900B2832B /* WithdrawaDetaillViewController.swift in Sources */,
 				563FC30229948C77009254DE /* ProfileViewController.swift in Sources */,
 				569B720A2995E0FE00104EE5 /* OptionTableViewCell.swift in Sources */,
 				56AAD5BC29A36E0600B2832B /* TopDedicationTableViewCell.swift in Sources */,
@@ -617,7 +660,7 @@
 				569B727A299B6D1600104EE5 /* BoxView.swift in Sources */,
 				569B721C2996261800104EE5 /* ListVideoTableViewCell.swift in Sources */,
 				569DA5DC296D6CB9001003A1 /* MyCollectionViewCell.swift in Sources */,
-				56AAD5B729A31A0B00B2832B /* ChartsViewController.swift in Sources */,
+				56AAD5B729A31A0B00B2832B /* RankingViewController.swift in Sources */,
 				569B720E2995E1AC00104EE5 /* LiveCenterViewController.swift in Sources */,
 				56B56225296FEA910055271F /* TestViewViewController.swift in Sources */,
 				569143A329754CF1001E1E5E /* buyDiamondCollectionViewCell.swift in Sources */,
@@ -627,11 +670,13 @@
 				569DA5C9296D59FB001003A1 /* CollectionViewController.swift in Sources */,
 				569B722129962B1000104EE5 /* ListPostedVideoTableViewCell.swift in Sources */,
 				564907A02967C71A00CD768C /* PresentViewController.swift in Sources */,
+				56AAD5CD29A4B82700B2832B /* HistoryTableViewCell.swift in Sources */,
 				569DA5EB296FE0EC001003A1 /* CustomView.swift in Sources */,
 				64EF85FD295C4154000F4EBB /* UIButton.swift in Sources */,
 				569DA5CD296D5A44001003A1 /* TestCollectionViewCell.swift in Sources */,
 				64D3A1BF2959A8BA007EC7E3 /* IntExt.swift in Sources */,
 				569B721829961D6B00104EE5 /* VideoPlaybackViewController.swift in Sources */,
+				56AAD5D029A4C2E900B2832B /* Modelll.swift in Sources */,
 				569B72682999D82500104EE5 /* EditVideoViewController.swift in Sources */,
 				649D394529598520005E1E89 /* BuyDiamondsVC.swift in Sources */,
 				569DA5D8296D6C8F001003A1 /* CollectionTableViewCell.swift in Sources */,
@@ -782,6 +827,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JG52YH39VN;
@@ -800,6 +846,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.n76i.iOSUIKitXib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -810,6 +858,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JG52YH39VN;
@@ -828,6 +877,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.n76i.iOSUIKitXib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

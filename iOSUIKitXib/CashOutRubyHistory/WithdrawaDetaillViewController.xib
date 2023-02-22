@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Sarabun-Regular.ttf">
+            <string>Sarabun-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WithdrawaDetaillViewController" customModule="iOSUIKitXib" customModuleProvider="target">
+            <connections>
+                <outlet property="dayLabel" destination="CGR-rS-24J" id="e7T-Vs-CxL"/>
+                <outlet property="hourLabel" destination="axy-8m-GSo" id="98T-s4-zSa"/>
+                <outlet property="imageLabel" destination="Pty-e1-edw" id="pbV-oX-yVQ"/>
+                <outlet property="numberAccountLabel" destination="h86-h5-EYf" id="ff3-zO-rg4"/>
+                <outlet property="numberRubyLabel" destination="zaZ-Fo-xke" id="bAh-os-rPr"/>
+                <outlet property="reasonLabel" destination="B9i-mS-b8r" id="VTk-p6-2Nz"/>
+                <outlet property="resultCashOutLabel" destination="pD5-bP-OxE" id="BUw-gY-LOd"/>
+                <outlet property="swapImageLabel" destination="b47-NO-Gqf" id="p7V-B3-Kd7"/>
+                <outlet property="trainslationCodeLabel" destination="Mid-ff-Frs" id="AoO-yt-QiU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wrongAccountLabel" destination="Njc-uH-cFg" id="aPi-aE-wfS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GradientScreen" translatesAutoresizingMaskIntoConstraints="NO" id="6bd-YW-tQN">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thời gian:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fmh-Pg-phm">
+                    <rect key="frame" x="20.000000000000004" y="120" width="60.333333333333343" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="jZz-mW-FeR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Sarabun-Regular" family="Sarabun" pointSize="14"/>
+                    <color key="textColor" red="0.19607841970000001" green="0.18039217590000001" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:12" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axy-8m-GSo">
+                    <rect key="frame" x="338.66666666666669" y="120" width="34.333333333333314" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="w1c-yy-yyr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Sarabun-Regular" family="Sarabun" pointSize="14"/>
+                    <color key="textColor" red="0.19607841970000001" green="0.18039217590000001" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaZ-Fo-xke">
+                    <rect key="frame" x="349.66666666666669" y="157" width="23.333333333333314" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="fJb-lC-1wz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Sarabun-Regular" family="Sarabun" pointSize="14"/>
+                    <color key="textColor" red="0.19607841970000001" green="0.18039217590000001" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100.000 VND" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3Q-iO-xPd">
+                    <rect key="frame" x="293" y="194" width="80" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="rtk-Cf-qQ1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Sarabun-Regular" family="Sarabun" pointSize="14"/>
+                    <color key="textColor" red="0.19607841970000001" green="0.18039217590000001" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIETCOMBANK" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7i-eI-z0x">
+                    <rect key="frame" x="282.33333333333331" y="231" width="90.666666666666686" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="FDN-O1-irC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Sarabun-Regular" family="Sarabun" pointSize="14"/>
+                    <color key="textColor" red="0.19607841970000001" green="0.18039217590000001" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chi nhanh Nguyen Chi Thanh" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vl-Jp-83n">
+                    <rect key="frame" x="197.66666666666663" y="268" width="175.33333333333337" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="v1p-8S-XY9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Sarabun-Regular" family="Sarabun" pointSize="14"/>
+                    <color key="textColor" red="0.19607841970000001" green="0.18039217590000001" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAN NGOC AN" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kmp-JC-N94">
+                    <rect key="frame" x="286.66666666666669" y="305" width="86.333333333333314" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="ASz-nl-ISd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Sarabun-Regular" family="Sarabun" pointSize="14"/>
+                    <color key="textColor" red="0.19607841970000001" green="0.18039217590000001" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1030435029" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h86-h5-EYf">
+                    <rect key="frame" x="295.66666666666669" y="342" width="77.333333333333314" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="zIm-10-oJJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Sarabun-Regular" family="Sarabun" pointSize="14"/>
+                    <color key="textColor" red="0.19607841970000001" green="0.18039217590000001" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thất bại" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pD5-bP-OxE">
+                    <rect key="frame" x="293" y="378.66666666666669" width="80" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="BIl-dN-p0d"/>
+                        <constraint firstAttribute="height" constant="22" id="UqH-iw-lGn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Sarabun-Regular" family="Sarabun" pointSize="14"/>
+                    <color key="textColor" red="0.19607841970000001" green="0.18039217590000001" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tài khoản ngân hàng sai" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Njc-uH-cFg">
+                    <rect key="frame" x="227.66666666666663" y="416" width="145.33333333333337" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Xem-6n-alP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Sarabun-Regular" family="Sarabun" pointSize="14"/>
+                    <color key="textColor" red="0.19607841970000001" green="0.18039217590000001" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Hình ảnh]" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b47-NO-Gqf">
+                    <rect key="frame" x="309.66666666666669" y="453" width="63.333333333333314" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="beA-SV-Uip"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Sarabun-Regular" family="Sarabun" pointSize="14"/>
+                    <color key="textColor" red="0.19607841970000001" green="0.18039217590000001" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số tiền rút:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffg-Co-LZd">
+                    <rect key="frame" x="20" y="194" width="67.333333333333329" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="AmO-Sb-HJX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Sarabun-Regular" family="Sarabun" pointSize="14"/>
+                    <color key="textColor" red="0.19607841970000001" green="0.18039217590000001" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ngân hàng:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUV-pq-k0C">
+                    <rect key="frame" x="20" y="231" width="69.333333333333329" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="crn-sP-RB6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Sarabun-Regular" family="Sarabun" pointSize="14"/>
+                    <color key="textColor" red="0.19607841970000001" green="0.18039217590000001" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chi nhánh:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ou9-aN-DfC">
+                    <rect key="frame" x="20" y="268" width="64.666666666666671" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="dzM-oY-3Oj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Sarabun-Regular" family="Sarabun" pointSize="14"/>
+                    <color key="textColor" red="0.19607841970000001" green="0.18039217590000001" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chủ tài khoản:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZl-eg-zLy">
+                    <rect key="frame" x="20" y="305" width="87.333333333333329" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="uEa-iv-sik"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Sarabun-Regular" family="Sarabun" pointSize="14"/>
+                    <color key="textColor" red="0.19607841970000001" green="0.18039217590000001" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số tài khoản:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2YE-Hd-McT">
+                    <rect key="frame" x="20" y="342" width="79" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="AXN-8C-QQc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Sarabun-Regular" family="Sarabun" pointSize="14"/>
+                    <color key="textColor" red="0.19607841970000001" green="0.18039217590000001" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trạng thái:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncn-tK-ljd">
+                    <rect key="frame" x="20" y="379" width="66" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="zGM-F8-hoA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Sarabun-Regular" family="Sarabun" pointSize="14"/>
+                    <color key="textColor" red="0.19607841970000001" green="0.18039217590000001" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lí do:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9i-mS-b8r">
+                    <rect key="frame" x="19.999999999999996" y="416" width="33.666666666666657" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="ANc-ze-mMd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Sarabun-Regular" family="Sarabun" pointSize="14"/>
+                    <color key="textColor" red="0.19607841970000001" green="0.18039217590000001" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hình ảnh:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pty-e1-edw">
+                    <rect key="frame" x="20.000000000000004" y="453" width="58.333333333333343" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="BzO-XW-i3B"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Sarabun-Regular" family="Sarabun" pointSize="14"/>
+                    <color key="textColor" red="0.19607841970000001" green="0.18039217590000001" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mã giao dịch:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJ1-zn-miI">
+                    <rect key="frame" x="20" y="83" width="80.333333333333329" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="4QU-Hk-gOM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Sarabun-Regular" family="Sarabun" pointSize="14"/>
+                    <color key="textColor" red="0.19607841970000001" green="0.18039217590000001" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số ruby:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q38-xP-Lkr">
+                    <rect key="frame" x="19.999999999999996" y="157" width="48.666666666666657" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="hZJ-g4-rTE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Sarabun-Regular" family="Sarabun" pointSize="14"/>
+                    <color key="textColor" red="0.19607841970000001" green="0.18039217590000001" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2023/02/15" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGR-rS-24J">
+                    <rect key="frame" x="255.33333333333334" y="120" width="73.333333333333343" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="kkO-bZ-Qhx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Sarabun-Regular" family="Sarabun" pointSize="14"/>
+                    <color key="textColor" red="0.19607841970000001" green="0.18039217590000001" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F123456" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mid-ff-Frs">
+                    <rect key="frame" x="319" y="83" width="54" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="tvX-nC-XuX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Sarabun-Regular" family="Sarabun" pointSize="14"/>
+                    <color key="textColor" red="0.19607841970000001" green="0.18039217590000001" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="h86-h5-EYf" secondAttribute="trailing" constant="20" id="0Mx-b5-UiY"/>
+                <constraint firstItem="FJ1-zn-miI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="1JF-xz-DFB"/>
+                <constraint firstItem="zaZ-Fo-xke" firstAttribute="centerY" secondItem="q38-xP-Lkr" secondAttribute="centerY" id="40L-Py-g4u"/>
+                <constraint firstItem="Pty-e1-edw" firstAttribute="top" secondItem="B9i-mS-b8r" secondAttribute="bottom" constant="16" id="453-TS-HDz"/>
+                <constraint firstItem="Fmh-Pg-phm" firstAttribute="top" secondItem="FJ1-zn-miI" secondAttribute="bottom" constant="16" id="A0b-cV-jIg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Njc-uH-cFg" secondAttribute="trailing" constant="20" id="AdH-J8-yXe"/>
+                <constraint firstItem="Ou9-aN-DfC" firstAttribute="top" secondItem="nUV-pq-k0C" secondAttribute="bottom" constant="16" id="BSJ-iB-TBb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="axy-8m-GSo" secondAttribute="trailing" constant="20" id="DIn-3N-23s"/>
+                <constraint firstItem="b47-NO-Gqf" firstAttribute="centerY" secondItem="Pty-e1-edw" secondAttribute="centerY" id="DyB-5S-suN"/>
+                <constraint firstItem="nUV-pq-k0C" firstAttribute="top" secondItem="ffg-Co-LZd" secondAttribute="bottom" constant="16" id="JbY-A7-a9b"/>
+                <constraint firstItem="h3Q-iO-xPd" firstAttribute="centerY" secondItem="ffg-Co-LZd" secondAttribute="centerY" id="JcB-by-FcE"/>
+                <constraint firstItem="Mid-ff-Frs" firstAttribute="centerY" secondItem="FJ1-zn-miI" secondAttribute="centerY" id="JgA-vt-Twm"/>
+                <constraint firstItem="EZl-eg-zLy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Ly5-3L-lRh"/>
+                <constraint firstItem="Pty-e1-edw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="MJS-YN-vm0"/>
+                <constraint firstItem="q38-xP-Lkr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="NAQ-cN-85d"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pD5-bP-OxE" secondAttribute="trailing" constant="20" id="NvB-Y5-BCJ"/>
+                <constraint firstItem="Fmh-Pg-phm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="PIR-qa-a89"/>
+                <constraint firstItem="B9i-mS-b8r" firstAttribute="top" secondItem="Ncn-tK-ljd" secondAttribute="bottom" constant="16" id="PhB-If-1wd"/>
+                <constraint firstItem="B9i-mS-b8r" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Pih-3o-XPK"/>
+                <constraint firstItem="FJ1-zn-miI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Q1c-WK-ZpE"/>
+                <constraint firstItem="nUV-pq-k0C" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Q21-QJ-GV8"/>
+                <constraint firstItem="q38-xP-Lkr" firstAttribute="top" secondItem="Fmh-Pg-phm" secondAttribute="bottom" constant="16" id="Qu5-4o-LFU"/>
+                <constraint firstItem="2vl-Jp-83n" firstAttribute="centerY" secondItem="Ou9-aN-DfC" secondAttribute="centerY" id="RGO-CG-mgd"/>
+                <constraint firstItem="Ncn-tK-ljd" firstAttribute="top" secondItem="2YE-Hd-McT" secondAttribute="bottom" constant="16" id="RZT-hj-0ol"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Kmp-JC-N94" secondAttribute="trailing" constant="20" id="URX-KM-0PB"/>
+                <constraint firstItem="ffg-Co-LZd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Y1a-qp-aG5"/>
+                <constraint firstItem="axy-8m-GSo" firstAttribute="leading" secondItem="CGR-rS-24J" secondAttribute="trailing" constant="10" id="YLX-Pb-noW"/>
+                <constraint firstItem="6bd-YW-tQN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cM1-Jh-n8l"/>
+                <constraint firstItem="v7i-eI-z0x" firstAttribute="centerY" secondItem="nUV-pq-k0C" secondAttribute="centerY" id="dIn-MV-uK5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6bd-YW-tQN" secondAttribute="trailing" id="dSb-Rl-YVB"/>
+                <constraint firstAttribute="bottom" secondItem="6bd-YW-tQN" secondAttribute="bottom" id="e3g-o0-5hM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zaZ-Fo-xke" secondAttribute="trailing" constant="20" id="eeK-nc-zk5"/>
+                <constraint firstItem="CGR-rS-24J" firstAttribute="centerY" secondItem="axy-8m-GSo" secondAttribute="centerY" id="gLS-aK-ZJE"/>
+                <constraint firstItem="Njc-uH-cFg" firstAttribute="centerY" secondItem="B9i-mS-b8r" secondAttribute="centerY" id="gLq-Dk-me6"/>
+                <constraint firstItem="axy-8m-GSo" firstAttribute="centerY" secondItem="Fmh-Pg-phm" secondAttribute="centerY" id="i3U-bW-IXq"/>
+                <constraint firstItem="EZl-eg-zLy" firstAttribute="top" secondItem="Ou9-aN-DfC" secondAttribute="bottom" constant="16" id="iDp-Vr-wni"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Mid-ff-Frs" secondAttribute="trailing" constant="20" id="n7h-T4-2dx"/>
+                <constraint firstItem="2YE-Hd-McT" firstAttribute="top" secondItem="EZl-eg-zLy" secondAttribute="bottom" constant="16" id="nTP-bY-Er2"/>
+                <constraint firstItem="2YE-Hd-McT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="nml-ru-N5V"/>
+                <constraint firstItem="ffg-Co-LZd" firstAttribute="top" secondItem="q38-xP-Lkr" secondAttribute="bottom" constant="16" id="qac-zf-Cis"/>
+                <constraint firstItem="Ou9-aN-DfC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="rNN-ib-Xb3"/>
+                <constraint firstItem="h86-h5-EYf" firstAttribute="centerY" secondItem="2YE-Hd-McT" secondAttribute="centerY" id="sBp-NS-sqS"/>
+                <constraint firstItem="6bd-YW-tQN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tTp-NY-RFV"/>
+                <constraint firstItem="Ncn-tK-ljd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="vEQ-gy-ReP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2vl-Jp-83n" secondAttribute="trailing" constant="20" id="vIf-o7-nFQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="b47-NO-Gqf" secondAttribute="trailing" constant="20" id="vok-NE-dld"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="h3Q-iO-xPd" secondAttribute="trailing" constant="20" id="vsR-nE-tgq"/>
+                <constraint firstItem="pD5-bP-OxE" firstAttribute="centerY" secondItem="Ncn-tK-ljd" secondAttribute="centerY" id="wUF-g8-dUB"/>
+                <constraint firstItem="Kmp-JC-N94" firstAttribute="centerY" secondItem="EZl-eg-zLy" secondAttribute="centerY" id="wrj-Qv-mOK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="v7i-eI-z0x" secondAttribute="trailing" constant="20" id="zQ8-mn-9wx"/>
+            </constraints>
+            <point key="canvasLocation" x="133.58778625954199" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="GradientScreen" width="375" height="811"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
